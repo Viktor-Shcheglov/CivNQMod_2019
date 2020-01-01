@@ -42,6 +42,60 @@
   </References>
   <Blocks />
   <Files>
+  <!-- Khmer New Art -->
+	<File md5="29F4F5832E06F55A545651C90F6E1261" import="1">Art/ArtReplacementsNNQMOD/Khmer/IconAtlas/KhmerAtlas_128.dds</File>
+    <File md5="720156190D625C514BEBF78F807EAC16" import="1">Art/ArtReplacementsNNQMOD/Khmer/IconAtlas/KhmerAtlas_256.dds</File>
+    <File md5="A124FEDF39AB01F769110F8C75BDB352" import="1">Art/ArtReplacementsNNQMOD/Khmer/IconAtlas/KhmerAtlas_32.dds</File>
+    <File md5="564DEA148F85F4692C1E4B6DBCE99477" import="1">Art/ArtReplacementsNNQMOD/Khmer/IconAtlas/KhmerAtlas_45.dds</File>
+    <File md5="8E8940C5E152321899C3F92E60F27AD3" import="1">Art/ArtReplacementsNNQMOD/Khmer/IconAtlas/KhmerAtlas_64.dds</File>
+    <File md5="BDB5B13C5E08B92CC2BF328DA608FEFC" import="1">Art/ArtReplacementsNNQMOD/Khmer/IconAtlas/KhmerAtlas_80.dds</File>
+	<File md5="BF1F8DEE76A3CF384E95777987203637" import="1">Art/ArtReplacementsNNQMOD/Khmer/Map/Jayavarman_VII_DOM.dds</File>
+    <File md5="595FA133765A476AEB0BA6B80B082225" import="1">Art/ArtReplacementsNNQMOD/Khmer/Map/KhmerMap512.dds</File>
+  <!-- Manchuria New Art -->
+	<File md5="EAF209245CA67A760D8AD56BE4695351" import="1">Art/ArtReplacementsNNQMOD/Manchuria/Map/JFD_MapGreatQing512.dds</File>
+    <File md5="75E0F1243018AE6D13B1109238C490AB" import="1">Art/ArtReplacementsNNQMOD/Manchuria/Map/JFD_DOM_GreatQing.dds</File>
+	<File md5="7B5399071C494718B1A4D15448C50783" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_128.dds</File>
+    <File md5="6245878ABCB61A8C451FA93D39FF32E9" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_16.dds</File>
+    <File md5="8B839A6C322B254C7766EDD02A1757ED" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_22.dds</File>
+    <File md5="D0FE69BB30BA3380C7E39BEE2A2F17F9" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_24.dds</File>
+    <File md5="5F39826BFBFECD74A58CD6264154DD95" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_256.dds</File>
+    <File md5="17E802A904EC2694CC5E5F2C225A79E2" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_32.dds</File>
+    <File md5="D80057F5E152E0AD1315B6404A05884F" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_45.dds</File>
+    <File md5="5BFA7DE7CF35CB9A2F20FCABBB55EA7A" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_48.dds</File>
+    <File md5="53DBB569F4C94E2E65C2DF1E581BF5BA" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_64.dds</File>
+    <File md5="423A38ED2D8CC90F0C52F9A581F51B80" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_AlphaAtlas_80.dds</File>
+    <File md5="9D580D65507069A860179027CBBE0AC3" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_IconAtlas_128.dds</File>
+    <File md5="4B65A1E8CDB84AEFCC8B0A16F68BD3EE" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_IconAtlas_256.dds</File>
+    <File md5="34105EC263233A516E9698C4AB831A7E" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_IconAtlas_32.dds</File>
+    <File md5="C470E618B157BF482942BE957A5D4097" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_IconAtlas_45.dds</File>
+    <File md5="D34150EEAC9667E10BC6F84D51B569C9" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_IconAtlas_64.dds</File>
+    <File md5="6C23386E1F5FB4388BC9B34FB57DBC2D" import="1">Art/ArtReplacementsNNQMOD/Manchuria/IconAtlas/JFD_GreatQing_IconAtlas_80.dds</File>
+  <!-- Sioux New Art -->
+	<File md5="B45052A13D7839F67F2C8018CC10C09C" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas128.dds</File>
+    <File md5="26916D5606F5BBD51EB1B0C27902BC2A" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas214.dds</File>
+    <File md5="89C5BE92556C21FDCB08696B8F86190A" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas256.dds</File>
+    <File md5="154E9B6CAE725073E1499C76D81C290A" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas32.dds</File>
+    <File md5="E286556501EDC6809DD5E9B7DF5BDB0C" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas45.dds</File>
+    <File md5="F29128B02D06B18715EE32C8B1466F1F" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas64.dds</File>
+    <File md5="4B90013E68425840AC8C9F313EE9C2D5" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxModAtlas80.dds</File>
+	<File md5="044EDDBFD9C5B1273DC84DDD776045CB" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxDoMMod.dds</File>
+    <File md5="7CD711CB7BED22CA6086696C938334FE" import="1">Art/ArtReplacementsNNQMOD/Sioux/Atlas/SiouxMapMod.dds</File>
+  <!-- Golden Horde New Art -->
+	<File md5="7C14174F5E772D08679BBCE054C74627" import="1">Art/ArtReplacementsNNQMOD/Golden Horde/Tar_Yuan_Icons_128.dds</File>
+    <File md5="3B77FA9E6D588604AAE3DCC45680A0C6" import="1">Art/ArtReplacementsNNQMOD/Golden Horde/Tar_Yuan_Icons_256.dds</File>
+    <File md5="5A296B9B49CD8316F63D44D163F12918" import="1">Art/ArtReplacementsNNQMOD/Golden Horde/Tar_Yuan_Icons_32.dds</File>
+    <File md5="130D69C3B27602A4BC408B3932940EA6" import="1">Art/ArtReplacementsNNQMOD/Golden Horde/Tar_Yuan_Icons_45.dds</File>
+    <File md5="D4686B6EF1BB67635AAFF55CB9D831D9" import="1">Art/ArtReplacementsNNQMOD/Golden Horde/Tar_Yuan_Icons_64.dds</File>
+    <File md5="BBC30E74B9418DF46FCE6883F1EA0B23" import="1">Art/ArtReplacementsNNQMOD/Golden Horde/Tar_Yuan_Icons_80.dds</File>
+  <!-- Goth New Art -->
+	<File md5="3F3E2DEFD871C9E850D454B410942E79" import="1">Art/ArtReplacementsNNQMOD/Goths/JFD_GermansAtlas_128.dds</File>
+    <File md5="C7613B2BCD1633907EB9831C5C75BA32" import="1">Art/ArtReplacementsNNQMOD/Goths/JFD_GermansAtlas_256.dds</File>
+    <File md5="F8FC8F80F03793948CC692244E058942" import="1">Art/ArtReplacementsNNQMOD/Goths/JFD_GermansAtlas_32.dds</File>
+    <File md5="1CC67ACA4BE3EC2D3D7054EF6F920894" import="1">Art/ArtReplacementsNNQMOD/Goths/JFD_GermansAtlas_45.dds</File>
+    <File md5="A43FE0D0F4F470BB0DFD87ABE076B7F1" import="1">Art/ArtReplacementsNNQMOD/Goths/JFD_GermansAtlas_64.dds</File>
+    <File md5="870194A632CE7EA525D2A48E44F3004D" import="1">Art/ArtReplacementsNNQMOD/Goths/JFD_GermansAtlas_80.dds</File>
+	<File md5="17DA7AD6D2EE01711B64460226980E74" import="1">Art/ArtReplacementsNNQMOD/Goths/Arminius_DOM.dds</File>
+    <File md5="034CD2D44B5F4C42D20BD5DA61972C10" import="1">Art/ArtReplacementsNNQMOD/Goths/GermansMap512.dds</File>
   <!-- Romania New civ -->
 	<File md5="9F8952BD2BE519BF89ED292A83CEBE3C" import="1">New Civs/Romania/Art/Atlases/MC_RomaniaAlphaAtlas_128.dds</File>
     <File md5="FA90B740F9614DFB32B9AFAE25FDE395" import="1">New Civs/Romania/Art/Atlases/MC_RomaniaAlphaAtlas_16.dds</File>
@@ -522,6 +576,12 @@
 	<File md5="1DE0990821B6F9CC1B75C0467C69BE10" import="1">Art/ArtReplacementsNNQMOD/Franks,Sumeria/DoMSumerLSMod.dds</File>
 	<File md5="939857C44FCEE41361B85850CFF0BA84" import="1">Art/ArtReplacementsNNQMOD/Franks,Sumeria/SumerUnitAlphaAtlas.dds</File>
   <!-- Canada additions art -->
+	<File md5="0FAC6398E6B9B9063B5A592890FC2FBC" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/JFD_PolandLithuaniaAtlas_128.dds</File>
+    <File md5="EFC47428E72197DE8664DF1D5A884B3D" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/JFD_PolandLithuaniaAtlas_256.dds</File>
+    <File md5="98451DDFB9FC031BC43046C803DC4056" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/JFD_PolandLithuaniaAtlas_32.dds</File>
+    <File md5="C7B1002F17B2E91696147851E7BF661B" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/JFD_PolandLithuaniaAtlas_45.dds</File>
+    <File md5="D8F79485BC9EE2F2DDB94EE0515BD930" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/JFD_PolandLithuaniaAtlas_64.dds</File>
+    <File md5="DFEB677734B1665DF345C8A55D57B595" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/JFD_PolandLithuaniaAtlas_80.dds</File>
 	<File md5="CCC20536414FADF3EC4BCD0772D2DEB4" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/avroarrow128.dds</File>
     <File md5="185C37E6F847D872C1FB2060C00CF279" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/avroarrow256.dds</File>
     <File md5="C8F8A2C31A325A45BA59910F6F3C9805" import="1">Art/ArtReplacementsNNQMOD/Canada/Art/avroarrow45.dds</File>
