@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT16" FontStyle="Shadow">
+
+	<!-- IconInstance -->
+	<Instance Name="IconInstance" >
+		<Button ID="IconFrame" Anchor="R,T" Size="64,64" Offset="22,0" Texture="64x64FrameButtons.dds" >
+			<Image ID="IconImage" Anchor="C,C" Size="64.64" Texture="LeaderPortraits512.dds" />
+		</Button>
+	</Instance>
+
+	<!-- IconStack -->
+	<Container ID="IconStackPanel" Anchor="L,T" Offset="201,90" Hidden='1'>
+		<ScrollPanel ID="IconStackScroll" Anchor="L,T" Offset="0,0" Vertical="1" AutoScrollBar="1" Size="100,242" ConsumeMouseOver="1" ConsumeMouseButton="1">
+
+			<!-- Scroll Controls -->
+			<ScrollBar Style="VertSlider" Anchor="R,C" Length="206" AnchorSide="I,I" />
+			<UpButton Style="ScrollBarUp" Anchor="R,T" AnchorSide="I,I" />
+			<DownButton Style="ScrollBarDown" Anchor="R,B" AnchorSide="I,I" />
+
+			<Stack Anchor="R,T" StackGrowth="Bottom" ID="IconStack" />
+		</ScrollPanel>
+	</Container>
+
+</Context>
