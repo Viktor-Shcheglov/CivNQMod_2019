@@ -346,8 +346,8 @@
     <File md5="249B124B007B2F03ED1106C0BA579D95" import="1">New Civs/Finland/Art/IconAtlas/flag_Sissi_32.dds</File>
     <File md5="10AC560436F78EAC7DDEDEFF71C61314" import="1">New Civs/Finland/Art/IconAtlas/sv_CivilGuard.dds</File>
     <File md5="F237A9280A92501BF3D84E04E0AC807F" import="1">New Civs/Finland/Art/IconAtlas/sv_RedGuard.dds</File>
-    <File md5="6CFEC0F8D4A45382A04085D5250A03C8" import="0">New Civs/Finland/Art/IconAtlas/sv_RuneSinger.dds</File>
-    <File md5="7665906134AC5E3C6FCC4D738D0F47E3" import="0">New Civs/Finland/Art/IconAtlas/sv_Sissi.dds</File>
+    <File md5="6CFEC0F8D4A45382A04085D5250A03C8" import="1">New Civs/Finland/Art/IconAtlas/sv_RuneSinger.dds</File>
+    <File md5="7665906134AC5E3C6FCC4D738D0F47E3" import="1">New Civs/Finland/Art/IconAtlas/sv_Sissi.dds</File>
     <File md5="FE3C92BA1F152705502575217B1235BA" import="1">New Civs/Finland/Art/IconAtlas/Hypereon_FinnsIconAtlas128.dds</File>
     <File md5="B2723365BA124E253ABE387836B2D6C1" import="1">New Civs/Finland/Art/IconAtlas/Hypereon_FinnsIconAtlas256.dds</File>
     <File md5="056F6DDCF2C11E33BA38E9965BE1223C" import="1">New Civs/Finland/Art/IconAtlas/Hypereon_FinnsIconAtlas32.dds</File>

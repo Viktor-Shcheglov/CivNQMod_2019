@@ -1,4 +1,23 @@
 -- Author: EnormousApplePie
+
+-- Korea dummy policy
+print("dummy policy loaded - Korea")
+function DummyPolicy(player)
+	print("working - Korea")
+	for playerID, player in pairs(Players) do
+		local player = Players[playerID];
+		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_KOREA"] then
+			if not player:HasPolicy(GameInfoTypes["POLICY_DUMMY_KOREA"]) then
+				
+				player:SetNumFreePolicies(1)
+				player:SetNumFreePolicies(0)
+				player:SetHasPolicy(GameInfoTypes["POLICY_DUMMY_KOREA"], true)	
+			end
+		end
+	end 
+end
+Events.SequenceGameInitComplete.Add(DummyPolicy)
+
 -- Akkad dummy policy
 print("dummy policy loaded - Akkad")
 function DummyPolicy(player)
