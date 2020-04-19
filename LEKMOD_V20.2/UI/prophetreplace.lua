@@ -1,4 +1,51 @@
+-- Horde UA Building
+function PlayerResearchComplete(iTeam, iTech, iChange)
+	if (iTech == GameInfoTypes.TECH_IRON_WORKING) or (iTech == GameInfoTypes.TECH_HORSEBACK_RIDING) then
+		for iPlayerID = 0, GameDefines.MAX_MAJOR_CIVS - 1 do
+			local pScanPlayer = Players[iPlayerID]
+			if pScanPlayer:IsAlive() and pScanPlayer:GetCivilizationType() == GameInfoTypes.CIVILIZATION_MODERN_AMERICA then
+				if pScanPlayer:GetTeam() == iTeam then
+					local pCapital = pScanPlayer:GetCapitalCity()
+					local iUnitType
+					if (iTech == GameInfoTypes.TECH_IRON_WORKING) then
+						iUnitType = GameInfoTypes.UNIT_SWORDSMAN
+					elseif (iTech == GameInfoTypes.TECH_HORSEBACK_RIDING) then
+						iUnitType = GameInfoTypes.UNIT_HORSEMAN
+					end
+					local pNewUnit = pScanPlayer:InitUnit(iUnitType, pCapital:GetX(), pCapital:GetY())
+					if (pNewUnit and pCapital:Plot():GetNumUnits() > 1) then
+						pNewUnit:JumpToNearestValidPlot()
+					else
+						pNewUnit:SetExperience(0)
+					end
+  					return
+				end
+			end
+		end
+
+	end
+end
+GameEvents.TeamTechResearched.Add(PlayerResearchComplete)
 -- Author: EnormousApplePie
+-- Created: 28-11-2019
+
+-- Korea dummy policy
+print("dummy policy loaded - Germany")
+function DummyPolicy(player)
+	print("working - Germany")
+	for playerID, player in pairs(Players) do
+		local player = Players[playerID];
+		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_GERMANY"] then
+			if not player:HasPolicy(GameInfoTypes["POLICY_DUMMY_GERMANY"]) then
+				
+				player:SetNumFreePolicies(1)
+				player:SetNumFreePolicies(0)
+				player:SetHasPolicy(GameInfoTypes["POLICY_DUMMY_GERMANY"], true)	
+			end
+		end
+	end 
+end
+Events.SequenceGameInitComplete.Add(DummyPolicy)
 
 -- Korea dummy policy
 print("dummy policy loaded - Korea")
@@ -325,7 +372,7 @@ function Honor_OnPolicyAdopted(playerID, policyID)
 
 	local player = Players[playerID]
 
-	-- Aesthetics Finisher
+	-- Honor Finisher
 	if	(policyID == GameInfo.Policies["POLICY_DISCIPLINE"].ID 
 		and player:HasPolicy(GameInfo.Policies["POLICY_MILITARY_TRADITION"].ID)
 		and player:HasPolicy(GameInfo.Policies["POLICY_MILITARY_CASTE"].ID)) or
