@@ -42,6 +42,22 @@
   </References>
   <Blocks />
   <Files>
+  <!-- New Mexico Art v23 -->
+	<File md5="58881D21D9EF54F027CAEF9CD1A89399" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SanPatricioAlpha256.dds</File>
+    <File md5="248EAB14CA9D05B329CA9950C2F5796B" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SanPatricioAlpha32.dds</File>
+    <File md5="AF961F423C9ED85F27517708B66098AE" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas128.dds</File>
+    <File md5="EFADBC8F192D1C6B170E04833D739566" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas16.dds</File>
+    <File md5="6D013BC444A014FCA04A94784A2A8E75" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas24.dds</File>
+    <File md5="B9DA96C65D8AAB034CC09D60A3D91D8E" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas256.dds</File>
+    <File md5="17E228099EC87A83F9905F26010631FB" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas32.dds</File>
+    <File md5="9E6FDDAF5575A43C9BE22599A2B206D5" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas45.dds</File>
+    <File md5="B10546EA6ACF1F6D6C30CACE7FBC370E" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas48.dds</File>
+    <File md5="49E36C81E397EB894997313EDEDA2316" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas64.dds</File>
+    <File md5="96472959AA468C52FCFB979D975CF468" import="1">Art/ArtReplacementsNNQMOD/Mexico/Atlas/SantaAnnaIconAtlas80.dds</File>
+	<File md5="9DBB390240CD6E8D3AB7805F660E4EA0" import="1">Art/ArtReplacementsNNQMOD/Mexico/SantaAnnaLS.dds</File>
+    <File md5="E149A046C1E0E6FA94EE886D801E3EC5" import="1">Art/ArtReplacementsNNQMOD/Mexico/SantaAnnaMap.dds</File>
+    <File md5="3B8DEA119A33EF4C882A5BECBA69486C" import="1">Art/ArtReplacementsNNQMOD/Mexico/SantaAnna_DOM.dds</File>
+	<File md5="AE82B171BF31D19761FE5B65D1C44634" import="1">Art/ArtReplacementsNNQMOD/Mexico/SantaAnnaScene.xml</File>
   <!-- New Resources v22 Art -->
 	<File md5="3D4ED3D95177801E567CC01813D627C9" import="1">New Resources/v22 More Resources/Art/FontIcons/Beer_FontIcon.dds</File>
     <File md5="D0EE88F8E115634762B2DB5779AF6EE6" import="1">New Resources/v22 More Resources/Art/FontIcons/BeerFontIcon_22.ggxml</File>
