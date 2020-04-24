@@ -18,7 +18,7 @@ include("MultilayeredFractal");
 function GetMapScriptInfo()
 	local world_age, temperature, rainfall, sea_level, resources = GetCoreMapOptions()
 	return {
-		Name = "Lekmap v1.1",
+		Name = "Lekmap v1.2",
 		Description = "A map script made for Lekmod based of HB's Mapscript v8.1 containing different map types selectable from the map set up screen.",
 		IsAdvancedMap = false,
 		IconIndex = 0,
@@ -164,6 +164,7 @@ function GetMapScriptInfo()
 					"Sparse",
 					"Average",
 					"Plentiful",
+					"Abundant",
 				},
 
 				DefaultValue = 2,
@@ -232,7 +233,7 @@ function GetMapScriptInfo()
 					"124",
 				},
 
-				DefaultValue = 12,
+				DefaultValue = 11,
 				SortPriority = -101,
 			},
 
@@ -294,9 +295,10 @@ function GetMapScriptInfo()
 				Values = {
 					"All Civs Have A Chance",
 					"Coastal Civs Only",
+					"Balanced Random",
 				},
 
-				DefaultValue = 1,
+				DefaultValue = 3,
 				SortPriority = -87,
 			},
 
@@ -944,11 +946,13 @@ function PangaeaFractalWorld:GeneratePlotTypes(args)
 
 		islandSetting = Map.GetCustomOption(11);
 
-		islCount =  15;
+		islCount =  12;
 
 		if islandSetting == 1 then --sparse
 			islCount =  8;
 		elseif islandSetting == 3 then -- plentiful
+			islCount =  15;
+		elseif islandSetting == 3 then -- abundant
 			islCount =  22;
 		end
 
@@ -2089,7 +2093,12 @@ function StartPlotSystem()
 	if Map.GetCustomOption(16) == 1 then
 		OnlyCoastal = false;
 	end
+	
+	local BalancedCoastal = false;
 
+	if Map.GetCustomOption(16) == 3 then
+		BalancedCoastal = true;
+	end
 	print("Creating start plot database.");
 	local start_plot_database = AssignStartingPlots.Create()
 	
@@ -2099,7 +2108,8 @@ function StartPlotSystem()
 		method = RegionalMethod,
 		start_locations = starts,
 		resources = res,
-		NoCoastInland = OnlyCoastal;
+		NoCoastInland = OnlyCoastal,
+		BalancedCoastal = BalancedCoastal;
 		};
 	start_plot_database:GenerateRegions(args)
 

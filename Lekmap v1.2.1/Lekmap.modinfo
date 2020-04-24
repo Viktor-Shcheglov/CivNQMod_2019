@@ -26,7 +26,7 @@
     <File md5="EA85AE9E94C61E0E9C0D8F51FDC5A8B1" import="1">HBFractalWorld.lua</File>
     <File md5="CB92E22643A0BCC8F962A99289EA31AE" import="1">HBMapGenerator.lua</File>
     <File md5="AF997E7EEA6F0BF723B11360F4E9B69D" import="1">HBMapmakerUtilities.lua</File>
-    <File md5="277391841DFBEB56B58038067810C513" import="1">Lekmapv1.1.lua</File>
+    <File md5="277391841DFBEB56B58038067810C513" import="1">Lekmapv1.2.lua</File>
     <File md5="8E52CAE0959FCE4DA08AA43D49F0BFF5" import="1">HBTerrainGenerator.lua</File>
   </Files>
   <EntryPoints>

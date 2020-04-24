@@ -1829,6 +1829,7 @@ function AssignStartingPlots:GenerateRegions(args)
 	self.start_locations = args.start_locations or 2; -- Each map script has to pass in parameter for Resource setting chosen by user.
 	self.resource_setting = args.resources or 3;
 	self.NoCoastInland = args.NoCoastInland;
+	self.BalancedCoastal = args.BalancedCoastal;
 
 	-- Determine number of civilizations and city states present in this game.
 	self.iNumCivs, self.iNumCityStates, self.player_ID_list, self.bTeamGame, self.teams_with_major_civs, self.number_civs_per_team = GetPlayerAndTeamInfo()
@@ -4246,13 +4247,13 @@ function AssignStartingPlots:ChooseLocations(args)
 			end
 		end
 	end
-
+	
 	for regcount = 1, iNumRegions do
 		print("Region #", regcount, " Is type: ", self.regionTypes[regcount]);
 	end
 	
 	print("-"); print("-"); print("--- REGION PRIORITY READOUT ---"); print("-");
-	local iNumSinglePriority, iNumMultiPriority, iNumNeedFallbackPriority = 0, 0, 0;
+	local iNumSinglePriority, iNumMultiPriority, iNumNeedFallbackPriority, iNumReserved = 0, 0, 0, 0;
 	local single_priority, multi_priority, fallback_priority = {}, {}, {};
 	local single_sorted, multi_sorted = {}, {};
 	-- Separate priority civs in to two categories: single priority, multiple priority.
@@ -4272,6 +4273,7 @@ function AssignStartingPlots:ChooseLocations(args)
 						print("Region match found for player #", playerNum, " Region #:", regcount);
 						print("--");
 						res_reg[regcount] = true;
+						iNumReserved = iNumReserved + 1;
 						found_reg = true;
 						table.remove(reg_still_active, regcount);
 					end
@@ -4284,6 +4286,7 @@ function AssignStartingPlots:ChooseLocations(args)
 				local choose_this_region = self:FindFallbackForUnmatchedRegionPriority(iPriorityType, reg_still_active)
 				print("Fallback region found for player #", playerNum, " Region #:", choose_this_region);
 				res_reg[choose_this_region] = true;
+				iNumReserved = iNumReserved + 1;
 				table.remove(reg_still_active, choose_this_region);
 			end
 		else
@@ -4293,7 +4296,54 @@ function AssignStartingPlots:ChooseLocations(args)
 			--iNumMultiPriority = iNumMultiPriority + 1;
 		end
 	end
-	
+	-- add extra coastals if balanced coast setting was chosen
+	if self.BalancedCoastal then
+		iRoll = Map.Rand(100, "Roll for extra coast");
+		local iNumCoastStart = iNumCoastNeeded;
+		if iNumRegions == 6 then
+			if iNumCoastStart == 0 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 20 and 1 or 0) + (iRoll >= 45 and 1 or 0) + (iRoll >= 85 and 1 or 0);
+			end
+			if iNumCoastStart == 1 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 15 and 1 or 0) + (iRoll >= 80 and 1 or 0)
+			end
+			if iNumCoastStart == 2 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 45 and 1 or 0) + (iRoll >= 95 and 1 or 0)
+			end
+			if iNumCoastStart == 3 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 85 and 1 or 0)
+			end
+		end
+		
+		if iNumRegions == 8 then
+			if iNumCoastStart == 0 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 15 and 1 or 0) + (iRoll >= 35 and 1 or 0) + (iRoll >= 65 and 1 or 0) + (iRoll >= 85 and 1 or 0)
+			end
+			if iNumCoastStart == 1 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 10 and 1 or 0) + (iRoll >= 55 and 1 or 0) + (iRoll >= 85 and 1 or 0)
+			end
+			if iNumCoastStart == 2 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 35 and 1 or 0) + (iRoll >= 80 and 1 or 0)  + (iRoll >= 95 and 1 or 0)
+			end
+			if iNumCoastStart == 3 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 60 and 1 or 0)  + (iRoll >= 90 and 1 or 0)
+			end
+			if iNumCoastStart == 4 then
+				iNumCoastNeeded = iNumCoastNeeded + (iRoll >= 75 and 1 or 0)  + (iRoll >= 95 and 1 or 0)
+			end
+		end
+		
+		-- clear out reservations randomly
+		local i = 1;
+		while iNumRegions - iNumReserved > iNumCoastNeeded and i <= 100 do
+		iRoll = Map.Rand(iNumRegions, "Roll region number to clear");
+			if res_reg[iRoll] then
+				res_reg[iRoll] = false;
+				iNumReserved = iNumReserved - 1;
+			end
+			i = i + 1;
+		end
+	end
 	-- now we have reserved the bias region all civ left must be coastal, so give them the remanining regions
 	
 	for assignIndex = 1, iNumRegions do
