@@ -29,6 +29,22 @@ GameEvents.TeamTechResearched.Add(PlayerResearchComplete)
 -- Author: EnormousApplePie
 -- Created: 28-11-2019
 
+print("dummy policy loaded - Franks")
+function DummyPolicy(player)
+	print("working - Franks")
+	for playerID, player in pairs(Players) do
+		local player = Players[playerID];
+		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_FRANKS"] then
+			if not player:HasPolicy(GameInfoTypes["POLICY_DUMMY_FRANKS"]) then
+				
+				player:SetNumFreePolicies(1)
+				player:SetNumFreePolicies(0)
+				player:SetHasPolicy(GameInfoTypes["POLICY_DUMMY_FRANKS"], true)	
+			end
+		end
+	end 
+end
+Events.SequenceGameInitComplete.Add(DummyPolicy)
 -- Korea dummy policy
 print("dummy policy loaded - Germany")
 function DummyPolicy(player)
