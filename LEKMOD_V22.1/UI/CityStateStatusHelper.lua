@@ -5,7 +5,7 @@
 -- Consolidation of code associated with displaying
 -- the friendship status of a player with a city-state
 ------------------------------------------------------
-
+print("City State Peace Block loaded");
 include( "IconSupport" );
 
 ------------------------------------------------------

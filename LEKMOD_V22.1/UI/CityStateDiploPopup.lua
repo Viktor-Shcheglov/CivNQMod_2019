@@ -5,6 +5,7 @@
 -- Authors: Anton Strenger
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
+print("Peace Block part 2 loaded");
 
 include( "IconSupport" );
 include( "InfoTooltipInclude" );

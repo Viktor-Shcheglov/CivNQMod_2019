@@ -4468,11 +4468,11 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 				return true, false, false
 			elseif terrainType == TerrainTypes.TERRAIN_PLAINS then -- Place Wheat or bison
 				local placethis = Map.Rand(100, "");
-				if placethis < 60 then
+				if placethis < 15 then
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
-				elseif placethis < 35 then
+				elseif placethis < 75 then
 					plot:SetResourceType(self.wheat_ID, 1);
 					print("Placed Wheat.");
 					self.amounts_of_resources_placed[self.wheat_ID + 1] = self.amounts_of_resources_placed[self.wheat_ID + 1] + 1;
