@@ -4441,35 +4441,25 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 			plot:SetResourceType(self.deer_ID, 1);
 			print("Placed Deer xx.");
 			self.amounts_of_resources_placed[self.deer_ID + 1] = self.amounts_of_resources_placed[self.deer_ID + 1] + 1;
-		elseif terrainType ~= TerrainTypes.TERRAIN_DESERT then
+		else
 			plot:SetResourceType(self.sheep_ID, 1);
 			print("Placed Sheep xx.");
 			self.amounts_of_resources_placed[self.sheep_ID + 1] = self.amounts_of_resources_placed[self.sheep_ID + 1] + 1;
-		else
-			plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
-			plot:SetResourceType(self.hardwood_ID, 1);
-			print("Placed Hardwood xx.");
-			self.amounts_of_resources_placed[self.hardwood_ID + 1] = self.amounts_of_resources_placed[self.hardwood_ID + 1] + 1;
 		end
 		return true, false, false
 	elseif plotType == PlotTypes.PLOT_LAND then
 		if featureType == FeatureTypes.NO_FEATURE then
 			if terrainType == TerrainTypes.TERRAIN_GRASS then -- Place Cows or bison
 				local bisonordeer = Map.Rand(100, "");
-				if bisonordeer < 40  then
+				if bisonordeer < 60  then
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
-				elseif bisonordeer < 25  then
+				elseif bisonordeer < 35  then
 					plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
 					plot:SetResourceType(self.deer_ID, 1);
 					print("Placed Deer xx.");
 					self.amounts_of_resources_placed[self.deer_ID + 1] = self.amounts_of_resources_placed[self.deer_ID + 1] + 1;
-				elseif bisonordeer < 15  then
-					plot:SetFeatureType(FeatureTypes.FEATURE_JUNGLE, -1);
-					plot:SetResourceType(self.hardwood_ID, 1);
-					print("Placed Hardwood xx.");
-					self.amounts_of_resources_placed[self.hardwood_ID + 1] = self.amounts_of_resources_placed[self.hardwood_ID + 1] + 1;
 				else
 					plot:SetResourceType(self.cow_ID, 1);
 					print("Placed Cow.");
@@ -4482,14 +4472,10 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
-				elseif placethis < 60 then
+				elseif placethis < 75 then
 					plot:SetResourceType(self.wheat_ID, 1);
 					print("Placed Wheat.");
 					self.amounts_of_resources_placed[self.wheat_ID + 1] = self.amounts_of_resources_placed[self.wheat_ID + 1] + 1;
-				elseif placethis < 15 then
-					plot:SetResourceType(self.maize_ID, 1);
-					print("Placed Maize.");
-					self.amounts_of_resources_placed[self.maize_ID + 1] = self.amounts_of_resources_placed[self.maize_ID + 1] + 1;
 				else
 					plot:SetResourceType(self.cow_ID, 1);
 					print("Placed Cow.");

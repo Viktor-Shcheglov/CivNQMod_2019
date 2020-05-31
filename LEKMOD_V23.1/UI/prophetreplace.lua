@@ -2,6 +2,26 @@
 -- Author: EnormousApplePie
 -- Created: 28-11-2019
 
+-- Horde free building 
+
+print("loaded horde ua")
+GameEvents.TeamSetHasTech.Add(function(iTeam, iTech, bAdopted)
+	print("working: horde UA")
+	for playerID, player in pairs(Players) do
+		local player = Players[playerID];
+		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_HORDE"] then
+			if player:GetTeam() == iTeam then
+				if (iTech == GameInfoTypes["TECH_PHILOSOPHY"]) then
+					local pCity = player:GetCapitalCity();
+					pCity:SetNumRealBuilding(GameInfoTypes["BUILDING_JARLIQ"], 1);
+				end
+			end
+		end
+	end
+end)
+
+
+
 
 -- Romania dummy Policy
 print("dummy policy loaded - Romania")
@@ -151,11 +171,7 @@ GameEvents.PlayerDoTurn.Add(AkkadOverseer)
 
 include("PlotIterators")
 --_________________________________________________________________________________________________________________________________________________________________________________________________________
---"Start with a free Great General. Great Generals grant Combat Strenth against cities to nearby units, and you gain points towards Great Generals from repairing or improving tiles on conquered cities."
---Add PlotIterators to the mod (The Safavids have one, just copy it from there) and set it as import into VSF = True
---The free Great General can be done through SQL/XML, with Civilization_FreeUnits. 
---You also need to add a promotion that grant combat strength against cities and change the promotionID here.
---The local greatGeneralPoints defines how much you gain from improving tiles.
+
 --_________________________________________________________________________________________________________________________________________________________________________________________________________
 local civilizationID = GameInfoTypes["CIVILIZATION_LITE_AKKAD"]
 local promotionID = GameInfoTypes["PROMOTION_LITE_AKKAD_CITY_BONUS"]
