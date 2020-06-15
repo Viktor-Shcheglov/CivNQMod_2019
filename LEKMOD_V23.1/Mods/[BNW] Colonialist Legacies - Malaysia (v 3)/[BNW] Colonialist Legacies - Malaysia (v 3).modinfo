@@ -42,6 +42,84 @@
   </References>
   <Blocks />
   <Files>
+	<!-- Scotland civ v24 -->
+	<File md5="43D0B862A0847E71D568C5AFD7714382" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_128.dds</File>
+    <File md5="58787DFF68D7B9130C2D08490628AAC5" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_16.dds</File>
+    <File md5="2C14F957E4A6E9B1AEC28AE44DEF35B7" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_22.dds</File>
+    <File md5="59392B3B197BF6A104429CA291C78401" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_24.dds</File>
+    <File md5="67E3FD0050DA61EACF4B0BBED0D7A965" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_32.dds</File>
+    <File md5="5656EE69395DAEB4CA6B6452FB0C0613" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_45.dds</File>
+    <File md5="BA3AD7E269A4536235FC53198745A268" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_48.dds</File>
+    <File md5="56F0D05887275692508690129946D99D" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_64.dds</File>
+    <File md5="FC89B4FED9366AAB73E86FCC63D885A8" import="1">New Civs/Scotland/Art/Atlases/MC_ScotlandAlpha_80.dds</File>
+    <File md5="E6FBFC592190657A0C807F3F7DD140C0" import="1">New Civs/Scotland/Art/Atlases/MC_Scotland_128.dds</File>
+    <File md5="EFB80A0A4CE8548C1F2E22BB5AC3069A" import="1">New Civs/Scotland/Art/Atlases/MC_Scotland_256.dds</File>
+    <File md5="CAF76AF2D72FD9630E2AF6A5CEC6251E" import="1">New Civs/Scotland/Art/Atlases/MC_Scotland_32.dds</File>
+    <File md5="63B2FDE68F5526A4C8D040E439725598" import="1">New Civs/Scotland/Art/Atlases/MC_Scotland_45.dds</File>
+    <File md5="A71D4F459CF1268930F27FA05D3661F0" import="1">New Civs/Scotland/Art/Atlases/MC_Scotland_64.dds</File>
+    <File md5="C7F230F815568CF9A1D00B510FF08592" import="1">New Civs/Scotland/Art/Atlases/MC_Scotland_80.dds</File>
+    <File md5="5F83FA957C8C4E7E3ADCAF0139DB6A50" import="1">New Civs/Scotland/Art/Models/Clan Castle/clancastle.fxsxml</File>
+    <File md5="6583FEB0E415BE307BE104659D700CCF" import="1">New Civs/Scotland/Art/Models/Clan Castle/clancastle.gr2</File>
+    <File md5="EB7BCBE661C00250E5701A4F3CC73D2A" import="1">New Civs/Scotland/Art/Models/Clan Castle/ClanCastle_DIFF.dds</File>
+    <File md5="415CA4E386B1AB8642A790CC8B7C73FA" import="1">New Civs/Scotland/Art/Models/Clan Castle/ClanCastle_DIFF_pl.dds</File>
+    <File md5="C9CD18F91FE5B568BCE37585212D318F" import="1">New Civs/Scotland/Art/Models/Clan Castle/ClanCastle_Ground.dds</File>
+    <File md5="4F3C17792667393F6F397B0D34BB009D" import="1">New Civs/Scotland/Art/Models/Clan Castle/ClanCastle_Ground_pl.dds</File>
+    <File md5="F9CD5D10A2ED84C22CE40C8B32C64ED3" import="1">New Civs/Scotland/Art/Models/Clan Castle/clancastle_hb.fxsxml</File>
+    <File md5="59C8863F5DDBF26C6D08B05751C92A13" import="1">New Civs/Scotland/Art/Models/Clan Castle/clancastle_hb.gr2</File>
+    <File md5="15B1BD4E350A00B122AE3E9B4094BE67" import="1">New Civs/Scotland/Art/Models/Clan Castle/clancastle_pl.fxsxml</File>
+    <File md5="78AB18C7297DC27F18A19351F700D41D" import="1">New Civs/Scotland/Art/Models/Clan Castle/clancastle_pl.gr2</File>
+    <File md5="260DF8DDF22255D6435E9BA58156721F" import="1">New Civs/Scotland/Art/Models/Clan Castle/sv_clancastle.dds</File>
+    <File md5="40684CE39656693E82746C1B0DF2E1FA" import="1">New Civs/Scotland/Art/Models/Gallowglass/claymor_bastard.dds</File>
+    <File md5="2CF4811FB3451DE8681180F34BCDD1B5" import="1">New Civs/Scotland/Art/Models/Gallowglass/claymor_bastard_gloss.dds</File>
+    <File md5="EB5F4D2EEBD8E47788AC5269D861902F" import="1">New Civs/Scotland/Art/Models/Gallowglass/Flag_MC_Gallowglass.dds</File>
+    <File md5="C4CA1E7B9FA892B6CA91258045E6F81D" import="1">New Civs/Scotland/Art/Models/Gallowglass/gallowglass.fxsxml</File>
+    <File md5="13E7D5A30582C82FC28D1E3F5CBADFB3" import="1">New Civs/Scotland/Art/Models/Gallowglass/gallowglass.gr2</File>
+    <File md5="FB26E30B8F69442832BF1BFAC80DB4C8" import="1">New Civs/Scotland/Art/Models/Gallowglass/GALLOW_BODY_diff.dds</File>
+    <File md5="FB883294450095195491B4DBDCFE5F0F" import="1">New Civs/Scotland/Art/Models/Gallowglass/GALLOW_BODY_sref.dds</File>
+    <File md5="B517DEBA45F9430D222CDFDCB8825279" import="1">New Civs/Scotland/Art/Models/Gallowglass/gallow_sword_diff.dds</File>
+    <File md5="8DB73274D2EC903D4157DB3D0AF83784" import="1">New Civs/Scotland/Art/Models/Gallowglass/gallow_sword_sref.dds</File>
+    <File md5="B46916BE83FD92388F007446F37911E7" import="1">New Civs/Scotland/Art/Models/Gallowglass/head_diff.dds</File>
+    <File md5="DAE1501FEA29828EF3DBD67B3B55FB15" import="1">New Civs/Scotland/Art/Models/Gallowglass/head_sref.dds</File>
+    <File md5="0067E786AC0E3B04A11E94289B2AA79A" import="1">New Civs/Scotland/Art/Models/Gallowglass/sv_Gallowglass.dds</File>
+    <File md5="C8FF94C273BD937900B50FA883478BA9" import="1">New Civs/Scotland/Art/Models/Gallowglass/u_spanish_tercio_piquero_diff.dds</File>
+    <File md5="86A0D34B5A2CB5AFD77074CFCD823D4E" import="1">New Civs/Scotland/Art/Models/Gallowglass/u_spanish_tercio_piquero_sref.dds</File>
+    <File md5="D44046603F2CE506E0A17E9E8C18C054" import="1">New Civs/Scotland/Art/Scenes/MC_Scotland_Leaderhead.dds</File>
+    <File md5="BC1EB4B64FE723A88EDD19D82A13DFEE" import="1">New Civs/Scotland/Art/Scenes/MC_Scotland_DoM.dds</File>
+    <File md5="5EF63C96DA7BCCD5A9B5163F9C4D1384" import="1">New Civs/Scotland/Art/Scenes/MC_Scotland_Map.dds</File>
+	<File md5="7A9F1D49A804476DC0C2F824702286EB" import="0">New Civs/Scotland/ClanCastleDefine.sql</File>
+    <File md5="BEC6AB398DD9E885FEA8E8535C2C220A" import="0">New Civs/Scotland/GallowglassDefine.sql</File>
+	<File md5="18F770EA4F93532873D058011BFC834B" import="1">New Civs/Scotland/MC_Scotland_Leaderhead.xml</File>
+	<!-- Wales civ v24 -->
+	<File md5="AF6C4FF3AD5BCA1F095CC9B484A2981D" import="1">New Civs/Wales/Art/Atlas/Saethwyr_Atlas.dds</File>
+    <File md5="F8AB331CDE5E13E7CF5B41A5959FE379" import="1">New Civs/Wales/Art/Atlas/Urdnot_WalesAtlas_128.dds</File>
+    <File md5="C32F3F59CA3F69F32E5C628C16E720E8" import="1">New Civs/Wales/Art/Atlas/Urdnot_WalesAtlas_256.dds</File>
+    <File md5="8C7EFA564E1651685355786D2E7FAAB5" import="1">New Civs/Wales/Art/Atlas/Urdnot_WalesAtlas_32.dds</File>
+    <File md5="FCC2591F7F32957DC72F7D5447B81C33" import="1">New Civs/Wales/Art/Atlas/Urdnot_WalesAtlas_45.dds</File>
+    <File md5="C5A71CF704CBAA59DC57A28174E81E7E" import="1">New Civs/Wales/Art/Atlas/Urdnot_WalesAtlas_64.dds</File>
+    <File md5="B37AA82B77C0D51A8EE6245A9DD42827" import="1">New Civs/Wales/Art/Atlas/Urdnot_WalesAtlas_80.dds</File>
+    <File md5="3ADE04E0660AED64DBE52BC8B681B840" import="1">New Civs/Wales/Art/Atlas/WalesAlpha128.dds</File>
+    <File md5="5B8698CD0D22F8533F5D10A37ECE6491" import="1">New Civs/Wales/Art/Atlas/WalesAlpha16.dds</File>
+    <File md5="2455C1B025EE7A3C54B65FAF01335572" import="1">New Civs/Wales/Art/Atlas/WalesAlpha24.dds</File>
+    <File md5="4FC4D9CB2F44ED5C9DC8777D2307F6E3" import="1">New Civs/Wales/Art/Atlas/WalesAlpha256.dds</File>
+    <File md5="D1E72ACF7B3A77D552DB93EC25B65882" import="1">New Civs/Wales/Art/Atlas/WalesAlpha32.dds</File>
+    <File md5="0A34A224B0C52B8478A362B03C240407" import="1">New Civs/Wales/Art/Atlas/WalesAlpha45.dds</File>
+    <File md5="9567B2A9C06744CD5C9A20C47FCDDAF4" import="1">New Civs/Wales/Art/Atlas/WalesAlpha48.dds</File>
+    <File md5="9293131967F8F4513CFFBBF4E19B8456" import="1">New Civs/Wales/Art/Atlas/WalesAlpha64.dds</File>
+    <File md5="2EE97BBDF6D37BC2A107059AEC4A9336" import="1">New Civs/Wales/Art/Atlas/WalesAlpha80.dds</File>
+    <File md5="104CD7546DAF45913B2B09172DFCCFB1" import="0">New Civs/Wales/Art/Audio/US_Wales_audio.sql</File>
+    <File md5="CF91E2D674B54C6B78DD9144CC108B20" import="1">New Civs/Wales/Art/Audio/Wales_Peace.mp3</File>
+    <File md5="1E0CF11E3885245787C291DF10F7E627" import="1">New Civs/Wales/Art/Audio/Wales_War.mp3</File>
+    <File md5="CC14F1B7A2A18CA908AAFF077FDA03E8" import="1">New Civs/Wales/Art/Unit/Composite_Bowman_England.dds</File>
+    <File md5="53BA336488FE46EBC443F737422D520E" import="1">New Civs/Wales/Art/Unit/Composite_Bowman_England.fxsxml</File>
+    <File md5="EA7A7F831C57D9127EA8E7D441DCEC87" import="1">New Civs/Wales/Art/Unit/Composite_Bowman_England.gr2</File>
+    <File md5="27E8E1EA863C36919CE4F517B897F6B6" import="1">New Civs/Wales/Art/Unit/Composite_Bowman_England_gloss.dds</File>
+    <File md5="BF5318D4A212D55CD898F81055AED400" import="0">New Civs/Wales/Art/Unit/US_Longbowman.sql</File>
+    <File md5="100777C43395B191C13CA1B94535A6B8" import="1">New Civs/Wales/Art/Urdnot_Wales_Diplo.dds</File>
+    <File md5="AD3E0157A07CE42019642F8C581B2B84" import="1">New Civs/Wales/Art/Urdnot_Wales_DOM.dds</File>
+    <File md5="5FB760C28A7E8B89E572BCEE1B5E0C44" import="1">New Civs/Wales/Art/Urdnot_Wales_Map.dds</File>
+    <File md5="48E90EB0FBDA93D222F98591A28AE441" import="1">New Civs/Wales/Art/Wales_diplo.xml</File>
+    <File md5="E946E24AA1F9CFF5215267808285E1D7" import="0">New Civs/Wales/Diplomacy.sql</File>
+   
   <!-- XML imports (experimental) -->
 	<File md5="5FBB7A206B1AAF2605943EC7DB707905" import="0">XML/AM_Diplomacy_Responses.xml</File>
   <!-- New Art v23 -->

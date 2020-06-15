@@ -22,6 +22,23 @@ end)
 
 
 
+-- Scotland dummy Policy
+print("dummy policy loaded - Scotland")
+function DummyPolicy(player)
+	print("working - Wales")
+	for playerID, player in pairs(Players) do
+		local player = Players[playerID];
+		if player:GetCivilizationType() == GameInfoTypes["CIVILIZATION_MC_SCOTLAND"] then
+			if not player:HasPolicy(GameInfoTypes["POLICY_DUMMY_SCOTLAND"]) then
+				
+				player:SetNumFreePolicies(1)
+				player:SetNumFreePolicies(0)
+				player:SetHasPolicy(GameInfoTypes["POLICY_DUMMY_SCOTLAND"], true)	
+			end
+		end
+	end 
+end
+Events.SequenceGameInitComplete.Add(DummyPolicy)
 
 -- Romania dummy Policy
 print("dummy policy loaded - Romania")
