@@ -10,6 +10,10 @@ Simply put, if you, for example, want to translate Lekmod to French, you copy al
 then paste it inside the <language_fr_fr></language_fr_fr> tag which you can find at the end of the document. 
 Once pasted, you then can proceed translating all the text inside the <Text></Text> tags!
 
+Rules for what to and what to not change: 
+- All text not truly visible in game or not really used (Dummy buildings, unused units or other unused things) should not be translated.
+- All City names, Spy names and Leader names (all names) should also not be translated
+
 =========================================================================================================
 
 Hopefully you will have the fortune to work with other translators. If so, we will tell you who, so you can dicuss with them on which parts everyone does, so everything can go as smooth as possible!
