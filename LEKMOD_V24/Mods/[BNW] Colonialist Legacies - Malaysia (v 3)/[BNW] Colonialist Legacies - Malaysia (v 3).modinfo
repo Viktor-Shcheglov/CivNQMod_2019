@@ -835,6 +835,7 @@
     <File md5="D1617552C9301B54A041AF0845190C3F" import="1">New Civs/Israel/Art/Art/YeshivaIcon45.dds</File>
     <File md5="86CD5FDF133583891C6FF228CB10FB03" import="1">New Civs/Israel/Art/Art/YeshivaIcon64.dds</File>
     <File md5="849675F4E8E1D4B7FCD2325B91D7DE95" import="1">New Civs/Israel/Art/Art/YeshivaIcon80.dds</File>
+	<File md5="A97F2770968BF8ACC3F6058DD3DF1FAE" import="1">New Civs/Israel/MC_Israel_Leaderhead.xml</File>
   <!-- Akkad New civ -->
 		<!-- Akkad Building Extra art -->
 			<File md5="04DCBC756083539B8F2B3EAF0E99CC78" import="1">Art/Atlases/MC_Minoa_128.dds</File>
