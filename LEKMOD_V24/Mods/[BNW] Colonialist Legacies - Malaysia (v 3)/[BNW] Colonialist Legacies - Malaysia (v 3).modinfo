@@ -771,6 +771,7 @@
     <File md5="78CFE72A44DEBF10135023B701F51005" import="1">New Civs/Romania/Art/Scenes/MC_Romania_Leaderhead.dds</File>
     <File md5="DEDED13CF946AE89C051DBA051372A29" import="1">New Civs/Romania/Art/Scenes/MC_Romania_DOM.dds</File>
     <File md5="01D23A410827882DE6688578B579F95C" import="1">New Civs/Romania/Art/Scenes/MC_Romania_Map.dds</File>
+	<File md5="800F1B362FDAB97945E116414FE8FAF0" import="1">New Civs/Romania/MC_Romania_Leaderhead.xml</File>
   <!-- Argentina New civ -->
 	<File md5="86E8194D6B1D988C9BFDF9174B326B18" import="1">New Civs/Argentina/Art/Icons/AlphaArgentinaIcon128.dds</File>
     <File md5="470ADE09D168A969F4BC56B91A2C4F27" import="1">New Civs/Argentina/Art/Icons/AlphaArgentinaIcon16.dds</File>
