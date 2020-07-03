@@ -1077,6 +1077,7 @@
     <File md5="BCD425021662B30CCA894744B286AC19" import="1">New Civs/Finland/Sounds/Leader Music/MannerheimWar.mp3</File>
     <File md5="EF6F8D173B423E2183CDB0ECF14A4B47" import="1">New Civs/Finland/Sounds/Leader Music/MannerheimAmbience.mp3</File>
     <File md5="3F2616E9615DFB91D1BFEAC44F585E67" import="1">New Civs/Finland/Sounds/Leader Music/MannerheimPeace.mp3</File>
+	<File md5="2940D702AF483085C759A8BFB84237A0" import="1">New Civs/Finland/MC_Finland_Leaderhead.xml</File>
   <!-- Ukraine additions art -->
 	<File md5="DF692A2A1DD7FB515CD5BA34054A9B99" import="1">Art/ArtReplacementsNNQMOD/Ukraine/Atlases/Alpha/UkraineAlpha_128.dds</File>
     <File md5="7DF1CF7DF040BE05CE8AA7BC0CE07C80" import="1">Art/ArtReplacementsNNQMOD/Ukraine/Atlases/Alpha/UkraineAlpha_16.dds</File>
