@@ -800,6 +800,7 @@
     <File md5="D084931382DBEDD664D960283E93C9C0" import="1">New Civs/Argentina/Art/Models/gaucho_worker.gr2</File>
     <File md5="159CC2F0D772EB417C7235BCA7E377BA" import="1">New Civs/Argentina/Art/Models/gaucho_worker_sref.dds</File>
     <File md5="0F7E17DA945B3741530921F470B5FB46" import="1">New Civs/Argentina/Art/Models/sv_gaucho.dds</File>
+	<File md5="6CAD02F7AE27DF76F1A29219BE869EDB" import="1">New Civs/Argentina/MC_Argentina_Leaderhead.xml</File>
   <!-- Israel New civ -->
 	<File md5="627A352693BC40C94F9E77608316203C" import="1">New Civs/Israel/Art/AlphaIsraelIcon128.dds</File>
     <File md5="5D30F7BCBBA87F623C38043BFF7FBDA6" import="1">New Civs/Israel/Art/Art/AlphaIsraelIcon16.dds</File>
