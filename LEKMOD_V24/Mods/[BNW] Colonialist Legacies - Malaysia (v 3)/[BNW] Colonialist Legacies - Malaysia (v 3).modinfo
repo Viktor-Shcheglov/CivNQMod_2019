@@ -771,6 +771,7 @@
     <File md5="78CFE72A44DEBF10135023B701F51005" import="1">New Civs/Romania/Art/Scenes/MC_Romania_Leaderhead.dds</File>
     <File md5="DEDED13CF946AE89C051DBA051372A29" import="1">New Civs/Romania/Art/Scenes/MC_Romania_DOM.dds</File>
     <File md5="01D23A410827882DE6688578B579F95C" import="1">New Civs/Romania/Art/Scenes/MC_Romania_Map.dds</File>
+	<File md5="800F1B362FDAB97945E116414FE8FAF0" import="1">New Civs/Romania/MC_Romania_Leaderhead.xml</File>
   <!-- Argentina New civ -->
 	<File md5="86E8194D6B1D988C9BFDF9174B326B18" import="1">New Civs/Argentina/Art/Icons/AlphaArgentinaIcon128.dds</File>
     <File md5="470ADE09D168A969F4BC56B91A2C4F27" import="1">New Civs/Argentina/Art/Icons/AlphaArgentinaIcon16.dds</File>
@@ -800,6 +801,7 @@
     <File md5="D084931382DBEDD664D960283E93C9C0" import="1">New Civs/Argentina/Art/Models/gaucho_worker.gr2</File>
     <File md5="159CC2F0D772EB417C7235BCA7E377BA" import="1">New Civs/Argentina/Art/Models/gaucho_worker_sref.dds</File>
     <File md5="0F7E17DA945B3741530921F470B5FB46" import="1">New Civs/Argentina/Art/Models/sv_gaucho.dds</File>
+	<File md5="6CAD02F7AE27DF76F1A29219BE869EDB" import="1">New Civs/Argentina/MC_Argentina_Leaderhead.xml</File>
   <!-- Israel New civ -->
 	<File md5="627A352693BC40C94F9E77608316203C" import="1">New Civs/Israel/Art/AlphaIsraelIcon128.dds</File>
     <File md5="5D30F7BCBBA87F623C38043BFF7FBDA6" import="1">New Civs/Israel/Art/Art/AlphaIsraelIcon16.dds</File>
@@ -835,6 +837,7 @@
     <File md5="D1617552C9301B54A041AF0845190C3F" import="1">New Civs/Israel/Art/Art/YeshivaIcon45.dds</File>
     <File md5="86CD5FDF133583891C6FF228CB10FB03" import="1">New Civs/Israel/Art/Art/YeshivaIcon64.dds</File>
     <File md5="849675F4E8E1D4B7FCD2325B91D7DE95" import="1">New Civs/Israel/Art/Art/YeshivaIcon80.dds</File>
+	<File md5="A97F2770968BF8ACC3F6058DD3DF1FAE" import="1">New Civs/Israel/MC_Israel_Leaderhead.xml</File>
   <!-- Akkad New civ -->
 		<!-- Akkad Building Extra art -->
 			<File md5="04DCBC756083539B8F2B3EAF0E99CC78" import="1">Art/Atlases/MC_Minoa_128.dds</File>
@@ -979,6 +982,7 @@
     <File md5="DBB580FB144C4E522CF79E0BF0D766AE" import="0">New Civs/Akkad/Code/XML/Civilization/Akkad_Leader.xml</File>
     <File md5="7C104E0C49F9215A2341AEA1B76BC978" import="0">New Civs/Akkad/Code/XML/Civilization/Akkad_Traits.xml</File>
     <File md5="09B8A242E622CF0B586F48DF2317E1C8" import="0">New Civs/Akkad/Code/XML/Game Text/Akkad_Text.xml</File>
+	<File md5="6F962433A37BDC37BC80A0EA34539CDE" import="0">New Civs/Akkad/MC_Akkad_Leaderhead.xml</File>
   <!-- Finland New civ -->
   <File md5="36A1F69898843F98DE1BFB658A2AB80D" import="1">New Civs/Finland/Art/IconAtlas/FinnsAlphaAtlas_128.dds</File>
     <File md5="CC013D0EF3BC599BE89FADAD5DDDEF01" import="1">New Civs/Finland/Art/IconAtlas/FinnsAlphaAtlas_16.dds</File>
@@ -1074,6 +1078,7 @@
     <File md5="BCD425021662B30CCA894744B286AC19" import="1">New Civs/Finland/Sounds/Leader Music/MannerheimWar.mp3</File>
     <File md5="EF6F8D173B423E2183CDB0ECF14A4B47" import="1">New Civs/Finland/Sounds/Leader Music/MannerheimAmbience.mp3</File>
     <File md5="3F2616E9615DFB91D1BFEAC44F585E67" import="1">New Civs/Finland/Sounds/Leader Music/MannerheimPeace.mp3</File>
+	<File md5="2940D702AF483085C759A8BFB84237A0" import="1">New Civs/Finland/MC_Finland_Leaderhead.xml</File>
   <!-- Ukraine additions art -->
 	<File md5="DF692A2A1DD7FB515CD5BA34054A9B99" import="1">Art/ArtReplacementsNNQMOD/Ukraine/Atlases/Alpha/UkraineAlpha_128.dds</File>
     <File md5="7DF1CF7DF040BE05CE8AA7BC0CE07C80" import="1">Art/ArtReplacementsNNQMOD/Ukraine/Atlases/Alpha/UkraineAlpha_16.dds</File>
