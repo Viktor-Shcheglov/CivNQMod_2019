@@ -1,2 +1,2 @@
-# CivNQMod_2019
-NQ mod repo to maintain consistency between current editors
+# Lekmod Github
+For anyone wanting to take a look at the source files / commits
