@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c650741a-f328-4bcf-9085-213c073eb5de" version="1">
+  <Properties>
+    <Name>Lekmod</Name>
+    <Stability>Beta</Stability>
+    <Teaser>Lekmod, a balance mod and much more!</Teaser>
+    <Description>
+	Civ 5 Multiplayer Balance mod. Adds roughly 50 new civs, a few buildings and tonnes of balance changes
+
+    </Description>
+    <Authors>EnormousApplePie, Lek10, Cirra</Authors>
+    <SpecialThanks>
+      Fruitstrike
+	  Various members of the NQ steam group
+     
+    </SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>0</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+   <File md5="CF8FFD7E3E6380DBAD07D1039A5EB903" import="1">Mods/JFD's The Papal States (v 10)/Art/Diplomacy/Pius_diplo.dds</File>
+    <File md5="B4FAE294730DB207F898771A52081CF6" import="1">Mods/JFD's The Papal States (v 10)/Art/Diplomacy/Pius_Scene.xml</File>
+    <File md5="594C06F52E01A6490D442CA73DC14F42" import="1">Mods/JFD's The Papal States (v 10)/Art/Graphics/sv_Disciple.dds</File>
+    <File md5="A6CCDE935AFD654B6803717FFF4773C6" import="1">Mods/JFD's The Papal States (v 10)/Art/Graphics/Swiss Guard/reislaufer.fxsxml</File>
+    <File md5="54466258F5A615864E2F2FC808E6ACF6" import="1">Mods/JFD's The Papal States (v 10)/Art/Graphics/Swiss Guard/reislaufer.gr2</File>
+    <File md5="DD4DBB6FB2E7E11ADBE9B37D53560428" import="1">Mods/JFD's The Papal States (v 10)/Art/Graphics/Swiss Guard/reislaufer_diff.dds</File>
+    <File md5="C17C1A9359A378E1F1FF8A47F4D40308" import="1">Mods/JFD's The Papal States (v 10)/Art/Graphics/Swiss Guard/reislaufer_sref.dds</File>
+    <File md5="5632FD033DFBC01D596860C64D09DAA7" import="1">Mods/JFD's The Papal States (v 10)/Art/Graphics/Swiss Guard/sv_Swissguard.dds</File>
+    <File md5="731D49D279AF20F7396EBDC71831FD4B" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Bartolomew_Esteban_Murillo--Liberation_of_St_Peter.dds</File>
+    <File md5="5E005F4D34CB667C41DFF33A0015BF8E" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Caravaggio--The_Crucifixtion_of_Saint_Peter.dds</File>
+    <File md5="EA6EFC8A65F95D6D8F35EAF7564912BB" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_El_Greco--Saint_Peter_in_Penitence.dds</File>
+    <File md5="5DB9635F9CABD98AA4ECD7E7B6B94E11" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Enguerrand_Quarton--Coronation_of_the_Virgin.dds</File>
+    <File md5="DC5095A431DCC16956A64AFBAD07BFE0" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Fra_Angelico--Madonna_of_Humility.dds</File>
+    <File md5="24062FCF73E625B3E4261D4F70E17742" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Fra_Angelico--St_Dominic.dds</File>
+    <File md5="F6373E6D80B1A105CC1A473B86D845E7" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Gwen_John--The_Nun.dds</File>
+    <File md5="B5DAEF7483D5D3DAFCA898CDBCFAE705" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Man_of_Sorrows_Meister_Francke.dds</File>
+    <File md5="D59EDE5A60774267417141F506B2B315" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Memling--Last_Judgement.dds</File>
+    <File md5="36F3551F2900B2E5E83EB8F72FB0DAC7" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Michelangelo--Fresco_of_the_Last_Judgement.dds</File>
+    <File md5="4DEE15A517CF7F19B5BDBB337941C38D" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Murillo--Immaculate_Conception.dds</File>
+    <File md5="4EB600B7D2DAEA975009E958AAB09437" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Paolo_de_Matteis--The_Annunciation.dds</File>
+    <File md5="FD49B96566C747F7B8CECD9BF761DFAD" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Paolo_Veronese--The_Weddeding_at_Cana.dds</File>
+    <File md5="347824CFABAFF7D4ABBFADE0972A91FE" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Raphael--Madonna.dds</File>
+    <File md5="D088136C31732ACF867ADE3174DADC30" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Rembrant--Adoration_of_the_Magi.dds</File>
+    <File md5="7DF37BD0882F4B79894DDAA698AF54ED" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Rembrant--The_Stoning_of_Saint_Stephen.dds</File>
+    <File md5="1042220E2200B67DAEA38D03C587F327" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Sandro_Botticellii--St.Sebastian.dds</File>
+    <File md5="157DB00B308950CF8725E678CA9D83DE" import="1">Mods/JFD's The Papal States (v 10)/Art/Great Works of Art/GW_Scipione_Pulzone--Lamentation.dds</File>
+    <File md5="8B51CD62C31BA43353B66EFC96DBE03E" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_128.dds</File>
+    <File md5="8670343A21F573A7BBE04C0DB5D5BC0E" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_16.dds</File>
+    <File md5="512CC705891355768E70638BCAF93040" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_22.dds</File>
+    <File md5="ED6357F1E2BE8D5F984528F51D596253" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_24.dds</File>
+    <File md5="3DFACF856DB5C5108BFB6324B073DC13" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_32.dds</File>
+    <File md5="8696AC004DDD6F688337836B39126FD1" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_45.dds</File>
+    <File md5="1453B9E8F88D0CF712D2F06343D16688" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_48.dds</File>
+    <File md5="0CB64F7B047389E1164E2A557F63FD6F" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_64.dds</File>
+    <File md5="F78D460008A3F5FBF3AC56E90ED9527A" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAlphaAtlas_80.dds</File>
+    <File md5="DA5BEB0C5FAD493BE3AB8FDA0351D931" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAtlas_128.dds</File>
+    <File md5="19B6F915479CB41BD4A421143636245F" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAtlas_256.dds</File>
+    <File md5="25F0359A3101B9326135673637F254C2" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAtlas_32.dds</File>
+    <File md5="62C5575228E1EB8B45B6553325A940EB" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAtlas_45.dds</File>
+    <File md5="64918E4C5B25DD644479C86CCEED151E" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAtlas_64.dds</File>
+    <File md5="0F19EB8036A760DF0FDB5C0FB34E2607" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/JFD_PapalStatesAtlas_80.dds</File>
+    <File md5="F9F4EE5B0DA0C3977CE52AB6B3883748" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/Unit_Disciple_Flag_32.dds</File>
+    <File md5="C1D745CF91073EECDB731752F9F6DD92" import="1">Mods/JFD's The Papal States (v 10)/Art/Icon Atlas/Unit_SwissGuard_Flag_32.dds</File>
+    <File md5="B2E6FBF623C5B94781FC17728301BC8E" import="1">Mods/JFD's The Papal States (v 10)/Art/Map/PapalStatesMap512.dds</File>
+    <File md5="5B6510880819B0A3E2453BAE0ACE4BCE" import="1">Mods/JFD's The Papal States (v 10)/Art/Map/Pius_DOM.dds</File>
+    <File md5="27BDC496CB2F437C43A8E6E5877C249C" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Atomic.dds</File>
+    <File md5="9E2D14F116EC8D75C66B0A87D62EDECC" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Classical.dds</File>
+    <File md5="0C436F2393E3714D9B02DD7DB831219A" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Enlightenment.dds</File>
+    <File md5="76E0C912CD2992EF0BC8948F27B2CDA2" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Future.dds</File>
+    <File md5="905BBE6C045BC2FEB505A30B6F5E9603" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Industrial.dds</File>
+    <File md5="63CEB03E2C64891865CF7B1DAC08E5DA" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Medievel.dds</File>
+    <File md5="905BBE6C045BC2FEB505A30B6F5E9603" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Modern.dds</File>
+    <File md5="CEF1DCFACF2A7B50E108FE1E6E1ACA84" import="1">Mods/JFD's The Papal States (v 10)/Art/Splashscreens/Era_JFD_MediterraneanPapal_Renissance.dds</File>
+    <File md5="FE3B65095B6DC1225479C2F8F44FC25A" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Antoine_Brumel--Missa_Et_ecce_terrae_motus_Gloria.mp3</File>
+    <File md5="B09286251DF5205C6EAD5B632CB8CDDD" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Art_Writing--O Bone Jesu.mp3</File>
+    <File md5="CBE598BA6021D0FC5FF7186BA71363AC" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Franz_Schubert--Ave_Maria.mp3</File>
+    <File md5="B0C4A26F186C2A7BC273C238505909F1" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Gregorio_Allegri--Misererei Mei, Deus.mp3</File>
+    <File md5="4EEDC67FBC3AB9F1EF7D0CF194103043" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Jheronimus_Vinders--O_Mors_Inevitabilis.mp3</File>
+    <File md5="B6D0F76F1498BF061E7B11AABB8A1B46" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Johannes_Ockeghem--Intemerata.mp3</File>
+    <File md5="D230C0F5CB7AF86B13B07B718580C2A2" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_John_Sheppard--Media_Vita.mp3</File>
+    <File md5="0FC87E00CB0980573834906F630142D2" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Mozart_Requiem.mp3</File>
+    <File md5="6D1847C3106F4CB543402AD60F66F3E7" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Palestrina--Alma_Redemptoris_Mater.mp3</File>
+    <File md5="821D3D54E3B1734AC3BBF53684899337" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Palestrina--Missa Papae Marcelli_ III_ Credo.mp3</File>
+    <File md5="4EB5A4587105745BE2E92CA5EC86472B" import="1">Mods/JFD's The Papal States (v 10)/Audio/Great Works of Music/GW_Verdi_Dies_Irae.mp3</File>
+    <File md5="6A91B4BCED611BBFE389AA1036299148" import="1">Mods/JFD's The Papal States (v 10)/Audio/Pius_Peace.mp3</File>
+    <File md5="24E0E2F8170571929C52C59432EE88DA" import="1">Mods/JFD's The Papal States (v 10)/Audio/Pius_War.mp3</File>
+    <File md5="FD99CDAFAD84D0F499D384D6C499CE1A" import="0">Mods/JFD's The Papal States (v 10)/Audio/Sound.xml</File>
+    <File md5="A533C2392C0BCDE7186A8496B5F17C06" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_ArtDefines.sql</File>
+    <File md5="601040B2918331CA943EAB1D3C15ADF4" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_GameDefines.sql</File>
+    <File md5="717D9859C009341A743874082F474B6C" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_GameDefines_Diplomacy.sql</File>
+    <File md5="AB380368A94B5D7B74015F805F2FC4EC" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_GameDefines_ModSupport.sql</File>
+    <File md5="6A743B4EA5E1E03E8B1E6FEC41526BCF" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_GameText.xml</File>
+    <File md5="BD175BBD41F2E0E7AA6283955DBE62DB" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_GameText_Diplomacy.xml</File>
+    <File md5="9165CFA3436BE52338BA7518893F5231" import="0">Mods/JFD's The Papal States (v 10)/Core/JFD_PapalStates_GameText_ModSupport.xml</File>
+    <File md5="D5C5BD0C59757735517D96FAB438377B" import="0">Mods/JFD's The Papal States (v 10)/DeleteMissingReferences.xml</File>
+    <File md5="FF2CD8B41A61E672EC224F985034B75A" import="1">Mods/JFD's The Papal States (v 10)/Lua/JFD_PapalStates_Decisions.lua</File>
+    <File md5="9CE8DF5E81C78A2BE8C5B4355553075E" import="1">Mods/JFD's The Papal States (v 10)/Lua/JFD_PapalStates_Events.lua</File>
+    <File md5="F4FE5EEAEFBAC55489826640BB4323A6" import="0">Mods/JFD's The Papal States (v 10)/Lua/JFD_PapalStates_Functions.lua</File>
+    <File md5="BCE3061A155668AF5D155AE02F0F3A53" import="0">Mods/JFD's The Papal States (v 10)/Lua/JFD_PapalStates_Functions.xml</File>
+    <File md5="64DF635BD57CDEB13DC1038934568A7E" import="0">Mods/JFD's The Papal States (v 10)/Lua/Sukritact's MCIS/CityInfoStack.lua</File>
+    <File md5="4E7C5E4894BC0A0E0CBA1743787E1015" import="0">Mods/JFD's The Papal States (v 10)/Lua/Sukritact's MCIS/CityInfoStack.xml</File>
+    <File md5="4006FE07EFBC07CD74767D0A3AD9302C" import="0">Mods/JFD's The Papal States (v 10)/Lua/Sukritact's MCIS/JFD_PapalStates_SwissGuard_CityInfo.lua</File>
+    <File md5="E43C569D2687522D8F075C5C362E9D2E" import="0">Mods/JFD's The Papal States (v 10)/Lua/Sukritact's MCIS/JFD_PapalStates_SwissGuard_CityInfo.xml</File>
+    <File md5="4486E05E92C6A1829D1BD4FC8EAB80DE" import="1">Mods/JFD's The Papal States (v 10)/Lua/UI/InGame/Popups/CultureOverview.lua</File>
+    <File md5="BF85D174CA9D4F2EC2AD7E3FBB6C0D6D" import="1">Mods/JFD's The Papal States (v 10)/Lua/UI/InGame/Popups/CultureOverview.xml</File>
+    <File md5="3B7B1EE92949FC3B7B9308074F036BEB" import="1">Mods/JFD's The Papal States (v 10)/Lua/Utilities/NewSaveUtils.lua</File>
+    <File md5="2AAEFCE9788ABC5C6FDC338E9A845AD9" import="0">Mods/JFD's The Papal States (v 10)/Readme.txt</File>
+  
+  
+  
+	 <File md5="EBA165614353CD0D1E6B18CF8B99C58F" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/Alpha/KongoAlphaAtlas128.dds</File>
+    <File md5="7A3B466D926887B81B34B7E204BBBA84" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/Alpha/KongoAlphaAtlas16.dds</File>
+    <File md5="D3C2875E7886E9620DA378CEE7CC5CAD" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/Alpha/KongoAlphaAtlas24.dds</File>
+    <File md5="64B83812627190F773C2C2EEC4A910BF" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/Alpha/KongoAlphaAtlas32.dds</File>
+    <File md5="08730CF0E30B9DF51B63BFF5E33FFD31" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/Alpha/KongoAlphaAtlas48.dds</File>
+    <File md5="291ACF1C26A0AB2BA335BA410D5DCA8C" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/Alpha/KongoAlphaAtlas64.dds</File>
+    <File md5="F89ED65874223E2E2A678F2D3825DC49" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas128.dds</File>
+    <File md5="201DBF86DEF90302DAF948EFA4A4DAFA" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas214.dds</File>
+    <File md5="F16451D7938FBA153A8B037C501238DE" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas256.dds</File>
+    <File md5="9BA78D132EA17B67ACA02F1E14EE581A" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas32.dds</File>
+    <File md5="18874A8712221D80798A83D98A53C582" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas45.dds</File>
+    <File md5="9B965C73C0DB4C083B67F0236FB2CBFC" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas64.dds</File>
+    <File md5="1C1A189321A4A020A4C5AE7EDF194BD3" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Atlases/KongoIconAtlas80.dds</File>
+    <File md5="B082B50C9D3CDEB17A300732472D9801" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Leader/Kongo_Mod_Diplo.dds</File>
+    <File md5="39974E081DB12047365DF74477FECA32" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Leader/Kongo_Mod_DOM.dds</File>
+    <File md5="0C4EA27186405037497F7952DD828028" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Leader/Kongo_Mod_Map.dds</File>
+    <File md5="D8469CFA15D5174DE2F6934E7B58B214" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Resources/Rafia_FontIcon.dds</File>
+    <File md5="7A9D7EF78ADF485832854E5EFEDEEF0D" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Resources/Rafia_FontIcon.ggxml</File>
+    <File md5="1D0DA351C4D3421CCA586EFC34D834AF" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/PomboAlphaAtlas.dds</File>
+    <File md5="DC3B4E092D8EFAC1CA8A90D32AD7040B" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/Skin/EthiopiaSpearman.dds</File>
+    <File md5="35A70C4E21BF8B0E88CFCD85BA8EE747" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/Skin/EthiopiaSpearman.fbx</File>
+    <File md5="C256716200301D1EB3D4CEC26B92A275" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/Skin/EthiopiaSpearman.fxsxml</File>
+    <File md5="E5D78C453655C7C33E510372EBED2656" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/Skin/EthiopiaSpearman.gr2</File>
+    <File md5="3BBB17018C0693F51BB80D900F3DBD16" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/Skin/EthiopiaSpearman_sref.dds</File>
+    <File md5="CEDEE1A0AAA63F1EA44A0F720EB05C12" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/Skin/EthiopiaSpearman_Template.blend</File>
+    <File md5="B7295CD30ECE7A55953E59E3C920DF46" import="1">Mods/Kongo (Brave New World) (v 48)/Art/Units/sv_Pombo_Kongo_Mod.dds</File>
+    <File md5="9C77E162A0437C8F9901A54610F5380A" import="0">Mods/Kongo (Brave New World) (v 48)/Decisions/Kongo Decisions SQL.sql</File>
+    <File md5="E7208D62773E9FE477B54EF2070F261A" import="0">Mods/Kongo (Brave New World) (v 48)/Decisions/Kongo Decisions Support.xml</File>
+    <File md5="D86122897700DCD1002BA3226FFA38AD" import="1">Mods/Kongo (Brave New World) (v 48)/Decisions/TomatekhKongoDecisions.lua</File>
+    <File md5="65082CEED3616249E751D3695292D42E" import="1">Mods/Kongo (Brave New World) (v 48)/LUA/Kongo Scripts.lua</File>
+    <File md5="CBBBF5F2D1F267618F9F9BD346B14F0D" import="0">Mods/Kongo (Brave New World) (v 48)/LUA/Kongo Scripts Check.lua</File>
+    <File md5="18C96888C1C9E1C917B5788EFD231183" import="1">Mods/Kongo (Brave New World) (v 48)/Sounds/EwuareWar1.mp3</File>
+    <File md5="F1622A0D2682B35CC360EA82A157F083" import="1">Mods/Kongo (Brave New World) (v 48)/Sounds/NzingaDoM.mp3</File>
+    <File md5="DF7DD83118400EE9FB975BD81C20D28E" import="1">Mods/Kongo (Brave New World) (v 48)/Sounds/NzingaWar.mp3</File>
+    <File md5="6BDFDFF1F30FE8D55DE803B772047C43" import="0">Mods/Kongo (Brave New World) (v 48)/SQL/Kongo Mod Support.sql</File>
+    <File md5="F5630CCBC5F52707ECF09995716BC771" import="1">Mods/Kongo (Brave New World) (v 48)/SQL/Kongo Pombo Mod.sql</File>
+    <File md5="3FC7F80C0C55106E4361BE682F27518B" import="1">Mods/Kongo (Brave New World) (v 48)/XML/Art/civ5artdefines_units.xml</File>
+    <File md5="C184E07BA086F236BA0D5BD77385C779" import="1">Mods/Kongo (Brave New World) (v 48)/XML/Art/civ5artdefines_unitmembers.xml</File>
+    <File md5="ACCDD1F114108B125DC79D870ECB4D9A" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Art/Kongo Atlas Mod.xml</File>
+    <File md5="980FF61367406906A14D252F7FAFBF6A" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Art/Kongo Strategic View Mod.xml</File>
+    <File md5="6C67B53F7B9F82F4BFB467DF885E050B" import="1">Mods/Kongo (Brave New World) (v 48)/XML/Art/Kongo_Leader_Scene_Mod.xml</File>
+    <File md5="2E6022B4852A92BE8C0891FFEA0136D9" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Buildings/Kongo Mod Buildingclass.xml</File>
+    <File md5="5ABA15A2B300350B95AB625013C34CB6" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Buildings/Kongo Mod Buildings.xml</File>
+    <File md5="4864C2A83638DCD75506A0F43B4FD3AE" import="0">Mods/Kongo (Brave New World) (v 48)/XML/City-State Update/Kongo City-State Update.xml</File>
+    <File md5="F9C990385559C31EA499038B30C684B8" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Civilizations/Kongo Civilizations Mod.xml</File>
+    <File md5="192A1B35267C4ED12B76D251AA1B2761" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Civilizations/Kongo Leader Mod.xml</File>
+    <File md5="D9E930867321C53815F9E191B5199371" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Civilizations/Kongo Traits Mod.xml</File>
+    <File md5="A14C2C77B2CAEB921CCE9254938B6EC0" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Diplomacy/Kongo Diplomacy Mod.xml</File>
+    <File md5="3319106C43ED6BD870BACB32DA8A0137" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Sounds/Kongo Sound Mod.xml</File>
+    <File md5="F38AD5803071BDC8565469EC80C45044" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Terrain/Kongo Resource Mod.xml</File>
+    <File md5="501AFA4CD6FFDE5EBBB5F620B694878A" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Kongo Mod Game Text.xml</File>
+    <File md5="FE8E9B2815F6F1B4E1CE22593A406033" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text DE_DE.xml</File>
+    <File md5="66EA6E35A1154C08D2887BE9C2879008" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text ES_ES.xml</File>
+    <File md5="2D336AB17D9138222A236519231DF13D" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text FR_FR.xml</File>
+    <File md5="33454303EDD7ECD871FDEAF06E469429" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text IT_IT.xml</File>
+    <File md5="41DED97F40B0A69EF6AD3F930DA68474" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text JA_JP.xml</File>
+    <File md5="D27A5A397A3CBBB693E845E353885148" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text KO_KR.xml</File>
+    <File md5="01AF804F66A6A0151574B03ED7F2AF2F" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text PL_PL.xml</File>
+    <File md5="187BFF7DA2F72898FA7DDEC66B6FC967" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Text/Non English XML Tags/Kongo Game Text RU_RU.xml</File>
+    <File md5="91273FB1AC5570F57213598FBE9B05FA" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Units/Kongo Promotions Mod.xml</File>
+    <File md5="7C0592318F0DC6C7CA19CA07EA441EDA" import="0">Mods/Kongo (Brave New World) (v 48)/XML/Units/Kongo Unit Mod.xml</File>
+    <File md5="EC90A3EB29218788F792EA5951DF5898" import="0">Mods/Kongo (Brave New World) (v 48)/YnAEMP/Kongo YnAEMP Compatability.sql</File>
+  
+  
+  
+	<File md5="800580FE2364F00A0B8AB388E20BF263" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_128.dds</File>
+    <File md5="12183AB70031463DDD4A26EC56943973" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_16.dds</File>
+    <File md5="06A300E7F52518843180DBFF5850CC1C" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_22.dds</File>
+    <File md5="1385A37F9C00CC7B4DAD1FF49EB15DE0" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_24.dds</File>
+    <File md5="09D71A705EEB6FC5B367658FF0FA2EC4" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_256.dds</File>
+    <File md5="C17B4F366BC91B0F7DF4FEB3FDE25C6C" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_32.dds</File>
+    <File md5="C80B22208991641A23452C50CD66F83E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_45.dds</File>
+    <File md5="6DF8FCE539BCC4EFCB9EEA2187F9D6DD" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_48.dds</File>
+    <File md5="7ACCB7BB004406C9B4E60C9C3FE9E52C" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_64.dds</File>
+    <File md5="37D48734A9650069FF3F7BDA4DF1A48F" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAlphaAtlas_80.dds</File>
+    <File md5="32194B9A0887CA7FD9B2B11527EAC813" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAtlas_128.dds</File>
+    <File md5="4A43FC98E90EBF3AD723CEE32C1C1B80" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAtlas_256.dds</File>
+    <File md5="31137107C440C2D26993FD56AB6B1552" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAtlas_32.dds</File>
+    <File md5="9FDF6960232B65B9122BEF7FA11D75A1" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAtlas_45.dds</File>
+    <File md5="A191FC2F46C86E9387BA21CF30704BBE" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAtlas_64.dds</File>
+    <File md5="619D4D31E34D835C5ED248B52081FC8B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Atlases/MC_GreeceAtlas_80.dds</File>
+    <File md5="A7CBEB0112664B5D9D621690416A11A5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Athens_DOM.dds</File>
+    <File md5="1FB47869ADDCBCA39393BF1BAFBC6E3E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Athens_Map.dds</File>
+    <File md5="13552CCEEAB0DCB4EC590C2AE70ADD77" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Pergamon_DOM.dds</File>
+    <File md5="8E95BB1492652A46CC32DC150EDBD093" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Pergamon_Leaderhead.dds</File>
+    <File md5="D3E5552C0311581F48A369DEC77966BC" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Sparta_DOM.dds</File>
+    <File md5="1E933C2BE653BF40E2109218E8454FDA" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Sparta_Map.dds</File>
+    <File md5="DFE0BCDE1D32880F1F5DDD9E30CFA128" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Sparta_Leaderhead.dds</File>
+    <File md5="A97F6A171104E29C4669F23A806D02B0" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Pergamon_Map.dds</File>
+    <File md5="676E39D5ACD10B4B0D1B598233245E7D" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Scenes/MC_Athens_Leaderhead.dds</File>
+    <File md5="FB547D0A6A66BAC267D6DBFCDBFD2AD8" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Assault Trieres/Epibatas_Naval.fxsxml</File>
+    <File md5="F61DD09C7B805F20505BD7D8F9072A34" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Assault Trieres/Epibatas_Naval.gr2</File>
+    <File md5="6C12F30D6991BAB755130EC9EE594463" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Assault Trieres/epibatas_naval_diff.dds</File>
+    <File md5="9309774C33232FFC6E47E09F56BDD3C5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_attack_city_to_run.dge</File>
+    <File md5="FA9CE373BB700CFCD8F0FA3A955B1E69" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_attack_to_run_graph.dge</File>
+    <File md5="BA4F6AEB27527AB47CC284B27C8288A8" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_bombard_defend_loop_graph.dge</File>
+    <File md5="933E4A224EFE615D537517EFE06B34BC" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_civilian_activate_captured.dge</File>
+    <File md5="87476FD4384999BCCBF43AEEF9B3A652" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_civilian_death_final.dge</File>
+    <File md5="9AB143ED19D8B61A7794C90D5D65EE97" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_civilian_enter_bombard_defend.dge</File>
+    <File md5="7BCAF33AE57FA6E4F56F767E1799955E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_civilian_state_01.fsmxml</File>
+    <File md5="CD02EC91E73F396297C2B3434A8BA034" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_combat_ready_graph.dge</File>
+    <File md5="6B4338103039DFBD431A44C89DA198D6" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_death_final_graph.dge</File>
+    <File md5="F9F109E1E43FD75DFC765D9B3A43CE48" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_death_graph.dge</File>
+    <File md5="014FBFBCB17012BEC0B32D9FFDBF721E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_enter_bombard_defend_graph.dge</File>
+    <File md5="7A5A0ADFBBB05D6E4FB126383988B264" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_enter_combat_ready_graph.dge</File>
+    <File md5="34488A641F9D948D865BBECF8B3878DF" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_enter_fortify.dge</File>
+    <File md5="ADAECB630FF73EEFBBE3EE3661F1819C" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_enter_sleep_civilian.dge</File>
+    <File md5="F245B80AAC985C0011FEE5CBF3FB25DF" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_fidgets_graph.dge</File>
+    <File md5="65FED4E2E20D7512D6B5E92C1CD37EF7" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_fortify_fidget_graph.dge</File>
+    <File md5="F758D65157483D32C6763F817B216937" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_fortify_graph.dge</File>
+    <File md5="C2C8D0ADFA388980A03E814BF2B335F5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_fortify_leave_graph.dge</File>
+    <File md5="AD4E2A013238410D8FCE2666AEB1DC08" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_fortify_to_idle_a.dge</File>
+    <File md5="EF6168FF0903555EDCBB9FD626CFB00F" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_idle_graph.dge</File>
+    <File md5="268797759660DA55A0F792A966EB586B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_idle_offset_continue_true_graph.dge</File>
+    <File md5="C4D8B3EB164B5525B92514645521D0C3" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_leave_bombard_defend_trans_idle_a_graph.dge</File>
+    <File md5="189E34C23C7A19F2C190E1ACB4212C91" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_leave_combat_ready.dge</File>
+    <File md5="225D164523FE1270306005CCD71B075A" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_melee_attacks.dge</File>
+    <File md5="71E511A38054110B5D9A23B311AC0104" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_modern_ship_attacks.dge</File>
+    <File md5="BA0D234DE017F5CEB6DEF37CE7DFE384" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_attack_city_to_run.dge</File>
+    <File md5="75D8FBC3A2C4D56B1089F20A2E9D9DA1" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_attack_to_run_graph.dge</File>
+    <File md5="82C3CE94F7827159DEA80CCF8AAF5D9E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_bombard_defend_loop_graph.dge</File>
+    <File md5="FF8A929D15C8ECE5089A806AFBC80C8E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_civilian_activate_captured.dge</File>
+    <File md5="1AE83D5303F9671277D4FEC7F327A2BB" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_civilian_death_final.dge</File>
+    <File md5="0021307C276C3516A57BBADDAC07ACE7" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_civilian_enter_bombard_defend.dge</File>
+    <File md5="C3686411D2E96A715267F9A5C72A5EB1" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_combat_ready_graph.dge</File>
+    <File md5="FE5B902745DEE0860ECEE5BA421D141F" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_death_final_graph.dge</File>
+    <File md5="21659FCED7A08D6FB464A693D0E82597" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_death_graph.dge</File>
+    <File md5="B66FF4B10706BE666A916B917D14AC83" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_enter_bombard_defend_graph.dge</File>
+    <File md5="9B18015ACB470CD66C3294FDA203C27E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_enter_combat_ready_graph.dge</File>
+    <File md5="FD1B5EABA624344B944CD37BD71DE110" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_enter_fortify.dge</File>
+    <File md5="2470ABA98F462C27DD3C1AC013BD3AC6" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_enter_sleep_civilian.dge</File>
+    <File md5="04680D47D3519A5FFB950F1147D7B1D4" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_fidgets_graph.dge</File>
+    <File md5="327CB90C3BCF5BAC71F77DA677997631" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_fortify_fidget_graph.dge</File>
+    <File md5="998F9D5F9FCAFE31E97022C5C50C67E8" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_fortify_graph.dge</File>
+    <File md5="39370F05801D7D017D605CE224EE11E7" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_fortify_leave_graph.dge</File>
+    <File md5="7BC464D9DF686D87145362DEE0F68A04" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_fortify_to_idle_a.dge</File>
+    <File md5="EF3E7C919600B18CDC0D6F1BCDD45F64" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_idle_graph.dge</File>
+    <File md5="2F7C2570D10BD4E5879F105F9BB3BC53" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_idle_offset_continue_true_graph.dge</File>
+    <File md5="7AAA31587E2E15A0B887A31C861D4B45" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_leave_bombard_defend_trans_idle_a_graph.dge</File>
+    <File md5="4BB9881AAB8B9F3571AA787BB89B4FF1" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_leave_combat_ready.dge</File>
+    <File md5="2937CE1A002CB18C85FA2E3E63221139" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_melee_attacks.dge</File>
+    <File md5="E538938BAD81B88082C8DF076514653E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_modern_ship_attacks.dge</File>
+    <File md5="DBFC96AE4406957395EC439CEFF8584A" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_running_loop.dge</File>
+    <File md5="BD96EBE9953A41BD78D450DC26561AFC" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_run_no_charge_loop.dge</File>
+    <File md5="91A772D3D07C64329ED801632EB689C7" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_run_start_civilian.dge</File>
+    <File md5="C017AA3F2D83AAB3B6B939B6418071A3" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_start_running.dge</File>
+    <File md5="34D584D857E6CBA51D87EE2FD6950EC6" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_stop_running.dge</File>
+    <File md5="8D3450B63AF23F48CF9DEDC3B586B022" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_stop_running_civilian.dge</File>
+    <File md5="500F6DEDBDB767CAE8C964DBEE647459" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_ms_transitions_for_idles.dge</File>
+    <File md5="A64E86033B61613B4F39979D5603E65F" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_running_loop.dge</File>
+    <File md5="E38EAF3E95C835B93C7E7849A7F4F23B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_run_no_charge_loop.dge</File>
+    <File md5="9432853873B222F5AEF1CE53C1CD98DA" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_run_start_civilian.dge</File>
+    <File md5="BCF1F945C0CBE7A1C9F62E5B46F84F99" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_start_running.dge</File>
+    <File md5="7B0232A8BE345EB899FF221FBD7BDCFB" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_stop_running.dge</File>
+    <File md5="38B813F99CCD01B77FB798D2AFE91571" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_stop_running_civilian.dge</File>
+    <File md5="2506D6C118D6A9FB915723F731C95FD4" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_aim_transitions_for_idles.dge</File>
+    <File md5="E38F763EEDD8E5CA2320278CC1641F42" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_antiair_vehicle_1gun.ftsxml</File>
+    <File md5="1091C411BFCA66D5EE74CEFFD6EE64DC" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_antiair_vehicle_2gun.ftsxml</File>
+    <File md5="948F20768997973457FAD6CF0F58645E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_antiair_vehicle_3gun.ftsxml</File>
+    <File md5="76CCDC691B5CBE0C4F3A85BF0E796AA5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_antiair_vehicle_4gun.ftsxml</File>
+    <File md5="EDA5989385F1C83D85AD44E2B8028A1E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_artillery.ftsxml</File>
+    <File md5="AB180DC6BFF8E18757D23D554F80784A" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_battleship.ftsxml</File>
+    <File md5="15D16F16B2DA12C59E1DB7565EBAC0ED" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_battleship_4turret.ftsxml</File>
+    <File md5="57B853C5D7F32E9A1000E2F1341916A0" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_Cruiser.ftsxml</File>
+    <File md5="6E0AFDF33543EE37A4770E8903EF3DCB" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_destroyer.ftsxml</File>
+    <File md5="206D2B57E712C46A9B2B06BC024BA5F4" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_EarlyJet.ftsxml</File>
+    <File md5="DE8146AC44DE6C704F0728782C1AE500" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_EarlyTank_1gun.ftsxml</File>
+    <File md5="609CE0B64FB4B5781695009F0D913A51" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_EarlyTank_2gun.ftsxml</File>
+    <File md5="6903919CC91F1C38BC07B661FDCF73AB" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_fighter_2Propellers.ftsxml</File>
+    <File md5="57E688AF2606E958CA088BD229D43F5B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_infantry.ftsxml</File>
+    <File md5="5B811AF5596286D7B6DAD0FE8E8FA53B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_jetfighter.ftsxml</File>
+    <File md5="DD04F56BC976D1CC6D925C1677DCF2A2" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_Katyusha.ftsxml</File>
+    <File md5="A08730646EFA18C9E3385EE7D59EA9DC" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_modernarmor.ftsxml</File>
+    <File md5="6E33E758B853E1114BB487111B8FA075" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_paratrooper.ftsxml</File>
+    <File md5="212745C0D1059F32FAC334A46B790713" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_paratrooper_mg.ftsxml</File>
+    <File md5="108FD3B4BAAB4A605BF70CCD44F20E8B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_tank.ftsxml</File>
+    <File md5="2B8DD37B99816431055263F820529E18" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_tank_lightfire.ftsxml</File>
+    <File md5="2C9B80EF7FD70EFAA250F616A4316DC2" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_tank_mg_1gun.ftsxml</File>
+    <File md5="CCEE19B5A0E7AE186838E1A5A0EE0D33" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_fx_triggers_tank_mg_2gun.ftsxml</File>
+    <File md5="B233D27FC1FA1DB1127E263DC20D30DB" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_mechanized_aim_state_01.fsmxml</File>
+    <File md5="75C5BA4CEC139C9EAFA47AE912EAB3EC" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Edited_Animations/edited_modern_ship_aim_state_01.fsmxml</File>
+    <File md5="1BC5A1913DE2319B07AB4E6235327A9A" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/MC_AthensAssaultTrieresFlag_32.dds</File>
+    <File md5="84826AD888BB9F29409912BEF9A963BB" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/MC_MacedonPhalangitaiFlag_32.dds</File>
+    <File md5="0EEAD08DDE683416EAD862782194AE8D" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/MC_PergamonRhodianSlingerFlag_32.dds</File>
+    <File md5="5464654ED623EF67404CF9A858AC6848" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Pergamene Slinger/u_pergamene_slinger.fxsxml</File>
+    <File md5="437BA5F73B7F143FD8DFAD60A9B8D109" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Pergamene Slinger/u_pergamene_slinger.gr2</File>
+    <File md5="D0D509397F104DF295E54AAF75560E5B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Pergamene Slinger/u_pergamene_slinger_diff.dds</File>
+    <File md5="FE512B685A46436BED7945704064EEC5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Phalangitai/Pikeman_Greece.blend</File>
+    <File md5="68306D2A9C378131D05FF015CD8DC845" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Phalangitai/Pikeman_Greece.dds</File>
+    <File md5="96BA511FBD7B719A1A1E5689FC5ED8CE" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Phalangitai/Pikeman_Greece.fxsxml</File>
+    <File md5="07CCF319CEDF9625C00CFD26E2601736" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Phalangitai/Pikeman_Greece.gr2</File>
+    <File md5="21A8A542450644107119EC0662AC6B5A" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/Phalangitai/Pikeman_Greece_gloss.dds</File>
+    <File md5="5649611B34A1CAC34B2022FF88B7FE06" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/sv_AthensAssaultTrieres.dds</File>
+    <File md5="40E3051A886E9A95B938E9A833C66F78" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/sv_MacedonPhalangitai.dds</File>
+    <File md5="CB187D0CC53DA04D4C8B2D6BB35990CA" import="1">Mods/MC's Greek Civilisation Split (v 2)/Art/Unit Models/sv_PergamonRhodianSlinger.dds</File>
+    <File md5="2A8CE4C3F1D60B68BFE9E30990111B09" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Art/ArtDefines/MC_AssaultTrieresDefines.sql</File>
+    <File md5="B034FB3472DA9C3B856449CD5047C409" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Art/ArtDefines/MC_RhodianSlingerDefines.sql</File>
+    <File md5="EE3C429E1F60D1D3B08AF0A93BCC22CB" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Art/ArtDefines/MC_PhalangitaiDefines.sql</File>
+    <File md5="8392D978D6F03DF0188F03065845E9F7" import="1">Mods/MC's Greek Civilisation Split (v 2)/Core/Art/MC_Athens_Leaderhead.xml</File>
+    <File md5="C872738CA42EEEC446FA0118A6793B41" import="1">Mods/MC's Greek Civilisation Split (v 2)/Core/Art/MC_Pergamon_Leaderhead.xml</File>
+    <File md5="17D9427D3F60FEC9C67D2614B1B54A88" import="1">Mods/MC's Greek Civilisation Split (v 2)/Core/Art/MC_Sparta_Leaderhead.xml</File>
+    <File md5="ADE5AB706AD14066D208A4708191E824" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Buildings/MC_Greece_Buildings.xml</File>
+    <File md5="1D6321106016F7ACEC66325BFBA9E216" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Civilizations/MC_Greece_MinorCivFlavours.sql</File>
+    <File md5="36E3C2E085FED4C2D34A7908DEBA02BC" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Civilizations/MC_Greece_Civilizations.xml</File>
+    <File md5="7A16611EFAB397068840F6D683711410" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Civilizations/MC_Greece_MinorCivilizations.xml</File>
+    <File md5="6FCEC998DA38382BE21FF1C260F3EB86" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/GameInfo/MC_Greece_Sounds.xml</File>
+    <File md5="07E35AD28A7BB9F9BC29CFD143B20C64" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/GameInfo/MC_Greece_IconTextureAtlases.xml</File>
+    <File md5="FDC50AACA9292D5926F58209A1CDD6FF" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/GameInfo/MC_Greece_Traits.xml</File>
+    <File md5="FA192E6AAEE28396FBBDFFADB5AD6013" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/GameInfo/MC_Greece_Traits.sql</File>
+    <File md5="56CE284533B9EBC501D4895736930428" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Leaders/MC_Greece_LeaderFlavors.sql</File>
+    <File md5="B7764A638D58F81AF465FB36382D9617" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Leaders/MC_Greece_Leader.xml</File>
+    <File md5="222B62B729F4DAFAFC922070D251D627" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Text/MC_Greece_Text.xml</File>
+    <File md5="773CA943033FADC840E9041AA3EE7B8D" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Units/MC_Greece_UnitClasses.xml</File>
+    <File md5="38A4524BDB4BAA6F8E1DFD59716BC2DE" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Units/MC_Greece_Units.xml</File>
+    <File md5="392562745EB5077901FA6038840190B2" import="0">Mods/MC's Greek Civilisation Split (v 2)/Core/Units/MC_Greece_UnitPromotions.xml</File>
+    <File md5="BB649E45F94B1E90CBD0AFB2E0B20690" import="1">Mods/MC's Greek Civilisation Split (v 2)/Lua/Macedonian GG code/MacedonGAAtlas45.dds</File>
+    <File md5="D6BE45F4218DD19813B23BBD639A566B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Lua/Macedonian GG code/MacedonGAAtlas64.dds</File>
+    <File md5="CE97ECF08A96A5B22C18862EDCD66BD8" import="0">Mods/MC's Greek Civilisation Split (v 2)/Lua/Macedonian GG code/MC_Macedon_GG_GA.lua</File>
+    <File md5="15206C888F7AFBBE5E8F1E67A9D528B2" import="0">Mods/MC's Greek Civilisation Split (v 2)/Lua/Macedonian GG code/MC_Macedon_GG_GA.sql</File>
+    <File md5="1CF2DDD6CBC9800E492535A5ECEF41B2" import="1">Mods/MC's Greek Civilisation Split (v 2)/Lua/Macedonian GG code/MC_Macedon_GG_GA.xml</File>
+    <File md5="E31AB6F0730CAC3333F2D28682DF8B36" import="1">Mods/MC's Greek Civilisation Split (v 2)/Lua/Macedonian GG code/MC_Macedon_GG_GA_Bonus.lua</File>
+    <File md5="306F135F39305D3EA07372A2CFFFEC64" import="0">Mods/MC's Greek Civilisation Split (v 2)/Lua/MC_AthensFunctions.lua</File>
+    <File md5="CCDC06541658921102F156149D064964" import="0">Mods/MC's Greek Civilisation Split (v 2)/Lua/MC_MacedonFunctions.lua</File>
+    <File md5="2960731D3ED1ED80C1C389DE5C3EA515" import="0">Mods/MC's Greek Civilisation Split (v 2)/Lua/MC_PergamonFunctions.lua</File>
+    <File md5="EA65843F0535FDEDE004924E5FD15737" import="0">Mods/MC's Greek Civilisation Split (v 2)/Lua/MC_SpartaFunctions.lua</File>
+    <File md5="D63DC8BB6AA0F310DD55B264DB49C7E2" import="1">Mods/MC's Greek Civilisation Split (v 2)/Lua/PlotIterators.lua</File>
+    <File md5="5754B1BE6E37A2F9D04D9D4149E5CDDF" import="1">Mods/MC's Greek Civilisation Split (v 2)/Lua/SaveUtils.lua</File>
+    <File md5="7266002376FC8BFA79400DAB10FC7E9E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_AthensPeace.mp3</File>
+    <File md5="29AE76C415658763BD97930BB425760B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_AthensWar.mp3</File>
+    <File md5="048C3B1AE819AD7B2922D072DAA8ECF6" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_MacedonDoM.mp3</File>
+    <File md5="3D214A3D0FBFDF78D06F89BF82C876C5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/Alexander_Peace.mp3</File>
+    <File md5="20DA090C5A7E9E1CA815C88183449C94" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/Alexander_War.mp3</File>
+    <File md5="26B60EFDA9D8F6514AE772E6D74F76F6" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_PergamonPeace.mp3</File>
+    <File md5="AEBC26F435C3453C847B638C28C801E0" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_PergamonWar.mp3</File>
+    <File md5="8AE492E8BBAE7184C59C829865E409A2" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_SpartaPeace.mp3</File>
+    <File md5="BA0B74BB2B34D3494096B80DCF1800EF" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_SpartaWar.mp3</File>
+    <File md5="4DF9A52C4C9B0828506D09C9E160BD9B" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_SpartaDoM.mp3</File>
+    <File md5="533ED268A4D9AB59093A527F2EEBDC9A" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_AthensDoM.mp3</File>
+    <File md5="709D6DFAC8D721364E977A8238B0FF8E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Sounds/MC_PergamonDoM.mp3</File>
+    <File md5="E6F65C00788BF7A81F8FC4E7EB7A1C2E" import="1">Mods/MC's Greek Civilisation Split (v 2)/Support/event_mc_eleusinian.dds</File>
+    <File md5="B0EC1D77FBC73FE2CEB941D689C3BFF5" import="1">Mods/MC's Greek Civilisation Split (v 2)/Support/event_mc_olympics.dds</File>
+    <File md5="3FA4FD4AC290D5C741BFEB436082EA09" import="1">Mods/MC's Greek Civilisation Split (v 2)/Support/event_mc_thesmophoria.dds</File>
+    <File md5="336618C0D0435EA7DB454178F115FA56" import="1">Mods/MC's Greek Civilisation Split (v 2)/Support/gw_mc_dying_gaul.dds</File>
+    <File md5="20324880256E21E124843DD14F88B44F" import="1">Mods/MC's Greek Civilisation Split (v 2)/Support/MC_Greece_Decisions.lua</File>
+    <File md5="A97F9DEE49BF1C07E6D540821E091EC3" import="0">Mods/MC's Greek Civilisation Split (v 2)/Support/MC_Greece_ModSupport.xml</File>
+    <File md5="73A86AC73279A12023DD58DC9F8B2DB2" import="1">Mods/MC's Greek Civilisation Split (v 2)/Support/MC_Greece_Events.lua</File>
+    <File md5="42851D7FBD5421DF3749D779B9FEE2C0" import="0">Mods/MC's Greek Civilisation Split (v 2)/Support/MC_Greece_ModSupport.sql</File>
+  
+  
+  
+	<File md5="9C1FECF8E07A7BE3A72463E6B54830C3" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_128.dds</File>
+    <File md5="2AEC5596E6F45ED83E4CC175DBEDFCF1" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_16.dds</File>
+    <File md5="4014F7D0352C6F32DC03A5D8DBA42A4A" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_214.dds</File>
+    <File md5="B1867B913EA790E84AABBD139AC3E4D1" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_24.dds</File>
+    <File md5="805F26C0C9D74E0F22B744BADEEE5531" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_256.dds</File>
+    <File md5="F91EC9187B98A99977095F21524F398E" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_32.dds</File>
+    <File md5="5980AF7D704FAD16029F2889450D57F9" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_48.dds</File>
+    <File md5="F1C2C7A4392C5ED12BC0DF8D6769BC86" import="1">Mods/Mexican Civilization (v 3)/Mods/Mexican Civilization (v 3)/Art/Atlases/MexicoAlpha_64.dds</File>
+    <File md5="96A10E4449B78AF13F38FB16F49674FA" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_128.dds</File>
+    <File md5="8CBA6243435D93BC64719E36E023B1BD" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_16.dds</File>
+    <File md5="644B5D2F9F4D0F8D2E47E0A282FBCFCE" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_214.dds</File>
+    <File md5="D23B7753ED28AF7328D4B994EA6FD14F" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_24.dds</File>
+    <File md5="EADA3DE98EED6D968150E2A1779AF7FC" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_256.dds</File>
+    <File md5="EE1A3D936FF0EA835E23E16D08372977" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_32.dds</File>
+    <File md5="E4B8FFF801AB8A00B248040868BC5702" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_45.dds</File>
+    <File md5="51F1F027E47155A7994BD8125BD85A76" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_48.dds</File>
+    <File md5="B7B10B7913C60C5149720B5BD862F28D" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_64.dds</File>
+    <File md5="B1C1D0BA06A45DD28D34830CD6B17785" import="1">Mods/Mexican Civilization (v 3)/Art/Atlases/Mexico_80.dds</File>
+    <File md5="8DBFCDE93D8E0B4F87B5DFDDFA11E943" import="1">Mods/Mexican Civilization (v 3)/Art/Scenes/Mexico_Leaderhead.xml</File>
+    <File md5="96A8C591FC462265A15696A3A32F5FF0" import="1">Mods/Mexican Civilization (v 3)/Art/Scenes/Guadalupe_Diplo.dds</File>
+    <File md5="232C444E928FAE06B46348DDED876728" import="1">Mods/Mexican Civilization (v 3)/Art/Scenes/Mexico_Map.dds</File>
+    <File md5="6BD438F9F283A55BF6F0FFE0688A5364" import="1">Mods/Mexican Civilization (v 3)/Art/Scenes/Mexico_DoM.dds</File>
+    <File md5="9783692ACCCD310E5057AE4DF2F6289A" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/flag_rural.dds</File>
+    <File md5="38F78E1290F8C110B178C1D972BF1C49" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/flag_zapatista.dds</File>
+    <File md5="CBB7EC70E773B7A33F39F9058962FE47" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/rural.dds</File>
+    <File md5="B71ACEA823089F9DC96229CF9F622F53" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/rural.fxsxml</File>
+    <File md5="E75DA1EB74249238B093A2DB762F362F" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/rural.gr2</File>
+    <File md5="B2B7881876AE17016FABE35B84239EF3" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/sv_rural.dds</File>
+    <File md5="57DD7D586D6CEFDD888CD15E2AADC46C" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/sv_zapatista.dds</File>
+    <File md5="AAD7DB64460C787C7107CCD675F3DE88" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/zapatista.fxsxml</File>
+    <File md5="21E24CF70AD8203286DF727D7D4B5B9E" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/zapatista.gr2</File>
+    <File md5="6E0A095905518B6F06B6C1A06E71BF40" import="1">Mods/Mexican Civilization (v 3)/Art/Unit art/zapatista_diff.dds</File>
+    <File md5="8CD95FF2CE08468DCADCC7257E867328" import="0">Mods/Mexican Civilization (v 3)/Lua/BonusOnPillaged.lua</File>
+    <File md5="AA7466F968A90AD6FD23AA372095F7D8" import="0">Mods/Mexican Civilization (v 3)/Lua/BuildingYieldFromArtifact.lua</File>
+    <File md5="76C0103036A9CD37A9BD51D9244C42E3" import="0">Mods/Mexican Civilization (v 3)/Lua/MexicoScripts.lua</File>
+    <File md5="5754B1BE6E37A2F9D04D9D4149E5CDDF" import="1">Mods/Mexican Civilization (v 3)/Lua/SaveUtils.lua</File>
+    <File md5="85322ABCCDDB8C9088AB232DE804C345" import="1">Mods/Mexican Civilization (v 3)/Music/GuadalupePeace.mp3</File>
+    <File md5="0A8DC2BD14ADB3747E03982B6998B35F" import="1">Mods/Mexican Civilization (v 3)/Music/GuadalupeWar.mp3</File>
+    <File md5="DE55174D748CAED4A34E0C4E684C4933" import="0">Mods/Mexican Civilization (v 3)/SQL/Mexico UA.sql</File>
+    <File md5="A30338C946CBD58866F0E1AD4C6F822B" import="1">Mods/Mexican Civilization (v 3)/SQL/ruraldef.sql</File>
+    <File md5="49FD2ABF1A60983FB9F3B6DC04626CC2" import="1">Mods/Mexican Civilization (v 3)/SQL/zapatista_def.sql</File>
+    <File md5="E750EF6124BA4C9926E7F4FB819E6BCF" import="0">Mods/Mexican Civilization (v 3)/XML/Buildings/Mexico_BuildingClasses.xml</File>
+    <File md5="781D25F70A52E862E5F475DECADE5182" import="0">Mods/Mexican Civilization (v 3)/XML/Buildings/Mexico_Buildings.xml</File>
+    <File md5="835E98998A13546AFBC04EFCA29D52AC" import="0">Mods/Mexican Civilization (v 3)/XML/Civilizations/Mexico_Civilizations.xml</File>
+    <File md5="39D9C232824C915C502A7A3B486C37F9" import="0">Mods/Mexican Civilization (v 3)/XML/Civilizations/Mexico_Strategic.xml</File>
+    <File md5="FA88B386AE31F530CAC709A6F3F39503" import="0">Mods/Mexican Civilization (v 3)/XML/GameInfo/Mexico_TSL.xml</File>
+    <File md5="84B8BB9B1D29585D1975B40F1DB4A1DE" import="0">Mods/Mexican Civilization (v 3)/XML/GameInfo/Mexico_IconTextureAtlases.xml</File>
+    <File md5="53F11885DA4DB7C86CD29C7A769D9F23" import="0">Mods/Mexican Civilization (v 3)/XML/GameInfo/Mexico_Traits.xml</File>
+    <File md5="8F839743DB8C20B9D7E290350A59C121" import="0">Mods/Mexican Civilization (v 3)/XML/GameInfo/Mexico_Music.xml</File>
+    <File md5="FEB060F306B339D9271FC14F3046B1D2" import="0">Mods/Mexican Civilization (v 3)/XML/Leaders/Mexico_Leader.xml</File>
+    <File md5="A93B9C3DA87971B64C01E3FED7977652" import="0">Mods/Mexican Civilization (v 3)/XML/Text/Mexico_Text.xml</File>
+    <File md5="74AC9EBB419B9ABB29BA5E7E939E11A0" import="0">Mods/Mexican Civilization (v 3)/XML/Units/Mexico_Units.xml</File>
+    <File md5="79E4A77D0A2A39209C9233DEAB5E3B4D" import="0">Mods/Mexican Civilization (v 3)/XML/Units/Mexico_UnitPromotions.xml</File>
+	
+	
+	
+	<File md5="27FCA688E5F1499678ED13368B9BC204" import="1">Mods/More Luxuries (v 155)/Art/Font Icon Atlas/fonticons_newluxuries.dds</File>
+    <File md5="9D6EBC1E2A1A35AA1C15C8C746759549" import="1">Mods/More Luxuries (v 155)/Art/Icon Atlas/NewLuxuries_ResourceAtlas256.dds</File>
+    <File md5="1609FDC8E77F7B1EDF1DE08D919043CA" import="1">Mods/More Luxuries (v 155)/Art/Icon Atlas/NewLuxuries_ResourceAtlas45.dds</File>
+    <File md5="E24E28FD873D99C7FBDFB66F5346CABC" import="1">Mods/More Luxuries (v 155)/Art/Icon Atlas/NewLuxuries_ResourceAtlas64.dds</File>
+    <File md5="569918FCB1B3B22DE92DE8F9A204C4FF" import="1">Mods/More Luxuries (v 155)/Art/Icon Atlas/NewLuxuries_ResourceAtlas80.dds</File>
+    <File md5="849FEEA5550DAB3E58659A829664F47F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral.fxsxml</File>
+    <File md5="3E40EF6CEAB8E1D1D2632E9EDD87BFDC" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral.gr2</File>
+    <File md5="59D2CCAF4E7BAD7C0AE8DB5632E2DD9D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral_built.gr2</File>
+    <File md5="CA665E4DB51AE715C2897958D87AD26D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral_diff.dds</File>
+    <File md5="DA2A68FF6214EAB606278BB281988B76" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral_industrial.fxsxml</File>
+    <File md5="52345BFF0D72D24895B90AA9F21839DF" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral_industrial.gr2</File>
+    <File md5="B8BCDEB07AACA906DA688DB5E8210F23" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral_industrial_built.gr2</File>
+    <File md5="18B1534F6314796D3B46F81E831B8AFF" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/coral_sref.dds</File>
+    <File md5="2C8A798537EC5EFC631820F916337527" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/decal_coralreef_d.dds</File>
+    <File md5="8F51DE554797DF2E8F941053EF5E03BF" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/decal_coralreef_h.dds</File>
+    <File md5="CC71CD5E32505C42E30D827C686FAD21" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/decal_coralreef_s.dds</File>
+    <File md5="B23B6FD26F9A4D91BCBA261F76412829" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coral/sv_coral.dds</File>
+    <File md5="253A6491CBF0E8E56A60150E874803B7" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/hb_ind_mine_jade.fxsxml</File>
+    <File md5="05BCA8CFBA07D3E25600EEDCA581787D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/hb_ind_mine_jade.gr2</File>
+    <File md5="515B0C45A548DD87B49C8AD473DA6B87" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/hb_med_mine_jade.fxsxml</File>
+    <File md5="D473778E1D9DB51D4ED90B572E08A839" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/hb_med_mine_jade.gr2</File>
+    <File md5="8777A4301B8EA04F13CB667DF7B29F85" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/ind_mine_jade.fxsxml</File>
+    <File md5="6656E369162F82135BE1A2302C3CDE34" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/ind_mine_jade.gr2</File>
+    <File md5="4C315F97649D735CC6BFCC49C58DEDEB" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/jade.fxsxml</File>
+    <File md5="D93408C959D64F83508C3BDDE7948A1B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/jade.gr2</File>
+    <File md5="6C547FBFA8F02CDAD68A24097B80352B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/jade_diff.dds</File>
+    <File md5="45DF36B800344E3A5DF169248BD50612" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/jade_mine_decal_d.dds</File>
+    <File md5="C77D0C06C35486B9DF33E5AF717F2EF1" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/jade_rubble_diff.dds</File>
+    <File md5="A68DA5D4C1B6A6EF737D6EB30661B93F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/med_mine_jade.fxsxml</File>
+    <File md5="801F958183A97DD86873DB5DE57D128E" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/med_mine_jade.gr2</File>
+    <File md5="E6E1B154D29BBF6B07C53C6556A0886B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/pl_ind_mine_jade.fxsxml</File>
+    <File md5="E47B66CF1D99ADB9E98BCDBD07EE9A49" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/pl_ind_mine_jade.gr2</File>
+    <File md5="EA9CC6FB9826A5065DED5885777F8F9B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/pl_jade_mine_decal_d.dds</File>
+    <File md5="E32A63990DDF07DD99032618C0EB76FD" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/pl_med_mine_jade.fxsxml</File>
+    <File md5="67957836E6CD79C9A5185BE117874B7E" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/pl_med_mine_jade.gr2</File>
+    <File md5="8BE69AECA754F8A3C437EC7771D4AE7D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Jade/sv_jade.dds</File>
+    <File md5="51DC67899AE0FEBFB906DC214482BF0A" import="1">Mods/More Luxuries (v 155)/Art/Font Icon Atlas/FontIcons_NewLuxuries.ggxml</File>
+    <File md5="357711EC5102CCBCF9C89D4EE308188C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/amber.fxsxml</File>
+    <File md5="E686E86BC9C843F4CC7EBDAE5CB29805" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/amber.gr2</File>
+    <File md5="7A575BF68828F0FAB12ECC26C8847511" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/amber_diff.dds</File>
+    <File md5="0CCEEAB2C0FB223C494EADD863217DF3" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/amber_mine_decal_d.dds</File>
+    <File md5="4D98627500FD2872AD1753D9617C2C41" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/amber_rubble_diff.dds</File>
+    <File md5="EF51E8C263FFDF4DE8F24C6E3A839077" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/hb_ind_mine_amber.fxsxml</File>
+    <File md5="ED8EB35637B733162F8EE1A090D2C7C2" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/hb_ind_mine_amber.gr2</File>
+    <File md5="46B4B88D1589B4CE621F15ADC4ECBB86" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/hb_med_mine_amber.fxsxml</File>
+    <File md5="057E9472236A554ABF0E926CDB3D40AC" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/hb_med_mine_amber.gr2</File>
+    <File md5="80A018BF9F19824D56D264D2CB8A9627" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/ind_mine_amber.fxsxml</File>
+    <File md5="855C87F2A70E4AF83E4E686BC1812AFC" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/ind_mine_amber.gr2</File>
+    <File md5="E1A068F19E708424B0D9532CD16B802B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/med_mine_amber.fxsxml</File>
+    <File md5="E985B6B454A7A384F9142DE801C3B098" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/med_mine_amber.gr2</File>
+    <File md5="F9D6D75597AF4F8CFEB6677FD80CF9D3" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/pl_amber_mine_decal_d.dds</File>
+    <File md5="F2C838CFF1F5780036039321CE6734B6" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/pl_ind_mine_amber.fxsxml</File>
+    <File md5="712A880A2D4ED2A5AB5000B42682B82C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/pl_ind_mine_amber.gr2</File>
+    <File md5="88CB2967A63CA21E6F5CC9F1A51CD212" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/pl_med_mine_amber.fxsxml</File>
+    <File md5="D5C9A955790F1DEFE91BB1740C2170A7" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/pl_med_mine_amber.gr2</File>
+    <File md5="C93BE7663837FF07E1B7884FAA669B71" import="1">Mods/More Luxuries (v 155)/Art/Luxury Amber/sv_amber.dds</File>
+    <File md5="BBA2CED9FB2A1F8502FA3323B43CE3F4" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/coffee_diff.dds</File>
+    <File md5="DFA1DFEEBAB00C9F1643D57E0E38BFF7" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/coffee_vineyard_diff.dds</File>
+    <File md5="9E3ACF035B444A3EC62437A4A12B2641" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/hb_plantation_ind_coffee.fxsxml</File>
+    <File md5="11EBAC3C409792122333FA7DC49DCA1B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/hb_plantation_ind_coffee.gr2</File>
+    <File md5="F4A4E0272BB4C84E2E400302DB661CD1" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/hb_plantation_mid_coffee.fxsxml</File>
+    <File md5="232FDD31F9D29B36E32619D79DE82F16" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/hb_plantation_mid_coffee.gr2</File>
+    <File md5="F282FB6792392C3DC30A4F4AB711936A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/plantation_ind_coffee.fxsxml</File>
+    <File md5="EDC9886CB2F38AE8D1367B96D7964BB3" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/plantation_ind_coffee.gr2</File>
+    <File md5="D7B08012E2875AFF0ADA4BC2034FE60F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/plantation_mid_coffee.fxsxml</File>
+    <File md5="A14F286D2798437C888689C7CF771027" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/plantation_mid_coffee.gr2</File>
+    <File md5="ECF5DB61DFDE7CFE0AC52D6B74DFDD41" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/pl_coffee_diff.dds</File>
+    <File md5="774E1DE446E7FDC86E7778BF078DA884" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/pl_plantation_ind_coffee.fxsxml</File>
+    <File md5="560F6B234978677166054C25CA74F6DB" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/pl_plantation_ind_coffee.gr2</File>
+    <File md5="008EF0EAE6D077ADC63CC2F4A551207B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/pl_plantation_mid_coffee.fxsxml</File>
+    <File md5="1C3EF459E36D128BBB0A7233E9BFF97D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/pl_plantation_mid_coffee.gr2</File>
+    <File md5="0FDB69EC78A6B30EE74E622569AE65F0" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/resource_coffee.fxsxml</File>
+    <File md5="0E0AD7F18B45FF68D25752AD1A880EA5" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/resource_coffee.gr2</File>
+    <File md5="AC1351336843C9C834A4D8FCA1D7CD35" import="1">Mods/More Luxuries (v 155)/Art/Luxury Coffee/sv_coffee.dds</File>
+    <File md5="BB4FE68429C16C5ADE57DE4CAECEFD14" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/hb_ind_mine_lapis.fxsxml</File>
+    <File md5="26270D5F051071CE5D8FA942545DEDA3" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/hb_ind_mine_lapis.gr2</File>
+    <File md5="F9C2D84B084F394F0CE23E94FC2770FC" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/hb_med_mine_lapis.fxsxml</File>
+    <File md5="994EA0679FC75D6E4281FEAC8939557A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/hb_med_mine_lapis.gr2</File>
+    <File md5="CB6B8FB501CCCD92FE326DE38671D082" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/ind_mine_lapis.fxsxml</File>
+    <File md5="8203EB7EE32A028326483F9310C6F2FD" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/ind_mine_lapis.gr2</File>
+    <File md5="1F3BBB98DB6AD2F744E3E6EDFC918646" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/lapis.fxsxml</File>
+    <File md5="5A86A6DCA229CF1E593E052186167B84" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/lapis.gr2</File>
+    <File md5="F7C5A8CF9E60C94F12C0A93A066AF2D4" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/lapis_decal_diff.dds</File>
+    <File md5="5D2999410458BC76005D7CB116779D35" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/lapis_ore_diff.dds</File>
+    <File md5="6F11D154B827447B0F7774A9A2F47694" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/lapis_ore_sref.dds</File>
+    <File md5="349E9F64EA6C817E711865FE9FDDB729" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/lapis_rubble_diff.dds</File>
+    <File md5="7F0CCB4847675C17DDD591801209392A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/med_mine_lapis.fxsxml</File>
+    <File md5="C3AF97E4CA1089BA7FD72D3378AD6180" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/med_mine_lapis.gr2</File>
+    <File md5="D1C2FD079D78E69225F45ABEE7D5F830" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/mine_lapis_decal_d.dds</File>
+    <File md5="08A18C6ECC616E89D41E421BB6E4B1A4" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/pl_ind_mine_lapis.fxsxml</File>
+    <File md5="F1576CC9032CDCD9EB479521A0ACD4CD" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/pl_ind_mine_lapis.gr2</File>
+    <File md5="8EBFF2830A42C6FA83F1F7475E014DDA" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/pl_med_mine_lapis.fxsxml</File>
+    <File md5="3DAD8D6CDF4E638A36150ADDE18A01C5" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/pl_med_mine_lapis.gr2</File>
+    <File md5="4B31E7A433C6E98D3CE6ED7B2AF9CC98" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/pl_mine_lapis_decal_d.dds</File>
+    <File md5="1660F5E89324359A91D24C9CE4F4E16F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Lapis Lazuli/sv_lapis.dds</File>
+    <File md5="0DAD2C23B15251E76BB786D5D2135795" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/olive.fxsxml</File>
+    <File md5="A158848F582A1790C935786E20E2BC7B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/olive.gr2</File>
+    <File md5="5FE25879D2520832E56E69AE6C562C04" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/olive_trees_diff.dds</File>
+    <File md5="D9BB5E8260EF847DBEF9370EC510571D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/olive_trees_sref.dds</File>
+    <File md5="696B5ADC18F6760C2BFE50FDCEB2BCBD" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/pil_olive_trees_diff.dds</File>
+    <File md5="DCC6311389204966859C5067A9E41796" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_ind_olive.fxsxml</File>
+    <File md5="9BAC5D0EF28FBCA72AC7422E370EBC1B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_ind_olive.gr2</File>
+    <File md5="BBFA52863550BE179A40370261BA6D4C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_ind_olive_hb.fxsxml</File>
+    <File md5="0FA08D3AAD1EE5E4EE333BEFBC6CC4E2" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_ind_olive_hb.gr2</File>
+    <File md5="F37DF6ACCD5EB81C813CFDC3EA5F1215" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_ind_olive_pil.fxsxml</File>
+    <File md5="610D8FDEB75EC2C92C9607F540288B86" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_ind_olive_pil.gr2</File>
+    <File md5="8C3079FECB81606498F772642D31CE4D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_mid_olive.fxsxml</File>
+    <File md5="06B91EA5F531D381CDC309249EB99D60" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_mid_olive.gr2</File>
+    <File md5="A54B5578958DC9DCFAA3421406F7996C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_mid_olive_hb.fxsxml</File>
+    <File md5="31D68A28D72B03E6FC9B1CC048AD1235" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_mid_olive_hb.gr2</File>
+    <File md5="ADAED74AB5F202B732DFE223665C81CF" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_mid_olive_pil.fxsxml</File>
+    <File md5="33B572C0676E163B403739B88B391A4E" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/plantation_mid_olive_pil.gr2</File>
+    <File md5="5B833D1724A528917290D267A6EC074F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Olives/sv_olive.dds</File>
+    <File md5="1890B9DB576C52687CD3CA802CAE799B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/hb_plantation_ind_perfume.fxsxml</File>
+    <File md5="A448CD7AEDA45D05AD6DE50F2952224B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/hb_plantation_ind_perfume.gr2</File>
+    <File md5="DF4AE5E65461576302A8CA242640A071" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/hb_plantation_mid_perfume.fxsxml</File>
+    <File md5="AAE0FCB7F2B034F4D5689B274745B127" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/hb_plantation_mid_perfume.gr2</File>
+    <File md5="4B13C59F695EDF6D32D282B13AC1F99C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/perfume_diff.dds</File>
+    <File md5="EA56313C5E929369A92D9BE47358D33A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/plantation_ind_perfume.fxsxml</File>
+    <File md5="BE0419D45DAFF82493F37F0B122F4BFA" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/plantation_ind_perfume.gr2</File>
+    <File md5="3FCEA66078F55EC8FA94B918E7753154" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/plantation_mid_perfume.fxsxml</File>
+    <File md5="3311513849E40FA45B6944D1789D38D6" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/plantation_mid_perfume.gr2</File>
+    <File md5="B5C82F8EC3DA23A98E0711B292750366" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/pl_perfume_diff.dds</File>
+    <File md5="08776CDAF12A1094038F87C765B5CFA2" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/pl_plantation_ind_perfume.fxsxml</File>
+    <File md5="F4D9EF3D17984446690F21AFDA389D32" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/pl_plantation_ind_perfume.gr2</File>
+    <File md5="270F33DD0A246A73CD1E8DEA1B2D54AD" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/pl_plantation_mid_perfume.fxsxml</File>
+    <File md5="21A9E591CCC236D33782A18FD44A271F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/pl_plantation_mid_perfume.gr2</File>
+    <File md5="33B0DDBC3C7D9D47A9A950478F20A1AE" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/resource_perfume.fxsxml</File>
+    <File md5="C3F98D8414EA21AC60E73866686A8276" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/resource_perfume.gr2</File>
+    <File md5="6192AC182719E4DA1AE6E45FF331524A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Perfume/sv_perfume.dds</File>
+    <File md5="C8E89831317D8F6AFEFFCD6E5F5E2A0E" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/hb_plantation_ind_tea.fxsxml</File>
+    <File md5="A946699A2D65B6025683865A70713A74" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/hb_plantation_ind_tea.gr2</File>
+    <File md5="A708B523B13F1A67306A04012A157479" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/hb_plantation_mid_tea.fxsxml</File>
+    <File md5="25DDEFE256B52C1B52A267A8C0EF76D2" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/hb_plantation_mid_tea.gr2</File>
+    <File md5="0D47BE61F62C3129DDF5E057B8CBEE19" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/plantation_ind_tea.fxsxml</File>
+    <File md5="59DBB686A4E562A57704300EE419148A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/plantation_ind_tea.gr2</File>
+    <File md5="3F2154C0C03F2EE40E5C8F5952DCCF9F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/plantation_mid_tea.fxsxml</File>
+    <File md5="AA752A5F3CEA74D6FC55F02332B09F2B" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/plantation_mid_tea.gr2</File>
+    <File md5="0102C8B1889B12FD021A874A84583E95" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/pl_plantation_ind_tea.fxsxml</File>
+    <File md5="CF676AA4D936E0CABDA3FEF304F5E7D3" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/pl_plantation_ind_tea.gr2</File>
+    <File md5="322DE1FF7CE00093ABCE954AECD40431" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/pl_plantation_mid_tea.fxsxml</File>
+    <File md5="58348106DD0F88EE0EC2B0A97603E2B0" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/pl_plantation_mid_tea.gr2</File>
+    <File md5="8F593C6FA8073AED9DFDBD8B11ECD563" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/pl_tea_diff.dds</File>
+    <File md5="6CD98BD4A90F50D4B2E776F9D43B04FA" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/resource_tea.fxsxml</File>
+    <File md5="00D12FD03500EB6CBDFB89F9CBC98004" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/resource_tea.gr2</File>
+    <File md5="577CE479F35CC349697A3973B27FAA13" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/sv_tea.dds</File>
+    <File md5="810B57D57C16FFF33B830074C266208C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tea/tea_diff.dds</File>
+    <File md5="8261FEC2C4A460886246E4C9B864056D" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/hb_plantation_ind_tobacco.fxsxml</File>
+    <File md5="AB901C646A3D06790D20CF0B9374A910" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/hb_plantation_ind_tobacco.gr2</File>
+    <File md5="F37CA5B96F1EF6030CFA247D45B21443" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/hb_plantation_mid_tobacco.fxsxml</File>
+    <File md5="2A6D3AED0E009C393DD3B8F0382CCA57" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/hb_plantation_mid_tobacco.gr2</File>
+    <File md5="2FA4F804D1286AF73068C16B2F55FB08" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/plantation_ind_tobacco.fxsxml</File>
+    <File md5="5CD66D5BB9E4B1DD21118A9D2F4B953F" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/plantation_ind_tobacco.gr2</File>
+    <File md5="B9FEBD71F29EDC2A527C77006BABAAAF" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/plantation_mid_tobacco.fxsxml</File>
+    <File md5="5C731CBB41B66C7E14C7EDF9BC101292" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/plantation_mid_tobacco.gr2</File>
+    <File md5="67A69243A06C10305EB36113C5D4C4F5" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/pl_plantation_ind_tobacco.fxsxml</File>
+    <File md5="19970DA6F93D674B799F44934F953DD4" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/pl_plantation_ind_tobacco.gr2</File>
+    <File md5="0B0164F1CC3E7B4430FA47937DC9806A" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/pl_plantation_mid_tobacco.fxsxml</File>
+    <File md5="1189D9C0B5DA0A9C3889F51863E55C97" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/pl_plantation_mid_tobacco.gr2</File>
+    <File md5="DA8408660B1CD74801D7F8CC2B0B4166" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/pl_tobacco_diff.dds</File>
+    <File md5="39B5BB9B82EF081F68FC04C4C12CE1A2" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/resource_tobacco.fxsxml</File>
+    <File md5="0288D68DB9F56BE9986C229E04A839BC" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/resource_tobacco.gr2</File>
+    <File md5="EB8B7CC0C6161DD79C214CB757A3CC56" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/sv_tobacco.dds</File>
+    <File md5="0A0B31996D508E6A8246D65F0868697C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/tobacco_diff.dds</File>
+    <File md5="46F2B1292CE6D32003016F9292E0407C" import="1">Mods/More Luxuries (v 155)/Art/Luxury Tobacco/tobacco_sref.dds</File>
+    <File md5="5B55989F0254721E99E7971B7C4BF6AE" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/hb_plantation_ind_sugar_alt.fxsxml</File>
+    <File md5="F50EF8FCE55032DCEBBC219F7CFBCC83" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/hb_plantation_ind_sugar_alt.gr2</File>
+    <File md5="161E3A1C344876EBD58987207E908576" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/hb_plantation_mid_sugar_alt.fxsxml</File>
+    <File md5="108A88A8078A48EC4E91956F6CD9722D" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/hb_plantation_mid_sugar_alt.gr2</File>
+    <File md5="B39B250B9F0A1E93AC2103262C6656C4" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/plantation_ind_sugar_alt.fxsxml</File>
+    <File md5="13638012E23A9BDE1D9DF81135FC9090" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/plantation_ind_sugar_alt.gr2</File>
+    <File md5="ADD6238C66ED4B588B9813EE03E92495" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/plantation_mid_sugar_alt.fxsxml</File>
+    <File md5="7524CE6E18AEB92717FF4B56BE6F2F87" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/plantation_mid_sugar_alt.gr2</File>
+    <File md5="78F30B5A7D0F5A11AD2A1CC9328A39D8" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/pl_plantation_ind_sugar_alt.fxsxml</File>
+    <File md5="F3BB2F1EAD2B1110799F652FD9613357" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/pl_plantation_ind_sugar_alt.gr2</File>
+    <File md5="CFB331790CC2A0E69BA6496724F0CB04" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/pl_plantation_mid_sugar_alt.fxsxml</File>
+    <File md5="70C544131061A1DE313752D9B7D40BEA" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/pl_plantation_mid_sugar_alt.gr2</File>
+    <File md5="2A72B831EB1D3921BF5EF2942597E8E7" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/resource_sugar_alt.fxsxml</File>
+    <File md5="BF1377774AB4A8A4740942E2A27F6DDA" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/resource_sugar_alt.gr2</File>
+    <File md5="1109181AC754DA8DFEB710DE9CBE4E82" import="1">Mods/More Luxuries (v 155)/Art/Update Sugar/sugar_alt_diff.dds</File>
+    <File md5="1B5904172C3E793F1480DDC1861170F1" import="1">Mods/More Luxuries (v 155)/Lua/AssignStartingPlots.lua</File>
+    <File md5="716A0C191B55499344A13A4F3EA66C51" import="1">Mods/More Luxuries (v 155)/Lua/Maps/Terra.lua</File>
+    <File md5="5A4D3AC0191CBB7B8949ACEE18A23DC8" import="0">Mods/More Luxuries (v 155)/XML/NewLuxuries_Art_Icons.xml</File>
+    <File md5="FACE73E1D43D1A7ACA05D8813D261E7F" import="0">Mods/More Luxuries (v 155)/XML/NewLuxuries_Art_Terrain.xml</File>
+    <File md5="6F74452D7B0124E6CE14D0687CB02AB2" import="0">Mods/More Luxuries (v 155)/XML/NewLuxuries_Resources.xml</File>
+    <File md5="0EB87C23ADCA46682BC9344E7177DA6D" import="0">Mods/More Luxuries (v 155)/XML/NewLuxuries_Text.xml</File>
+	<!--- ---------------------------------------------------------------------------------------------------------------- --->
+	
+	<!--- ---------------------------------------------------------------------------------------------------------------- --->
+	<File md5="B37B6E667E885957A9F07B630A2D6586" import="0">Mods/No Quitters Mod (v 11)/buildings/AmphitheaterChanges.xml</File>
+    <File md5="F48713C110AF92F27A3781C8E8B9ADD1" import="0">Mods/No Quitters Mod (v 11)/buildings/BroadcastTowerChanges.xml</File>
+    <File md5="F27EBD9815CF31312EB124D8AEBA8AA0" import="0">Mods/No Quitters Mod (v 11)/buildings/CandiChanges.xml</File>
+    <File md5="C6B19107AD63B3FF9A931949C9108C8C" import="0">Mods/No Quitters Mod (v 11)/buildings/FaluGruva.xml</File>
+    <File md5="A8DA3955CC02CE60198AB3FD8F837C44" import="0">Mods/No Quitters Mod (v 11)/buildings/GardenChanges.xml</File>
+    <File md5="C384AF62AAD954079A049C58808D5C50" import="0">Mods/No Quitters Mod (v 11)/buildings/GranaryChanges.xml</File>
+    <File md5="5923FA782213820174D3B9F659625178" import="0">Mods/No Quitters Mod (v 11)/buildings/MintChanges.xml</File>
+    <File md5="9443800F8C6B07376A91D5CD2B987E13" import="0">Mods/No Quitters Mod (v 11)/buildings/MuseumChanges.xml</File>
+    <File md5="FBF65B703082B61F08FB4709E549AF2F" import="0">Mods/No Quitters Mod (v 11)/buildings/ObservatoryChanges.xml</File>
+    <File md5="21F722696D132754E97E7A372E491D10" import="0">Mods/No Quitters Mod (v 11)/buildings/Observatory_SQL.sql</File>
+    <File md5="95EBB166AFA3942FFBEF8D5A54DF47E3" import="0">Mods/No Quitters Mod (v 11)/buildings/OperaHouseChanges.xml</File>
+    <File md5="3732C7B5BB84C9B520D5C302BDA79DE1" import="0">Mods/No Quitters Mod (v 11)/buildings/RoyalLibraryChanges.xml</File>
+    <File md5="5F6127197DFD5ACDD14E386C5199CFB5" import="0">Mods/No Quitters Mod (v 11)/buildings/StoneworksChanges.xml</File>
+    <File md5="70F22959194F62CE1269778AA5E5526D" import="0">Mods/No Quitters Mod (v 11)/buildings/WindmillChanges.xml</File>
+    <File md5="DBFE3D8BA1FA6DDC298452E41EE800B5" import="0">Mods/No Quitters Mod (v 11)/civs/AmericaChanges.xml</File>
+    <File md5="ED7F310A9F7DC11539F9E6B7678E05D0" import="0">Mods/No Quitters Mod (v 11)/civs/AssyriaChanges.xml</File>
+    <File md5="B7A30EB2FD5BA90F16959B707E5CFAA2" import="0">Mods/No Quitters Mod (v 11)/civs/BabylonChanges.xml</File>
+    <File md5="C8AF4BE1BFD1BB075B611F20F02EA80B" import="0">Mods/No Quitters Mod (v 11)/civs/BrazilChanges.xml</File>
+    <File md5="3E8D2BB6E26964C4D808449BB4C83CC3" import="0">Mods/No Quitters Mod (v 11)/civs/CarthageChanges.xml</File>
+    <File md5="7056FA992A7F284D5E900120E3A7B05F" import="0">Mods/No Quitters Mod (v 11)/civs/ChinaChanges.sql</File>
+    <File md5="284426341039FC9320D2199F3F2D7ED7" import="0">Mods/No Quitters Mod (v 11)/civs/ChinaChanges.xml</File>
+    <File md5="1DACC9DF539770206EDD54598A520F8B" import="0">Mods/No Quitters Mod (v 11)/civs/DenmarkChanges.sql</File>
+    <File md5="A9D174C131D78A3322C9BD1E05A9EFD4" import="0">Mods/No Quitters Mod (v 11)/civs/DenmarkChanges.xml</File>
+    <File md5="C6FA0D1668B3493A81A8DA6DA5CAD7E3" import="0">Mods/No Quitters Mod (v 11)/civs/EthiopiaChanges.xml</File>
+    <File md5="5BDA184FBB8BB75FE68A48DAD156E165" import="0">Mods/No Quitters Mod (v 11)/civs/FranceChanges.xml</File>
+    <File md5="F80097A9B513324C420C0D0E37326BE8" import="0">Mods/No Quitters Mod (v 11)/civs/France_SQL.sql</File>
+    <File md5="6A9D9ED7E2C9C7B492DE3E1DC69276FC" import="0">Mods/No Quitters Mod (v 11)/civs/GermanyChanges.xml</File>
+    <File md5="E1A4F0F003937D0670CB1921F7D77C24" import="0">Mods/No Quitters Mod (v 11)/civs/IndonesiaChanges.xml</File>
+    <File md5="2EA04D180F1A0B24786C80F76EDFEBE5" import="0">Mods/No Quitters Mod (v 11)/civs/IroquoisChanges.xml</File>
+    <File md5="D8C01A1307C7120A3D4928E21B140C65" import="0">Mods/No Quitters Mod (v 11)/civs/JapanChanges.xml</File>
+    <File md5="C8A24BDB204AF3F0D4E7FE77E18393F1" import="0">Mods/No Quitters Mod (v 11)/civs/KoreaChanges.xml</File>
+    <File md5="F4B3B8706194A90E1CF1E88F00501A80" import="0">Mods/No Quitters Mod (v 11)/civs/MoroccoChanges.xml</File>
+    <File md5="C4B4E54CADF493F852166FC731E0D72E" import="0">Mods/No Quitters Mod (v 11)/civs/MoroccoChanges.sql</File>
+    <File md5="987927DB83076DC3CB73E4A47C368A5A" import="0">Mods/No Quitters Mod (v 11)/civs/NetherlandsChanges.sql</File>
+    <File md5="A2BF3E8A2BE8099127BA64DCC54DC1C8" import="0">Mods/No Quitters Mod (v 11)/civs/NetherlandsChanges.xml</File>
+    <File md5="3D620193E2D073D1819139B414555A43" import="0">Mods/No Quitters Mod (v 11)/civs/OttomanChanges.sql</File>
+    <File md5="AEB54C82D3DE43785C413B148CC1E48E" import="0">Mods/No Quitters Mod (v 11)/civs/OttomanChanges.xml</File>
+    <File md5="3877861A8CA135EB1BA78232FF1DAB7E" import="0">Mods/No Quitters Mod (v 11)/civs/PolandChanges.xml</File>
+    <File md5="B2AE94142ABDDE2D528505D823C33679" import="0">Mods/No Quitters Mod (v 11)/civs/PolynesiaChanges.xml</File>
+    <File md5="8E49E355F84070AC69E05FF4F7D76C94" import="0">Mods/No Quitters Mod (v 11)/civs/PortugalChanges.xml</File>
+    <File md5="35654279B7E456830708CDD540EFF67D" import="0">Mods/No Quitters Mod (v 11)/civs/RemoveVenice.xml</File>
+    <File md5="0B7A7DD87DADA6DB60B7092A48DA44A4" import="0">Mods/No Quitters Mod (v 11)/civs/SonghaiChanges.xml</File>
+    <File md5="704BE0243894B2605CE692E7984EA830" import="0">Mods/No Quitters Mod (v 11)/civs/SpainChanges.xml</File>
+    <File md5="4696630052496DC07A91930AB7AE6333" import="0">Mods/No Quitters Mod (v 11)/civs/SwedenChanges.sql</File>
+    <File md5="DD0E2096F68C25100781E7DF5E735E59" import="0">Mods/No Quitters Mod (v 11)/civs/SwedenChanges.xml</File>
+    <File md5="EA2B64DEA8046E22A9DC1E8B95F8DE82" import="0">Mods/No Quitters Mod (v 11)/civs/VeniceChanges.xml</File>
+    <File md5="4D8FA443C08E1CD26FE763EE9266FA62" import="1">Mods/No Quitters Mod (v 11)/CvGameCore_Expansion2.pdb</File>
+    <File md5="CE8DED491BD6AFB898C80A89B0F772BF" import="0">Mods/No Quitters Mod (v 11)/features/LakeChanges.xml</File>
+    <File md5="D1B53BC3D1293649F3CDC8A0F02B65FC" import="0">Mods/No Quitters Mod (v 11)/gameplay/AdjustKnownTechCostDiscount.xml</File>
+    <File md5="098B710BBC2CAD45EE68005320BCE9B0" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_Automation_Resets_TurnTimer.xml</File>
+    <File md5="0A6DF5D6A91852969469358666CD37D9" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_AutoPause_on_Active_Disconnect.xml</File>
+    <File md5="4D8F6F1E2294BB49FCF53540E019CBCF" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_Binomial_RNG_Combat.xml</File>
+    <File md5="9E22A4FF747162DFEABFBBE7E8758D5D" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_Capitol_Gifting.xml</File>
+    <File md5="EE6A6A5D8EC4E0BE248B11475B164542" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_No_Tech_Cost_Total_Known_Team_Modifier.xml</File>
+    <File md5="38D02F944A4B021C55AF3597F5E49723" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_Randomized_Turn_Activation.xml</File>
+    <File md5="E76E1F3CCCDDB38FCBA1D179BE698FF6" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_Ranged_Counterattacks.xml</File>
+    <File md5="86D9304804B2D89E8CC18F9151C34CEB" import="0">Mods/No Quitters Mod (v 11)/gameplay/CIV5GameOptions_Relative_TurnTimers.xml</File>
+    <File md5="8257E75C2CBAD69DF4661DE835C6888D" import="0">Mods/No Quitters Mod (v 11)/gameplay/FlatlandCityExtraFood.xml</File>
+    <File md5="9D45FED6F2C9238A98937C937329EE3A" import="0">Mods/No Quitters Mod (v 11)/gameplay/GoodyHutChanges.xml</File>
+    <File md5="5E6F195ECEC029016EF413575CE7C7FF" import="1">Mods/No Quitters Mod (v 11)/CvGameCore_Expansion2.dll</File>
+    <File md5="24D4E58F754E62FBCA987DBA52056E7A" import="0">Mods/No Quitters Mod (v 11)/gameplay/InlandSeaChanges.xml</File>
+    <File md5="D83EF6B75F6D8A591D1AB0AF35E4F2B7" import="0">Mods/No Quitters Mod (v 11)/gameplay/RemoveRAs.xml</File>
+    <File md5="89728A4626462E96811DF74EFADF427F" import="0">Mods/No Quitters Mod (v 11)/gameplay/RemoveUnitSupplyLimit.xml</File>
+    <File md5="E54A56CEB526DD09D8DE7D7A4FADE339" import="0">Mods/No Quitters Mod (v 11)/gameplay/ThemingBonusChanges.xml</File>
+    <File md5="F91D0D509F902FB0454CC92205E4E83F" import="0">Mods/No Quitters Mod (v 11)/gameplay/WetLandsRegion.xml</File>
+    <File md5="D90914874E676810AA82CFC60AEA706C" import="0">Mods/No Quitters Mod (v 11)/great_people/GreatEngineerChanges.xml</File>
+    <File md5="8D6BE785F103A481940F49CFF9C1A18E" import="0">Mods/No Quitters Mod (v 11)/great_people/GreatHumanitarian.xml</File>
+    <File md5="5A7B0E7C60D78E8A34E23911000F0A31" import="0">Mods/No Quitters Mod (v 11)/ideologies/autocracy/T1_EliteForces.xml</File>
+    <File md5="576BFE976643C50B24AC99F1B26AD055" import="0">Mods/No Quitters Mod (v 11)/ideologies/autocracy/T1_Fascism.xml</File>
+    <File md5="07BE4E884B36896F27F8E74314AC1077" import="0">Mods/No Quitters Mod (v 11)/ideologies/autocracy/T1_Mobilization.xml</File>
+    <File md5="50F21C0126E829C9449BDFE46D0F0540" import="0">Mods/No Quitters Mod (v 11)/ideologies/autocracy/T3_CultOfPersonality.xml</File>
+    <File md5="6577C7893AF992EAB91B875F5A873FF6" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T1_CovertAction.lua</File>
+    <File md5="F52AC7F004EB71630139ADC7A280F6FD" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T1_CovertAction.xml</File>
+    <File md5="A3B32321471F12E7E49C2FBA7BE712DA" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T1_CreativeExpression.xml</File>
+    <File md5="0107A8CC8AD237FC0AE57E283E52D0CF" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T1_EconomicUnion.lua</File>
+    <File md5="3FF3E152BF8CF633067EF0B343E2B0F0" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T1_EconomicUnion.sql</File>
+    <File md5="3DEB3D684B5EA6608002AED7A1FF4A15" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T1_EconomicUnion.xml</File>
+    <File md5="73D80ACFCAD3FCBF0E6BB0BA1C76741C" import="0">Mods/No Quitters Mod (v 11)/ideologies/freedom/T2_Urbanization.xml</File>
+    <File md5="6C87917A9B8CE363D7B3143AE797B51E" import="0">Mods/No Quitters Mod (v 11)/ideologies/IdeologyTriggerChanges.xml</File>
+    <File md5="3C467C49BE88DAD4C39774A903A4E9C0" import="0">Mods/No Quitters Mod (v 11)/ideologies/order/T2_CulturalRevolution.xml</File>
+    <File md5="FD8A7E23F0F9648EDFEDCB0386C4D9F5" import="0">Mods/No Quitters Mod (v 11)/ideologies/order/T2_PartyLeadership.xml</File>
+    <File md5="341ED4056F20D8E176B332A458ADFF1B" import="0">Mods/No Quitters Mod (v 11)/ideologies/order/T3_DictatorshipOfTheProletariat.sql</File>
+    <File md5="107D7359DFFDC73FB290B5BE81F48524" import="0">Mods/No Quitters Mod (v 11)/ideologies/order/T3_DictatorshipOfTheProletariat.xml</File>
+    <File md5="8196C068FA4A32044E96AA5D055F342A" import="0">Mods/No Quitters Mod (v 11)/ideologies/order/T3_IronCurtain.xml</File>
+    <File md5="B8C499C1A93E0D126D7685BEBD5A905F" import="0">Mods/No Quitters Mod (v 11)/improvements/CampsChanges.xml</File>
+    <File md5="4DF7E2BDCBE38F367E26C101B5F60906" import="0">Mods/No Quitters Mod (v 11)/improvements/CustomsHouseChanges.xml</File>
+    <File md5="7E5C19DBAFE929ED0DDA3E65878C26B2" import="0">Mods/No Quitters Mod (v 11)/improvements/FishingBoatsChanges.xml</File>
+    <File md5="F3C3971B45F478C909614E576D9AD297" import="0">Mods/No Quitters Mod (v 11)/improvements/ManufactoryChanges.xml</File>
+    <File md5="BCB6CA19CA5D5107326DEAB721E92061" import="0">Mods/No Quitters Mod (v 11)/improvements/PlantationChanges.xml</File>
+    <File md5="31390682C98AD552237564FBFB4246FB" import="0">Mods/No Quitters Mod (v 11)/religion/AllowExtraReligions.xml</File>
+    <File md5="DC691ECCFF0AC44C2071841E6D1F10C8" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/DalaiLama.xml</File>
+    <File md5="4378393CEB8E936B72EDF0D77529E051" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/DeusVult.sql</File>
+    <File md5="3816F498F3123019A04545C476F07EC1" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/DeusVult.xml</File>
+    <File md5="6571361BD8AB45D3260607CA390C5F07" import="0">Mods/No Quitters Mod (v 11)/buildings/Dharma.sql</File>
+    <File md5="F9E7B304491C0B9451A256ED578272D3" import="0">Mods/No Quitters Mod (v 11)/buildings/Dharma.xml</File>
+    <File md5="7F4C15F5742D34DC9996C148C7BD886E" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/JustWar.xml</File>
+    <File md5="53E40676A6DD980F1468056660A14DCB" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/PapalPrimacy.sql</File>
+    <File md5="3C62E363C04A048337D39826D10B5182" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/PapalPrimacy.xml</File>
+    <File md5="BEB17C05D08DEEDDA0BE8DCFDD031515" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/Pilgrimage.sql</File>
+    <File md5="6D4C30A522E5BBE18A87C1BFC38F8466" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/Pilgrimage.xml</File>
+    <File md5="847A4BA6E6CAFAEA11DA581A1EC8B977" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/PromisedLand.sql</File>
+    <File md5="3649DF6F57E755EE97C5817B73A7BA9C" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/PromisedLand.xml</File>
+    <File md5="1FB79250FCB138A46425C76DF06E4F22" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/UnityOfTheProphets.xml</File>
+    <File md5="4F5C83D4A3F9543FCA41B77ADF43AB62" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/Reliquary.xml</File>
+    <File md5="D066FD17280DEA8D7F4A95A199DC78EA" import="0">Mods/No Quitters Mod (v 11)/religion/enhancers/_RemoveOldEnhancers.xml</File>
+    <File md5="A65D768F0E92073F921537B81B04C9A6" import="0">Mods/No Quitters Mod (v 11)/religion/FaithPurchasingChanges.xml</File>
+    <File md5="6CFDA584D2D0C7564AE72DE43E273104" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Cathedrals.xml</File>
+    <File md5="EA953C6B7CB705C74A56B1B3071F96EB" import="0">Mods/No Quitters Mod (v 11)/religion/followers/DivineInspiration.xml</File>
+    <File md5="2A80121C485F33045B0D7736F89A57A4" import="0">Mods/No Quitters Mod (v 11)/religion/followers/FaithHealers.xml</File>
+    <File md5="D2D3DD42FBC921D7627DF327C370F62D" import="0">Mods/No Quitters Mod (v 11)/religion/followers/FeedTheWorld.xml</File>
+    <File md5="EDBBBA90823E52CA4C6058F9802BF1CC" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Gurdwaras.xml</File>
+    <File md5="4B644915074C5B61412CD167102A4492" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Guruship.xml</File>
+    <File md5="D11D989340D6DEBDD2B64476E40FB94E" import="0">Mods/No Quitters Mod (v 11)/religion/followers/HolyWarriors.xml</File>
+    <File md5="1D948A1CDBF90D0DDE48B479D2F533CE" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Madrassas.xml</File>
+    <File md5="25A6CFD34E59E3BDE8928507279DBCA6" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Mosques.xml</File>
+    <File md5="ABA6CA75C0D03AF851BD89674C821A1C" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Pagodas.xml</File>
+    <File md5="8861F58FE28C34FBBAB93D0BED45D0D9" import="0">Mods/No Quitters Mod (v 11)/religion/followers/LiturgicalDrama.xml</File>
+    <File md5="FC8F94B023B493C804F41F046367F85D" import="0">Mods/No Quitters Mod (v 11)/religion/followers/ReligiousCenter.xml</File>
+    <File md5="30DE1E9B4FFDEFFFC901C511AB7EF150" import="0">Mods/No Quitters Mod (v 11)/religion/followers/ReligiousCommunity.xml</File>
+    <File md5="D4953567BF1D0F4B75AD6963A0C7D21C" import="0">Mods/No Quitters Mod (v 11)/religion/followers/SacredWaters.xml</File>
+    <File md5="6B4FE5B3A73AFDE4D9E9DCA60B4EDEF6" import="0">Mods/No Quitters Mod (v 11)/religion/followers/SpiritualDialogue.xml</File>
+    <File md5="3761F1004AC2CD1A520055C0DD20110D" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Synagogues.xml</File>
+    <File md5="D731AE2B4E606DE66B7A2EFC606C1945" import="0">Mods/No Quitters Mod (v 11)/religion/followers/Basilicas.xml</File>
+    <File md5="CCC6BD8D84C27E8BCE1BC340BFDF3A3C" import="0">Mods/No Quitters Mod (v 11)/religion/followers/_RemoveOldFollowers.xml</File>
+    <File md5="D753FBA894165C53F0CA71AB40CA6E80" import="0">Mods/No Quitters Mod (v 11)/religion/founders/CeremonialBurial.xml</File>
+    <File md5="F34036D18A9EB806EE501AE728894110" import="0">Mods/No Quitters Mod (v 11)/religion/founders/ChurchProperty.xml</File>
+    <File md5="ABD2FB4302EA4A48910CDDFF1A533C6F" import="0">Mods/No Quitters Mod (v 11)/religion/founders/DefenderOfTheFaith.xml</File>
+    <File md5="48CBE29123F549213C7F7CF32ED9FFC0" import="0">Mods/No Quitters Mod (v 11)/religion/founders/InitiationRites.xml</File>
+    <File md5="1955F9BDB79F9871ABAE8DA66911CDB8" import="0">Mods/No Quitters Mod (v 11)/religion/founders/Messiah.xml</File>
+    <File md5="027DA181FEE6F2C99F267DF413167FD3" import="0">Mods/No Quitters Mod (v 11)/religion/founders/MissionaryZeal.sql</File>
+    <File md5="AAE8692D85A79C5DEA516072F90A7753" import="0">Mods/No Quitters Mod (v 11)/religion/founders/MissionaryZeal.xml</File>
+    <File md5="B673327E35BF11A986DC6BDEE27C9878" import="0">Mods/No Quitters Mod (v 11)/religion/founders/ShepherdAndFlock.sql</File>
+    <File md5="BBC4F623F986AF4542CB473FEE62291A" import="0">Mods/No Quitters Mod (v 11)/religion/founders/ShepherdAndFlock.xml</File>
+    <File md5="2387495673775C77C1B53F5A107D6B31" import="0">Mods/No Quitters Mod (v 11)/religion/founders/Tithe.xml</File>
+    <File md5="283A78119DC4DA68CA205161A60754C5" import="0">Mods/No Quitters Mod (v 11)/religion/founders/CharitableMissions.xml</File>
+    <File md5="C07A6E7D0344C00967023BEF5CF4655C" import="0">Mods/No Quitters Mod (v 11)/religion/founders/_RemoveOldFounders.xml</File>
+    <File md5="F5E4FEBEBB23F0A3E0AE06228B168C2C" import="0">Mods/No Quitters Mod (v 11)/religion/FoundingPantheonChanges.xml</File>
+    <File md5="EE3DA2BDA21436A748394B936F3D40EB" import="0">Mods/No Quitters Mod (v 11)/religion/InquisitorChanges.xml</File>
+    <File md5="B0CC282AD1C1D9F7CBD5ADA8EB66F5A6" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/AncestorWorship.xml</File>
+    <File md5="44F1CC3D6E6F226CC12BA2A80E2D3F9F" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/DesertFolklore.xml</File>
+    <File md5="87D6352E3D236A8CFE47C57ABA815D98" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/EarthMother.xml</File>
+    <File md5="389F9D55F7919C0FCC09ACF5ADB9A814" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/God-King.xml</File>
+    <File md5="26584D3894EE3AAE05C37A832C2025DB" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/GoddessOfFestivals.xml</File>
+    <File md5="77641FF1CF8C7CF980974E17700A48D3" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/GoddessOfTheHunt.xml</File>
+    <File md5="E08717FA9E30A7ACF8AE42C35C476DEC" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/GodOfTheSea.xml</File>
+    <File md5="C7F77CE4CB75B3FC1F3B50844117E8CA" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/MonumentToTheGods.xml</File>
+    <File md5="62BCABB730ECA0F53D8231F44D98C507" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/MysticRituals.xml</File>
+    <File md5="F89E98BF3BAA50510DCC9AA72E0B14EE" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/OceansBounty.xml</File>
+    <File md5="8834D758DC4764C63FD424D339F6A37C" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/OneWithNature.xml</File>
+    <File md5="528CB47561C61ECB6C1273FE5B419180" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/OralTradition.xml</File>
+    <File md5="4C7A9692C9B635F0471FD42365B93BF2" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/RainDancing.xml</File>
+    <File md5="A205CA22FD269B69E910E131554EB226" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/ReligiousIdols.xml</File>
+    <File md5="195830D9E29625E0357FD1015DF7FC08" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/RiteOfSpring.xml</File>
+    <File md5="EE03EC0FB92C913FFF693AE2287291F7" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/SacredPath.xml</File>
+    <File md5="5460DD65510D494031445AEAC44EAD0F" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/SpiritAnimals.xml</File>
+    <File md5="4C449BFC90E865611EFB66F44097A3D2" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/StoneCircles.xml</File>
+    <File md5="4AD6F226C8A41B1D446EEB9DFA5F6BCA" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/SunGod.xml</File>
+    <File md5="200706EDE62C8DAEEE5F6675D99C534F" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/VisionQuests.xml</File>
+    <File md5="28CA0A1619320F06F94EC244C20EEF82" import="0">Mods/No Quitters Mod (v 11)/religion/pantheons/_RemoveOldPantheons.xml</File>
+    <File md5="4F9BC283F42044EE4B3F8CE3F71F581C" import="0">Mods/No Quitters Mod (v 11)/religion/ProphetSpawnChanges.xml</File>
+    <File md5="736659C3D4C99BF709C9995E00625B7C" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/ApostolicPalace.xml</File>
+    <File md5="46ADB04C6AA5CB2105BC11652A03B100" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/SwordsToPlowshares.xml</File>
+    <File md5="2230C08051E893AB0A67AD0289006913" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/JesuitEducation.xml</File>
+    <File md5="2FA76D5D44B8559F24BB608802187017" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/HousesOfWorship.xml</File>
+    <File md5="10539FE41F5CCF2FEBC62A5E2E5F4A0A" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/ReligiousUnity.xml</File>
+    <File md5="3D5E559359ED06E37393DE2E4688BC30" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/UndergroundSect.xml</File>
+    <File md5="8CEDAA234217EEB39D015129A9C5CE35" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/SacredSites.xml</File>
+    <File md5="6AA4C3EFC32CEC3EC1BDA7062D3A51B9" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/WorldChurch.xml</File>
+    <File md5="70A521DC53418EE5755CEC507A1A1115" import="0">Mods/No Quitters Mod (v 11)/religion/reformations/_RemoveOldReformations.xml</File>
+    <File md5="9A50FF75F6CE10EEA9527E361BCEA429" import="0">Mods/No Quitters Mod (v 11)/resolutions/MoreFrequentVotes.xml</File>
+    <File md5="8A9C227217F62BBEAEA7632E901AD243" import="0">Mods/No Quitters Mod (v 11)/scoring_tweaks/Better_Score_Multipliers.xml</File>
+    <File md5="9D4C2E167980C603906133085E8E645E" import="0">Mods/No Quitters Mod (v 11)/resolutions/RemoveScholarsInResidence.xml</File>
+    <File md5="15DE0C48BD629559FD260D204A78D706" import="0">Mods/No Quitters Mod (v 11)/resolutions/WorldIdeologyChanges.xml</File>
+    <File md5="78026BF6833F7CFA0832649A7DFF331A" import="0">Mods/No Quitters Mod (v 11)/social_policies/1_tradition/Tradition1_Oligarchy.xml</File>
+    <File md5="20771ED0114B378E4E8279081406858A" import="0">Mods/No Quitters Mod (v 11)/social_policies/1_tradition/Tradition2_Legalism.xml</File>
+    <File md5="753E04F5136B10C196D0FB050D1F4929" import="0">Mods/No Quitters Mod (v 11)/social_policies/1_tradition/Tradition_SQL.sql</File>
+    <File md5="23096734DF7690E628C987515C4CE733" import="0">Mods/No Quitters Mod (v 11)/social_policies/1_tradition/Tradition_Tree.xml</File>
+    <File md5="BAB09B762C1F98EE2F3DED75A4CC0602" import="0">Mods/No Quitters Mod (v 11)/social_policies/2_liberty/Liberty0_OpenerAndFinisher.xml</File>
+    <File md5="CFA8FD5AAA034DDF40A6A1FE346FF9A4" import="0">Mods/No Quitters Mod (v 11)/social_policies/2_liberty/Liberty4_Representation.xml</File>
+    <File md5="8E2EAFAFAE0DD571EB967C5B32B7EC83" import="0">Mods/No Quitters Mod (v 11)/social_policies/2_liberty/Liberty5_Meritocracy.xml</File>
+    <File md5="A2741655122F75A3432A3932BCC8DE84" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor0_OpenerAndFinisher.xml</File>
+    <File md5="EE8DF840F606412C00CAC25CBFB500ED" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor1_WarriorCode.xml</File>
+    <File md5="BC79B826C4A2299F5C42A92A3189D0AE" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor3_MilitaryCaste.xml</File>
+    <File md5="8C66187ADF70022F7A8435C857463090" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor5_Discipline.xml</File>
+    <File md5="866D60746F863C5FD54E460363C47711" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor4_MilitaryTradition.xml</File>
+    <File md5="70C982575E4E125D3A9343082391BC10" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor2_ProfessionalArmy.xml</File>
+    <File md5="6740F3C1522DD5878FD974DACA5F71B9" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor_SQL.sql</File>
+    <File md5="21691FFBFF168BB8A44DC87BDA0F043D" import="0">Mods/No Quitters Mod (v 11)/social_policies/3_honor/Honor_Tree.xml</File>
+    <File md5="9E8D7B3D94EC28873A50B46E9953EA72" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety5_Theocracy.xml</File>
+    <File md5="464BACA7B1C9DAC14DFE5A21AF3C51E8" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety0_OpenerAndFinisher.xml</File>
+    <File md5="4FDF7BA5D86E4B82EC6255443BEF777C" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety1_OrganizedReligion.xml</File>
+    <File md5="D0CBE2D548022ACE33C1989A6A1A9A48" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety2_MandateOfHeaven.xml</File>
+    <File md5="63C60B4903709560321756CB8801437C" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety3_ReligiousTolerance.xml</File>
+    <File md5="23509F6493A48CF6420F01310F705C2E" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety4_Reformation.xml</File>
+    <File md5="658D5F5FCA9B80ECA798E7547F37DFCC" import="0">Mods/No Quitters Mod (v 11)/social_policies/4_piety/Piety_Tree.xml</File>
+    <File md5="ABDACF93BD9EF9A8CD34E9A8B8228382" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage1_Philanthropy.xml</File>
+    <File md5="4D5AC6ED120DABC1123E928FC61400A7" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage2_Scholasticism.xml</File>
+    <File md5="2910A0FCABC55A4ACFA04C8792553CB4" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage3_MerchantConfederacy.xml</File>
+    <File md5="270E9D7CE61B5579529AC9B2F16C0FF1" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage5_Consulates.lua</File>
+    <File md5="A8DF31266FEA34C352B3F63B300BCF76" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage5_Consulates.xml</File>
+    <File md5="B5D1D6BFAB74CF226950D632F5A0A35B" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage_SQL.sql</File>
+    <File md5="D34D43198F7C02E1CE542F99AD4DDA17" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage0_OpenerAndFinisher.xml</File>
+    <File md5="D591370F5DE593DCD41E46C572859EC2" import="0">Mods/No Quitters Mod (v 11)/social_policies/5_patronage/Patronage_Tree.xml</File>
+    <File md5="BDED4B458ADCC265C86D27F8BB76A851" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics0_OpenerAndFinisher.lua</File>
+    <File md5="BDE3EFB010DBA712D3C8AF1B5098702A" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics0_OpenerAndFinisher.xml</File>
+    <File md5="DDEB064D2E8EAFAB50C19E14C5DFFF28" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics1_FlourishingOfTheArts.xml</File>
+    <File md5="C8513CA32220C86FEA462D78237C7AB0" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics2_CulturalCenters.xml</File>
+    <File md5="F23FBDF5E88486E60794C60E91F1CB38" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics3_CulturalExchange.xml</File>
+    <File md5="C322512B7F0FA2F2262011151C7C9645" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics4_ArtisticGenius.xml</File>
+    <File md5="3D084C0392FCC0672B86BBB5D396F89D" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics_SQL.sql</File>
+    <File md5="33B0E3361DF41502C5DD82977F971D0C" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics5_FineArts.xml</File>
+    <File md5="A9217606A23D67F242CC80B1AD581D86" import="0">Mods/No Quitters Mod (v 11)/social_policies/6_aesthetics/Aesthetics_Tree.xml</File>
+    <File md5="BAD83884E3234715B612BF38F49B6A54" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce4_Entrepreneurship.lua</File>
+    <File md5="7471F18C6E198EEF97695AAFEBF9C44A" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce5_Protectionism.xml</File>
+    <File md5="C727C3E9A13CC4ADDAC8BBEFA83ECFF9" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce0_OpenerAndFinisher.xml</File>
+    <File md5="944EF0413A77C174EB064E8441EA3A2A" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce2_SilkRoad.xml</File>
+    <File md5="84CAE73AFF9DA8BD2DFBE6EF7C5593DF" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce3_Mercantilism.xml</File>
+    <File md5="427984C4953A0EDD7E829F380C7DB51A" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce4_Entrepreneurship.xml</File>
+    <File md5="92DBA062BD88B90479B138D391A5B90A" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce_SQL.sql</File>
+    <File md5="725A7848EEA49405764A790334527CB2" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce_Tree.xml</File>
+    <File md5="3BD25C6A0CB735EC6608FE4CE93136D4" import="0">Mods/No Quitters Mod (v 11)/social_policies/7_commerce/Commerce1_MercenaryArmy.xml</File>
+    <File md5="CA692537DBC186E1DD8B1E068F676943" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration0_OpenerAndFinisher.xml</File>
+    <File md5="98800836111286A07DAA97049FB68041" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration1_Colonialism.lua</File>
+    <File md5="27D07B546343FF9DA94A4105B38816DC" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration1_Colonialism.xml</File>
+    <File md5="3BCF94A07C6DEA3A48E504B05B7C4789" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration2_MaritimeInfrastructure.xml</File>
+    <File md5="88E6B271B52DC72A7CDE5B64B2AEE5BB" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration4_NaviationSchool.xml</File>
+    <File md5="C9821C55CAAD4ADE90F50B57A3C7A829" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration3_NavalTradition.xml</File>
+    <File md5="09E02C86A0721B7E7FA4D8AD4FF6E982" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration5_TreasureFleets.lua</File>
+    <File md5="261C2AA1DCC72E879D0911B3C57D0EA6" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration5_TreasureFleets.xml</File>
+    <File md5="BCC0965ED0D676D947A16D1AE38644B7" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration_SQL.sql</File>
+    <File md5="E555CC10FC681E3E503987583DE3CF70" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration_Tree.xml</File>
+    <File md5="1A3EBFA1B672B8C23CB4F563B14B9D11" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration__Conquistador.xml</File>
+    <File md5="1E6F4B0FBFB1895223D7C536B89AF067" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration__Icebreaker.lua</File>
+    <File md5="7855ABE8F0B2BD9234E3D5D4C2472CFA" import="0">Mods/No Quitters Mod (v 11)/social_policies/8_exploration/Exploration__Icebreaker.xml</File>
+    <File md5="4DB457C526BD4B8F688ED1AB341DB516" import="0">Mods/No Quitters Mod (v 11)/social_policies/9_rationalism/Rationalism5_Humanism.xml</File>
+    <File md5="1DAD09DB92F19FDBB07AAF416822C84E" import="0">Mods/No Quitters Mod (v 11)/social_policies/9_rationalism/Rationalism0_OpenerAndFinisher.xml</File>
+    <File md5="0F74D832DFC3B58245DD5C1BCE62A682" import="0">Mods/No Quitters Mod (v 11)/social_policies/9_rationalism/Rationalism2_ScientificRevolution.xml</File>
+    <File md5="96ACE3F023138683B2ECF7AA8BDD10F7" import="0">Mods/No Quitters Mod (v 11)/social_policies/9_rationalism/Rationalism3_FreeThought.xml</File>
+    <File md5="F66BB58B06DF7C1EBA033964E6CCAF6A" import="0">Mods/No Quitters Mod (v 11)/social_policies/9_rationalism/Rationalism_Tree.xml</File>
+    <File md5="9EA64A7B53741C89DDFFF27409903EB9" import="0">Mods/No Quitters Mod (v 11)/technologies/ArchaeologyChanges.xml</File>
+    <File md5="9AAE3C0032D1E67AF688ED744992C577" import="0">Mods/No Quitters Mod (v 11)/technologies/CompassChanges.xml</File>
+    <File md5="99280111924182A84B16975DBCDBC401" import="0">Mods/No Quitters Mod (v 11)/technologies/EmbassyTechChange.xml</File>
+    <File md5="FB5A03263AD002E6EDC9E5A137F38978" import="0">Mods/No Quitters Mod (v 11)/technologies/IronTechChanges.xml</File>
+    <File md5="64CB9E25700292AD3EF06D9036E8444D" import="0">Mods/No Quitters Mod (v 11)/technologies/OpenBordersTechChange.xml</File>
+    <File md5="D5643AEE84C7EF8F4F99DEF028FE1DDB" import="1">Mods/No Quitters Mod (v 11)/ui/AdvancedSetup.lua</File>
+    <File md5="DFB765B790D8AD1A12903240703D840A" import="0">Mods/No Quitters Mod (v 11)/ui/CIV5GameOptions_AI_Gimps.xml</File>
+    <File md5="16D1FB069CAAA9A26F5DA6C7FC86F60F" import="1">Mods/No Quitters Mod (v 11)/ui/CultureT100_Compatibility/CultureOverview.lua</File>
+    <File md5="AD74E1AB882511BDDD3658984CECF152" import="1">Mods/No Quitters Mod (v 11)/ui/CultureT100_Compatibility/EconomicGeneralInfo.lua</File>
+    <File md5="F991EE4AA196070755335C55ABCCAA69" import="1">Mods/No Quitters Mod (v 11)/ui/CultureT100_Compatibility/VictoryProgress.lua</File>
+    <File md5="7F555F8AC148659DBE14D097D0EDD678" import="1">Mods/No Quitters Mod (v 11)/ui/DiscussionDialog.lua</File>
+    <File md5="15FCEFB8E5D22010D643F997714AF93F" import="1">Mods/No Quitters Mod (v 11)/ui/EnemyUnitPanel.lua</File>
+    <File md5="1FAD2B805ABD739BC0B3B74A33891833" import="1">Mods/No Quitters Mod (v 11)/ui/EUI_tooltips.lua</File>
+    <File md5="7A65BC471E79CC9CB9F2668F89B8BD91" import="0">Mods/No Quitters Mod (v 11)/ui/GameSetupUI.xml</File>
+    <File md5="D16540D2CCB4E629302FD315B54FA9E0" import="1">Mods/No Quitters Mod (v 11)/ui/InfoTooltipInclude.lua</File>
+    <File md5="604FF981A4FE91690A0D58E3C4578D3D" import="0">Mods/No Quitters Mod (v 11)/ui/StagingRoomVersioning.xml</File>
+    <File md5="D7A79C8341B23C164D7FC25E168F2D43" import="0">Mods/No Quitters Mod (v 11)/units/AfricanForestElephant.xml</File>
+    <File md5="CD97C395F34C54EF7883DFA429D70030" import="0">Mods/No Quitters Mod (v 11)/units/ArmoredUnitChanges.xml</File>
+    <File md5="9E728C8760F4403A76446DB136911F85" import="0">Mods/No Quitters Mod (v 11)/units/BallistaChanges.xml</File>
+    <File md5="627EDE80BC67FB6E4AAF3F9ED33F2147" import="0">Mods/No Quitters Mod (v 11)/units/BatteringRamChanges.xml</File>
+    <File md5="00F53C8007DC5A16837F551CDC920552" import="0">Mods/No Quitters Mod (v 11)/units/CannonChanges.xml</File>
+    <File md5="41280A2176C228C371091781FFC8A6F0" import="0">Mods/No Quitters Mod (v 11)/units/CaravelChanges.xml</File>
+    <File md5="D3878D9C80AC0F1D5E64B3C6127661BD" import="0">Mods/No Quitters Mod (v 11)/units/CatapultChanges.xml</File>
+    <File md5="512C9F02CE06E0FD1CE1EB08CDBF8CCE" import="0">Mods/No Quitters Mod (v 11)/units/FrigateChanges.xml</File>
+    <File md5="3735973D6522486F7250E9298639FECE" import="0">Mods/No Quitters Mod (v 11)/units/GiantDeathRobotChanges.xml</File>
+    <File md5="F4E1CC86D6BBD58F25FC65547E5A73CE" import="0">Mods/No Quitters Mod (v 11)/units/GreatGeneralChanges.xml</File>
+    <File md5="0E15E3FB963CAEB6921177E47DD192DB" import="0">Mods/No Quitters Mod (v 11)/units/HakkapeliittaChanges.xml</File>
+    <File md5="F23427F662CD65CB095C4FA5767011D9" import="0">Mods/No Quitters Mod (v 11)/units/HelicopterGunshipChanges.xml</File>
+    <File md5="22C11DEB312C42A58878F1FEC34CD0C5" import="0">Mods/No Quitters Mod (v 11)/units/InfantryChanges.xml</File>
+    <File md5="75E8BB36BFD596B010E63C09463ECE26" import="0">Mods/No Quitters Mod (v 11)/units/JanissaryChanges.xml</File>
+    <File md5="8F59460BC3395070B21AADB537A39926" import="0">Mods/No Quitters Mod (v 11)/units/KrisSwordsmanChanges.xml</File>
+    <File md5="4F905DD1779B8D8A5E0EAE0D1CC2CE26" import="0">Mods/No Quitters Mod (v 11)/units/LandshipChanges.xml</File>
+    <File md5="0C88D81A2A64C735F588F2A9B9322ADB" import="0">Mods/No Quitters Mod (v 11)/units/LandsknechtChanges.xml</File>
+    <File md5="F91857E1DB2FF1273243C7D82F5DE2A7" import="0">Mods/No Quitters Mod (v 11)/units/MarineChanges.xml</File>
+    <File md5="9D130FE56B38C36F7D9F274F9C012019" import="0">Mods/No Quitters Mod (v 11)/units/MissileCruiserChanges.xml</File>
+    <File md5="FD7B1FCA2C8840647A490AB90DC6A21A" import="0">Mods/No Quitters Mod (v 11)/units/MohawkWarriorChanges.xml</File>
+    <File md5="59D465DA526E7B4C89C29DCFCDDF92CC" import="0">Mods/No Quitters Mod (v 11)/units/MountedRangedChanges.xml</File>
+    <File md5="D00FFFFF25592E700FCE4763DD605E29" import="0">Mods/No Quitters Mod (v 11)/units/NuclearMissileChanges.xml</File>
+    <File md5="0450C0999EA4710E6BAEDA9D4FB2D53B" import="0">Mods/No Quitters Mod (v 11)/units/Pioneer.xml</File>
+    <File md5="7686AABA3E4FF68FF5097E658665EFF8" import="0">Mods/No Quitters Mod (v 11)/units/PracinhaChanges.xml</File>
+    <File md5="701D475D2B862641B0C49025F22DF2B5" import="0">Mods/No Quitters Mod (v 11)/units/RemoveAtomicBombs.xml</File>
+    <File md5="4AEDCAF07C72718267DBEA00EA8BD736" import="0">Mods/No Quitters Mod (v 11)/units/RocketArtilleryChanges.xml</File>
+    <File md5="2212C1811CE50523CD2310E2B2A9EE27" import="0">Mods/No Quitters Mod (v 11)/units/SipahiChanges.xml</File>
+    <File md5="5D7F760740027A044C36F5C61586000E" import="0">Mods/No Quitters Mod (v 11)/units/StealthBomberChanges.xml</File>
+    <File md5="1D2E8933D032CBC1C217CB29568BF62B" import="0">Mods/No Quitters Mod (v 11)/units/SwordsmanChanges.xml</File>
+    <File md5="391893E38E44BED589DC4677A0B3136F" import="0">Mods/No Quitters Mod (v 11)/units/TrebuchetChanges.xml</File>
+    <File md5="D2AA5A90E09C98FC415A8DF4D224B1B3" import="0">Mods/No Quitters Mod (v 11)/units/WingedHussarChanges.xml</File>
+    <File md5="0FE1D3D968CEC0860DA6E028351CEA9B" import="0">Mods/No Quitters Mod (v 11)/units/WorkBoatChanges.xml</File>
+    <File md5="49D23D0600EA859EDEC5F73EC6A77A8E" import="0">Mods/No Quitters Mod (v 11)/units/WorkerChanges.xml</File>
+    <File md5="A78DAB7E51B6605EBFEA1DFCA13EDD71" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/HeavyChargeDownhill.sql</File>
+    <File md5="9F7463736D0F478A307ED7CF6464824A" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/AirRepairChanges.xml</File>
+    <File md5="BB596C1F47A247FE2AA1528E8F74DBFF" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/AntiTankChanges.xml</File>
+    <File md5="A2805CC741795B770E7D9B884E8869C6" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/FastGeneralChanges.xml</File>
+    <File md5="881C43393DAB842E27519377A12A1475" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/HeavyChargeDownhill.xml</File>
+    <File md5="DB4E6391F1DA199CF84E484D94372287" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/MergeAmbushAndFormation.xml</File>
+    <File md5="11F1E8EC6A13C736CDC39F08DD08933A" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/NavalMeleeChanges.xml</File>
+    <File md5="5AA080D57DECBB10E734C9513B10AA43" import="0">Mods/No Quitters Mod (v 11)/unit_promotions/RemoveBlitzFromParadrops.xml</File>
+    <File md5="DB695D6723498F3A50CCBFDBFF437339" import="0">Mods/No Quitters Mod (v 11)/wonders_national/CircusMaximusChanges.xml</File>
+    <File md5="219E84D71743459EF39B39C84E0FC3B2" import="0">Mods/No Quitters Mod (v 11)/wonders_national/EastIndiaCompanyChanges.xml</File>
+    <File md5="FA47D03401A60C139F056538236A8CC6" import="0">Mods/No Quitters Mod (v 11)/wonders_national/GrandTempleChanges.xml</File>
+    <File md5="850C1C59221C6AD6193BE5A27533E463" import="0">Mods/No Quitters Mod (v 11)/wonders_national/HermitageChanges.xml</File>
+    <File md5="6534157D831DE26EE136F29D95E90F72" import="0">Mods/No Quitters Mod (v 11)/wonders_national/HeroicEpicChanges.xml</File>
+    <File md5="4853BB55D82A1B1BBAA6F8D4826EBCD1" import="0">Mods/No Quitters Mod (v 11)/wonders_national/IronworksChanges.xml</File>
+    <File md5="FC13C4B5F0E8FDF72F6283B9712F8FC0" import="0">Mods/No Quitters Mod (v 11)/wonders_national/NationalCollegeChanges.xml</File>
+    <File md5="D6E74FA9FEE8ABC3B1A9A5E887AD3314" import="0">Mods/No Quitters Mod (v 11)/wonders_national/NationalEpic.xml</File>
+    <File md5="E58DCC8CBB10F49697B84A09EFACC11B" import="0">Mods/No Quitters Mod (v 11)/wonders_national/NationalIntelligenceAgencyChanges.xml</File>
+    <File md5="188D893AA456A56CEE35E4E939FF9B89" import="0">Mods/No Quitters Mod (v 11)/wonders_national/NationalVisitorCenterChanges.xml</File>
+    <File md5="4024C931A69FEB043F58F7D1EF561D96" import="0">Mods/No Quitters Mod (v 11)/wonders_national/OxfordUniversityChanges.xml</File>
+    <File md5="2758F8C14969C55F9B9BAB0D68326F09" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/BarringerCraterChanges.xml</File>
+    <File md5="E5F193C837FB22F239D815DEDAC6A11D" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/ElDoradoChanges.xml</File>
+    <File md5="22E0FC4529C3C73BA2D24BD658644399" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/FountainOfYouthChanges.xml</File>
+    <File md5="88E82C1C675ED19920BD649BEB906FB9" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/FujiChanges.xml</File>
+    <File md5="1FCB04B9B09B442E827E7A9DF78BED03" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/OldFaithfulChanges.xml</File>
+    <File md5="805FCA0697F66E31F2C06192D6F480C1" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/GrandMesaChanges.xml</File>
+    <File md5="F55560455036510C2D6A65D5FE659EA0" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/KrakatoaChanges.xml</File>
+    <File md5="62EBE86606AF0D81D2B6B1D34282E3B0" import="0">Mods/No Quitters Mod (v 11)/wonders_natural/SriPadaChanges.xml</File>
+    <File md5="381DDB2EC4B0CB5C0E7A2CB8D169E40A" import="0">Mods/No Quitters Mod (v 11)/wonders_world/AngkorWatChanges.xml</File>
+    <File md5="4C869948233E0D98A3DEDA3BEB5C1E4F" import="0">Mods/No Quitters Mod (v 11)/wonders_world/BigBenChanges.xml</File>
+    <File md5="6939A6A2CA6A3B9D512963E2E0FCD038" import="0">Mods/No Quitters Mod (v 11)/wonders_world/GreatLighthouseChanges.xml</File>
+    <File md5="D3579D5CF35C938BF23706F3507C5A5B" import="0">Mods/No Quitters Mod (v 11)/wonders_world/GreatWallChanges.lua</File>
+    <File md5="1E50570290302B101188BF7543BF2AF2" import="0">Mods/No Quitters Mod (v 11)/wonders_world/GreatWallChanges.xml</File>
+    <File md5="08F75056103262E5C90083CD4F675E41" import="0">Mods/No Quitters Mod (v 11)/wonders_world/HangingGardensChanges.xml</File>
+    <File md5="557C677CCEF2D60F90442F33BC89B2A3" import="0">Mods/No Quitters Mod (v 11)/wonders_world/NotreDameChanges.xml</File>
+    <File md5="4767383AD24CCC74CEA9FCA6D94B1916" import="0">Mods/No Quitters Mod (v 11)/wonders_world/PorcelainTowerChanges.xml</File>
+    <File md5="2B70106CD7B62D815963BD1BEE084909" import="0">Mods/No Quitters Mod (v 11)/wonders_world/PyramidChanges.xml</File>
+    <File md5="CC61502531037A705AE779EB61D5A5DE" import="0">Mods/No Quitters Mod (v 11)/wonders_world/StonehengeChanges.xml</File>
+    <File md5="2C1DD18F5A989F17DFEE55EE445DE6D0" import="0">Mods/No Quitters Mod (v 11)/wonders_world/Stonehenge_SQL.sql</File>
+    <File md5="A76D4F2E26F4A5BC62647B3B477E9711" import="0">Mods/No Quitters Mod (v 11)/wonders_world/HubbleChanges.xml</File>
+    <File md5="A97DFB45577AFC85E493F1A7A2B529CF" import="0">Mods/No Quitters Mod (v 11)/xml_localization_template.xml</File>
+    <File md5="B8A9E91134E7C89440A0F95470D5E47B" import="1">Mods/No Quitters Mod (v 11)/zlib1.dll</File>
+    <File md5="997D09AF5E4637A13936E9B2B774417D" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/Flavor Changes/AuI_CIV5Buildings_Flavors.xml</File>
+    <File md5="A5F2FA59C0F2931C80C496142AA24AFF" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/Flavor Changes/AuI_CIV5Flavors_Tourism.xml</File>
+    <File md5="D211CA36E2C7DE9A332CBF109A1AA4EF" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/Flavor Changes/AuI_CIV5Leaders_Flavors.xml</File>
+    <File md5="A3CA3D53A53FD8F2A44F606EF319C6FD" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/Flavor Changes/AuI_CIV5Policies_Flavors.xml</File>
+    <File md5="022FC4039E47EB6BF6A7FE6A8EBF41CE" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/Flavor Changes/AuI_CIV5Technologies_Flavors.xml</File>
+    <File md5="DA8699DC69DA9F8022F7778EFE2BD80C" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/Flavor Changes/AuI_CIV5Units_Flavors.xml</File>
+    <File md5="F19181823E1C5519A115C2AE2B378658" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5AICityStrategies.xml</File>
+    <File md5="A39418ECA1C0A6A7F3D60305232F6D43" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5AIEconomicStrategies.xml</File>
+    <File md5="8D0408216EC910351979DFC76D2E884E" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5AIGrandStrategies.xml</File>
+    <File md5="5A63E6B5F51010DE229AA30BEC98DD72" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5AIMilitaryStrategies.xml</File>
+    <File md5="33DD94D2261378B2FCFB117C8AB735EE" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5CitySpecializations.xml</File>
+    <File md5="F00164C275321FC8704F744D9C8C8DED" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5MultiUnitFormations.xml</File>
+    <File md5="9A6C3FFC72E82B4A7F4BC1EB7D53151E" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5TacticalMoves.xml</File>
+    <File md5="66C46EE74307AFF546BC901FCF0ED324" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_CIV5Units.xml</File>
+    <File md5="963BC3CEE71B665D9365574B780DC585" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_GlobalAIDefines.xml</File>
+    <File md5="55AE22C43A6BEB1167F3CB513C73D654" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_GlobalDefines.xml</File>
+    <File md5="140CAE485AFCC60EE1DC4A34491E817F" import="0">Mods/No Quitters Mod (v 11)/_from_AuI/AuI_GlobalDiplomacyAIDefines.xml</File>
+    <File md5="AEC2B21710AAD14FB6006EA4E9CD743E" import="0">Mods/No Quitters Mod (v 11)/_sql/Policies_ExtraTourismPerGreatWork.sql</File>
+    <File md5="AA75D829946A615F27B57B22631F86A5" import="0">Mods/No Quitters Mod (v 11)/_sql/TechnologyDiscountsByPolicy.sql</File>
+    <File md5="21C86CBF9C0AF30EC0C197F51ABDA5A3" import="0">Mods/No Quitters Mod (v 11)/_sql/Yield_MinCityOnHillsAdjust.sql</File>
+	<!--- ---------------------------------------------------------------------------------------------------------------- --->
+	
+	<!--- ---------------------------------------------------------------------------------------------------------------- --->
+	<File md5="7852302988C0C130144AD80929074ABA" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut128.dds</File>
+    <File md5="D5825E13200A94B5658A4BF8F5E47B17" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut214.dds</File>
+    <File md5="A641F0FE25DA23ED8112FC23DD832FDC" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut256.dds</File>
+    <File md5="D972E4C787BA59BE299F893BB711162B" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut32.dds</File>
+    <File md5="54329F6AE6CCF69762DFEE7DD2940CAF" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut45.dds</File>
+    <File md5="216226DE1E4BC943539AC5F34CBE6AE1" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut64.dds</File>
+    <File md5="D59AE396135A03621EEE91D29B5AF040" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakut80.dds</File>
+    <File md5="4B7F4DF7D3DEF583F7B9A5E72A294B63" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakutalpha128.dds</File>
+    <File md5="D39B28CD579E071FE7787E46DAF3C0E6" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakutalpha16.dds</File>
+    <File md5="2AB28B4D65E257907453C19C172BE863" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakutalpha24.dds</File>
+    <File md5="2D51A88C96D80A3D640DC64104F34A1F" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakutalpha32.dds</File>
+    <File md5="D66935C2739366F76AA0BD97C572B7E8" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakutalpha48.dds</File>
+    <File md5="ED592A11CA799D3816F7A2C3F6C6DA04" import="1">Mods/Yakutia Civilization (v 1)/Art/Civicons/yakutalpha64.dds</File>
+    <File md5="F39A18283447F2DC11423BBE319643AD" import="1">Mods/Yakutia Civilization (v 1)/Art/Leadericons/tygyn128.dds</File>
+    <File md5="38E6DB2A88F07F15E5DD5359ABF7267B" import="1">Mods/Yakutia Civilization (v 1)/Art/Leadericons/tygyn256.dds</File>
+    <File md5="60F6D7BEAC85C9CC06858005B08A7FF7" import="1">Mods/Yakutia Civilization (v 1)/Art/Leadericons/tygyn64.dds</File>
+    <File md5="383AECE1B0E68E03D565B9B23B1FDF6E" import="1">Mods/Yakutia Civilization (v 1)/Art/tygyndarkhan.dds</File>
+    <File md5="D555EB4D5F65C6ED70610AFCEAC7E884" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/batas128.dds</File>
+    <File md5="5894453C27C10F9C5E88666D1BB356D1" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/batas256.dds</File>
+    <File md5="39F9FC120F81E0DDB4F6ED8E19F1D226" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/batas32.dds</File>
+    <File md5="DB2B4828C53DE3AAEEB84EDD57168157" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/batas45.dds</File>
+    <File md5="39E27DB608DF36C1389968FE7A962E4E" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/batas64.dds</File>
+    <File md5="602A0ABE0EC5EC5B4775148A69E24B46" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/batas80.dds</File>
+    <File md5="0B4DFF2FADEC9CB71736F5B1E8082F16" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/toyon128.dds</File>
+    <File md5="A80CABF52829CA078A64FB0E1F43A123" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/toyon256.dds</File>
+    <File md5="4F6478A4BD8FF3ACA602263084305CCC" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/toyon32.dds</File>
+    <File md5="A6D6B9AAA452B910A263F590FB06BAA4" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/toyon45.dds</File>
+    <File md5="EB05855DD82A538296BA82C96D2F2209" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/toyon64.dds</File>
+    <File md5="914E4F2E7EDE785F0A6145892767F127" import="1">Mods/Yakutia Civilization (v 1)/Art/Uniticons/toyon80.dds</File>
+    <File md5="150F983EBE684D00672BB1D240685342" import="1">Mods/Yakutia Civilization (v 1)/Art/yakutDOM.dds</File>
+    <File md5="AA6FE948C327DF56D16C445315351D52" import="1">Mods/Yakutia Civilization (v 1)/Art/yakutmap.dds</File>
+    <File md5="A30A3A5FC762876AB35CD496211AB996" import="1">Mods/Yakutia Civilization (v 1)/Sound/TygynPeace.mp3</File>
+    <File md5="3F916C767EBAE83BCAA598F18AC11E1D" import="1">Mods/Yakutia Civilization (v 1)/Sound/TygynWar.mp3</File>
+    <File md5="9A420C45E9C15C9BFAA525FB5BF48BCE" import="0">Mods/Yakutia Civilization (v 1)/XML/Civilizations.xml</File>
+    <File md5="0C6EE9F54B41A116693BF5A105BE3623" import="0">Mods/Yakutia Civilization (v 1)/XML/IconAtlas.xml</File>
+    <File md5="DA69D1B4FA21E0ADD3900115BA567EFC" import="0">Mods/Yakutia Civilization (v 1)/XML/Improvements.xml</File>
+    <File md5="CABA5955DB00D04514EA1D6DB6D34DEB" import="0">Mods/Yakutia Civilization (v 1)/XML/Leaders.xml</File>
+    <File md5="F1F139E9A93CFC09AB265DFEEAFF7239" import="0">Mods/Yakutia Civilization (v 1)/XML/Sounds.xml</File>
+    <File md5="8E46D6497A0B71FA73186A4449F8CDD2" import="0">Mods/Yakutia Civilization (v 1)/XML/Text.xml</File>
+    <File md5="618EECCFD2158EA0D207A8B667E1DF9D" import="1">Mods/Yakutia Civilization (v 1)/XML/Tygyn_Scene.xml</File>
+    <File md5="AF7791020317F0CA2DE56369066D6F93" import="0">Mods/Yakutia Civilization (v 1)/XML/Units.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>removals/RemoveBlitzFromParadrops.sql</UpdateDatabase>
+      <UpdateDatabase>ui/CIV5GameOptions_AI.xml</UpdateDatabase>
+      <UpdateDatabase>gameplay/CIV5GameOptions_Randomized_Activation.xml</UpdateDatabase>
+      <UpdateDatabase>buildings/Stoneworks.xml</UpdateDatabase>
+      <UpdateDatabase>policies/honor/Honor_Opener.xml</UpdateDatabase>
+      <UpdateDatabase>removals/AtomicBomb.xml</UpdateDatabase>
+      <UpdateDatabase>removals/Hubble.xml</UpdateDatabase>
+      <UpdateDatabase>removals/ResearchAgreements.xml</UpdateDatabase>
+      <UpdateDatabase>removals/Scholars.xml</UpdateDatabase>
+      <UpdateDatabase>removals/ThemingBonusChanges.xml</UpdateDatabase>
+      <UpdateDatabase>removals/BanObservatories.xml</UpdateDatabase>
+      <UpdateDatabase>natural_wonders/KrakatoaChanges.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
