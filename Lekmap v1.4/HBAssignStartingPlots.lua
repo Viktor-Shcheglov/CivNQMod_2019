@@ -2459,7 +2459,7 @@ function AssignStartingPlots:DetermineRegionTypes()
 			print("Region #", this_region, " has been defined as a Desert Region.");
 			
 		-- Wetlands check.
-		elseif ((marshCount + floodplainCount) >= areaPlots * 0.11) or (floodplainCount >= 8) or (marshCount >= 6) then
+		elseif ((marshCount) >= areaPlots * 0.11) or (marshCount >= 6) then
 			table.insert(self.regionTypes, 9);
 			print("-");
 			print("Region #", this_region, " has been defined as a Wetlands Region.");
@@ -4475,7 +4475,7 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 		if featureType == FeatureTypes.NO_FEATURE then
 			if terrainType == TerrainTypes.TERRAIN_GRASS then -- Place Cows or bison
 				local bisonordeer = Map.Rand(100, "");
-				if bisonordeer < 55 then
+				if bisonordeer < 50 then
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
@@ -4488,11 +4488,6 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 					plot:SetResourceType(self.cow_ID, 1);
 					print("Placed Cow.");
 					self.amounts_of_resources_placed[self.cow_ID + 1] = self.amounts_of_resources_placed[self.cow_ID + 1] + 1;
-				else
-					plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
-					plot:SetResourceType(self.hardwood_ID, 1);
-					print("Placed Hardwood.");
-					self.amounts_of_resources_placed[self.hardwood_ID + 1] = self.amounts_of_resources_placed[self.hardwood_ID + 1] + 1;
 				end
 				return true, false, false
 			elseif terrainType == TerrainTypes.TERRAIN_PLAINS then -- Place Wheat or bison
@@ -4501,15 +4496,15 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
-				elseif placethis < 70 then
+				elseif placethis < 65 then
 					plot:SetResourceType(self.wheat_ID, 1);
 					print("Placed Wheat.");
 					self.amounts_of_resources_placed[self.wheat_ID + 1] = self.amounts_of_resources_placed[self.wheat_ID + 1] + 1;
-				elseif placethis < 10 then
+				elseif placethis < 15 then
 					plot:SetResourceType(self.cow_ID, 1);
 					print("Placed Cow.");
 					self.amounts_of_resources_placed[self.cow_ID + 1] = self.amounts_of_resources_placed[self.cow_ID + 1] + 1;
-				else
+				elseif placethis < 10 then
 					plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
 					plot:SetResourceType(self.hardwood_ID, 1);
 					print("Placed Hardwood.");
@@ -4548,7 +4543,7 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 		end
 	elseif plotType == PlotTypes.PLOT_OCEAN then
 		if terrainType == TerrainTypes.TERRAIN_COAST and featureType == FeatureTypes.NO_FEATURE then
-			if plot:IsLake() == false and Fish_Count < 3 then -- Place Fish
+			if plot:IsLake() == false and Fish_Count < 5 then -- Place Fish
 				plot:SetResourceType(self.fish_ID, 1);
 				print("Placed Fish.");
 				self.amounts_of_resources_placed[self.fish_ID + 1] = self.amounts_of_resources_placed[self.fish_ID + 1] + 1;
@@ -5468,11 +5463,11 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 	elseif totalFoodScore < 17 and innerFoodScore < 9 then
 		iNumFoodBonusNeeded = 3;
 	elseif nativeTwoFoodTiles < 2 then
-		iNumFoodBonusNeeded = 3;
-	elseif totalFoodScore < 24 and innerFoodScore < 11 then
 		iNumFoodBonusNeeded = 2;
+	elseif totalFoodScore < 24 and innerFoodScore < 11 then
+		iNumFoodBonusNeeded = 0;
 	elseif nativeTwoFoodTiles == 2 or iNumNativeTwoFoodFirstRing < 2 then
-		iNumFoodBonusNeeded = 1;
+		iNumFoodBonusNeeded = 0;
 	elseif totalFoodScore < 20 then
 		iNumFoodBonusNeeded = 0;
 	end
@@ -5799,9 +5794,9 @@ function AssignStartingPlots:FindFallbackForUnmatchedRegionPriority(iRegionType,
 				iMostHybrid = grassCount + plainsCount;
 			end
 		elseif iRegionType == 9 then -- Find fallback for wetlands priority
-			if marshCount + floodplainCount > iMostWet then
+			if marshCount > iMostWet then
 				bestWet = region_number;
-				iMostWet = marshCount + floodplainCount;
+				iMostWet = marshCount;
 			end
 		end
 	end
@@ -10570,7 +10565,7 @@ function AssignStartingPlots:GetWorldLuxuryTargetNumbers()
 	-- The second number affects minimum number of random luxuries placed.
 	-- I say "affects" because it is only one part of the formula.
 	local worldsizes = {};
-	if self.resource_setting == 1 or self.resource_setting == 2 then -- Sparse / Mediocre
+	if self.resource_setting == 1 or self.resource_setting == 2 or self.resource_setting == 3 then -- Sparse / Mediocre
 		worldsizes = {
 			[GameInfo.Worlds.WORLDSIZE_DUEL.ID] = {14, 3},
 			[GameInfo.Worlds.WORLDSIZE_TINY.ID] = {24, 4},
@@ -10579,7 +10574,7 @@ function AssignStartingPlots:GetWorldLuxuryTargetNumbers()
 			[GameInfo.Worlds.WORLDSIZE_LARGE.ID] = {60, 5},
 			[GameInfo.Worlds.WORLDSIZE_HUGE.ID] = {76, 6}
 		}
-	elseif self.resource_setting == 4 or self.resource_setting == 5 then -- Abundant / Plenty
+	elseif self.resource_setting == 7 or self.resource_setting == 8 or self.resource_setting == 9 or self.resource_setting == 10 then -- Abundant / Plenty
 		worldsizes = {
 			[GameInfo.Worlds.WORLDSIZE_DUEL.ID] = {24, 3},
 			[GameInfo.Worlds.WORLDSIZE_TINY.ID] = {40, 4},
@@ -10867,13 +10862,13 @@ function AssignStartingPlots:PlaceLuxuries()
 		-- local targetNum = math.floor((target_list[self.iNumCivs] + (0.5 * self.luxury_low_fert_compensation[res_ID])) / assignment_split);	-- MOD.Barathor: Disabled
 		targetNum = targetNum - self.region_low_fert_compensation[region_number];
 		-- Adjust target number according to Resource Setting.
-		if self.resource_setting == 1 then --sparse
+		if self.resource_setting == 1 or self.resource_setting == 2 then --sparse
 			targetNum = targetNum - 2;
 		elseif self.resource_setting == 3 then --mediocre
 			targetNum = targetNum - 1;
-		elseif self.resource_setting == 4 then --plenty
+		elseif self.resource_setting == 7 then --plenty
 			targetNum = targetNum + 1;
-		elseif self.resource_setting == 5 then --abundant
+		elseif self.resource_setting == 8 or self.resource_setting == 9 or self.resource_setting == 10 then --abundant
 			targetNum = targetNum + 2;
 		end
 		local iNumThisLuxToPlace = math.max(1, targetNum); -- Always place at least one.
@@ -11674,13 +11669,13 @@ function AssignStartingPlots:PlaceLuxuries_OLD()
 		targetNum = targetNum - self.region_low_fert_compensation[region_number];
 		-- Adjust target number according to Resource Setting.
 		targetNum = targetNum - 2;
-		if self.resource_setting == 1 then --sparse
+		if self.resource_setting == 1 or self.resource_setting == 2 then --sparse
 			targetNum = targetNum - 2;
 		elseif self.resource_setting == 3 then --mediocre
 			targetNum = targetNum - 1;
-		elseif self.resource_setting == 4 then --plenty
+		elseif self.resource_setting == 7 then --plenty
 			targetNum = targetNum + 1;
-		elseif self.resource_setting == 5 then --abundant
+		elseif self.resource_setting == 8 or self.resource_setting == 9 or self.resource_setting == 10 then --abundant
 			targetNum = targetNum + 2;
 		end
 
@@ -12487,7 +12482,7 @@ function AssignStartingPlots:PlaceFishMainland(frequency, plot_list)
 
 						if res_plot:GetResourceType(-1) == -1 then
 							-- Placing fish here. First decide impact radius of this fish.
-							local fish_radius = Map.Rand(1, "Fish Radius - Place Fish LUA") + 1;
+							local fish_radius = Map.Rand(0, "Fish Radius - Place Fish LUA") + 1;
 							--if fish_radius > 4 then
 							--	fish_radius = 3;
 							--end
@@ -12541,7 +12536,7 @@ function AssignStartingPlots:PlaceFish(frequency, plot_list)
 					local res_plot = Map.GetPlot(x, y)
 					if res_plot:GetResourceType(-1) == -1 then
 						-- Placing fish here. First decide impact radius of this fish.
-						local fish_radius = Map.Rand(6, "Fish Radius - Place Fish LUA") + 1;
+						local fish_radius = Map.Rand(4, "Fish Radius - Place Fish LUA") + 1;
 						--if fish_radius > 4 then
 						--	fish_radius = 3;
 						--end
@@ -12579,7 +12574,7 @@ function AssignStartingPlots:PlaceSexyBonusAtCivStarts()
 		local use_this_ID = bonus_type_associated_with_region_type[region_type];
 		local plot_list, fish_list = {}, {};
 		-- For notes on how the hex-iteration works, refer to PlaceResourceImpact()
-		local ripple_radius = 3;
+		local ripple_radius = 2;
 		local currentX = x - ripple_radius;
 		local currentY = y;
 		for direction_index = 1, 6 do
@@ -12941,13 +12936,13 @@ function AssignStartingPlots:PlaceOilInTheSea()
 	-- WARNING: This operation will render the Strategic Resource Impact Table useless for
 	-- further operations, so should always be called last, even after minor placements.
 	local sea_oil_amt = 4;
-	if self.resource_setting == 1 then -- sparse
+	if self.resource_setting == 1 or self.resource_setting == 2 then -- sparse
 		sea_oil_amt = sea_oil_amt - 2;
-	elseif self.resource_setting == 2 then -- mediocre
+	elseif self.resource_setting == 3 then -- mediocre
 		sea_oil_amt = sea_oil_amt - 1;
-	elseif self.resource_setting == 4 then -- plenty
+	elseif self.resource_setting == 7 then -- plenty
 		sea_oil_amt = sea_oil_amt + 1;
-	elseif self.resource_setting == 5 then -- Abundant
+	elseif self.resource_setting == 8 or self.resource_setting == 9 or self.resource_setting == 10 then -- Abundant
 		sea_oil_amt = sea_oil_amt + 2;
 	end
 	local iNumLandOilUnits = self.amounts_of_resources_placed[self.oil_ID + 1];
@@ -13241,13 +13236,13 @@ function AssignStartingPlots:GetMajorStrategicResourceQuantityValues()
 	-- Note: scripts that cannot place Oil in the sea need to increase amounts on land to compensate.
 	local uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 4, 7, 6, 7, 8;
 	-- Check the resource setting.
-	if self.resource_setting == 1 then -- Sparse
+	if self.resource_setting == 1 or self.resource_setting == 2 then -- Sparse
 		uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 2, 5, 4, 5, 6;
-	elseif self.resource_setting == 2 then -- mediocre
+	elseif self.resource_setting == 3 then -- mediocre
 		uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 3, 6, 5, 6, 7;
-	elseif self.resource_setting == 4 then -- plenty
+	elseif self.resource_setting == 7 then -- plenty
 		uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 5, 8, 7, 8, 9;
-	elseif self.resource_setting == 5 then -- Abundant
+	elseif self.resource_setting == 8 or self.resource_setting == 9 or self.resource_setting == 10 then -- Abundant
 		uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 6, 9, 8, 9, 10;
 	end
 	return uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt
@@ -13257,9 +13252,9 @@ function AssignStartingPlots:GetSmallStrategicResourceQuantityValues()
 	-- This function determines quantity per tile for each strategic resource's small deposit size.
 	local uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 2, 4, 2, 3, 3;
 	-- Check the resource setting.
-	if self.resource_setting == 1 or self.resource_setting == 2 then -- Sparse / Mediocre
+	if self.resource_setting == 1 or self.resource_setting == 2 or self.resource_setting == 3 then -- Sparse / Mediocre
 		uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 1, 1, 2, 1, 2, 2;
-	elseif self.resource_setting == 4 or self.resource_setting == 5 then -- Plenty / Abundant
+	elseif self.resource_setting == 7 or self.resource_setting == 8 or self.resource_setting == 9 or self.resource_setting == 10 then -- Plenty / Abundant
 		uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = 2, 3, 3, 3, 3, 3;
 	end
 	return uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt
@@ -13278,16 +13273,26 @@ function AssignStartingPlots:PlaceStrategicAndBonusResources()
 	local uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = self:GetMajorStrategicResourceQuantityValues()
 	
 	-- Adjust appearance rate per Resource Setting chosen by user.
-	local bonus_multiplier = 0.66;
+	local bonus_multiplier = 0.55;
 
-	if self.resource_setting == 1 then -- Sparse
+	if self.resource_setting == 1 then -- Near to nothing
 		bonus_multiplier = 1;
-	elseif self.resource_setting == 2 then -- mediocre
-		bonus_multiplier = 0.77;
-	elseif self.resource_setting == 4 then -- plenty
-		bonus_multiplier = 0.33;
-	elseif self.resource_setting == 5 then -- Abundant
-		bonus_multiplier = 0.16;
+	elseif self.resource_setting == 2 then -- 
+		bonus_multiplier = 0.9;
+	elseif self.resource_setting == 3 then -- 
+		bonus_multiplier = 0.8;
+	elseif self.resource_setting == 4 then -- 
+		bonus_multiplier = 0.7;
+	elseif self.resource_setting == 6 then -- 
+		bonus_multiplier = 0.5;
+	elseif self.resource_setting == 7 then -- 
+		bonus_multiplier = 0.4;
+	elseif self.resource_setting == 8 then -- 
+		bonus_multiplier = 0.3;
+	elseif self.resource_setting == 9 then -- 
+		bonus_multiplier = 0.2;
+	elseif self.resource_setting == 10 then -- filled the map full
+		bonus_multiplier = 0.1;
 	end
 
 	-- Place Strategic resources.

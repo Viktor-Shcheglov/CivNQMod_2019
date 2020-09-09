@@ -18,7 +18,7 @@ include("MultilayeredFractal");
 function GetMapScriptInfo()
 	local world_age, temperature, rainfall, sea_level, resources = GetCoreMapOptions()
 	return {
-		Name = "Lekmap v1.4",
+		Name = "Lekmap v1.4.1",
 		Description = "A map script made for Lekmod based of HB's Mapscript v8.1 containing different map types selectable from the map set up screen.",
 		IsAdvancedMap = false,
 		IconIndex = 0,
@@ -279,14 +279,19 @@ function GetMapScriptInfo()
 			{
 				Name = "TXT_KEY_MAP_OPTION_RESOURCES",	-- add setting for resources (15)
 				Values = {
-					"Sparse",
-					"Mediocre",
-					"Standard",
-					"Plenty",
-					"Abundant",
+					"1 -- Nearly Nothing",
+					"2",
+					"3",
+					"4",
+					"5 -- Default",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10 -- Almost no normal tiles left",
 				},
 
-				DefaultValue = 3,
+				DefaultValue = 5,
 				SortPriority = -91,
 			},
 
