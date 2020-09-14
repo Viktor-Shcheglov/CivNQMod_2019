@@ -5415,7 +5415,7 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 	end
 	
 	-- If early hammers will be too short, attempt to add a small Horse or Iron to second ring.
-	if innerHammerScore <= 4 and earlyHammerScore < 10 then -- Add a small Horse or Iron to second ring.
+	if innerHammerScore <= 6 and earlyHammerScore < 12 then -- Add a small Horse or Iron to second ring.
 		if isEvenY then
 			randomized_second_ring_adjustments = GetShuffledCopyOfTable(self.secondRingYIsEven);
 		else
@@ -5453,97 +5453,99 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 	
 	-- Six levels for Bonus Resource support, from zero to five.
 	if totalFoodScore < 4 and innerFoodScore == 0 then
-		iNumFoodBonusNeeded = 7;
-	elseif totalFoodScore < 6 then
 		iNumFoodBonusNeeded = 6;
+	elseif totalFoodScore < 6 then
+		iNumFoodBonusNeeded = 5;
 	elseif totalFoodScore < 8 then
 		iNumFoodBonusNeeded = 5;
 	elseif totalFoodScore < 12 and innerFoodScore < 5 then
-		iNumFoodBonusNeeded = 4;
+		iNumFoodBonusNeeded = 5;
 	elseif totalFoodScore < 17 and innerFoodScore < 9 then
-		iNumFoodBonusNeeded = 3;
+		iNumFoodBonusNeeded = 5;
 	elseif nativeTwoFoodTiles < 2 then
-		iNumFoodBonusNeeded = 2;
+		iNumFoodBonusNeeded = 4;
 	elseif totalFoodScore < 24 and innerFoodScore < 11 then
-		iNumFoodBonusNeeded = 0;
+		iNumFoodBonusNeeded = 3;
 	elseif nativeTwoFoodTiles == 2 or iNumNativeTwoFoodFirstRing < 2 then
-		iNumFoodBonusNeeded = 0;
+		iNumFoodBonusNeeded = 3;
+	elseif nativeTwoFoodTiles > 10 or iNumNativeTwoFoodFirstRing > 3 then
+		iNumFoodBonusNeeded = 5;
 	elseif totalFoodScore < 20 then
-		iNumFoodBonusNeeded = 0;
+		iNumFoodBonusNeeded = 2;
 	end
 	
 	-- Check for Legendary Start resource option.
 	if self.start_locations == 1 or self.start_locations == 2 then
-		iNumFoodBonusNeeded = iNumFoodBonusNeeded + 2;
+		iNumFoodBonusNeeded = iNumFoodBonusNeeded + 1;
 	end
 	
 	print("Food Bonuses: ", iNumFoodBonusNeeded);
 	
 	-- Check to see if a Grass tile needs to be added at an all-plains site with zero native 2-food tiles in first two rings.
-	if nativeTwoFoodTiles == 0 and iNumFoodBonusNeeded < 3 then
-		local odd = self.firstRingYIsOdd;
-		local even = self.firstRingYIsEven;
-		local plot_list = {};
+	--if nativeTwoFoodTiles == 0 and iNumFoodBonusNeeded < 3 then
+		--local odd = self.firstRingYIsOdd;
+		--local even = self.firstRingYIsEven;
+		--local plot_list = {};
 		-- For notes on how the hex-iteration works, refer to PlaceResourceImpact()
-		local ripple_radius = 2;
-		local currentX = x - ripple_radius;
-		local currentY = y;
-		for direction_index = 1, 6 do
-			for plot_to_handle = 1, ripple_radius do
-			 	if currentY / 2 > math.floor(currentY / 2) then
-					plot_adjustments = odd[direction_index];
-				else
-					plot_adjustments = even[direction_index];
-				end
-				nextX = currentX + plot_adjustments[1];
-				nextY = currentY + plot_adjustments[2];
-				if wrapX == false and (nextX < 0 or nextX >= iW) then
+		--local ripple_radius = 2;
+		--local currentX = x - ripple_radius;
+		--local currentY = y;
+		--for direction_index = 1, 6 do
+			--for plot_to_handle = 1, ripple_radius do
+			 	--if currentY / 2 > math.floor(currentY / 2) then
+					--plot_adjustments = odd[direction_index];
+				--else
+					--plot_adjustments = even[direction_index];
+				--end
+				--nextX = currentX + plot_adjustments[1];
+				--nextY = currentY + plot_adjustments[2];
+				--if wrapX == false and (nextX < 0 or nextX >= iW) then
 					-- X is out of bounds.
-				elseif wrapY == false and (nextY < 0 or nextY >= iH) then
+				--elseif wrapY == false and (nextY < 0 or nextY >= iH) then
 					-- Y is out of bounds.
-				else
-					local realX = nextX;
-					local realY = nextY;
-					if wrapX then
-						realX = realX % iW;
-					end
-					if wrapY then
-						realY = realY % iH;
-					end
+				--else
+					--local realX = nextX;
+					--local realY = nextY;
+					--if wrapX then
+						--realX = realX % iW;
+					--end
+					--if wrapY then
+						--realY = realY % iH;
+					--end
 					-- We've arrived at the correct x and y for the current plot.
-					local plot = Map.GetPlot(realX, realY);
-					if plot:GetResourceType(-1) == -1 then -- No resource here, safe to proceed.
-						local plotType = plot:GetPlotType()
-						local terrainType = plot:GetTerrainType()
-						local featureType = plot:GetFeatureType()
-						local plotIndex = realY * iW + realX + 1;
+					--local plot = Map.GetPlot(realX, realY);
+					--if plot:GetResourceType(-1) == -1 then -- No resource here, safe to proceed.
+						--local plotType = plot:GetPlotType()
+						--local terrainType = plot:GetTerrainType()
+						--local featureType = plot:GetFeatureType()
+						--local plotIndex = realY * iW + realX + 1;
 						-- Now check this plot for eligibility to be converted to flat open grassland.
-						if plotType == PlotTypes.PLOT_LAND then
-							if terrainType == TerrainTypes.TERRAIN_PLAINS then
-								if featureType == FeatureTypes.NO_FEATURE then
-									table.insert(plot_list, plotIndex);
-								end
-							end
-						end
-					end
-				end
-				currentX, currentY = nextX, nextY;
-			end
-		end
-		local iNumConversionCandidates = table.maxn(plot_list);
-		if iNumConversionCandidates == 0 then
-			iNumFoodBonusNeeded = 3;
-		else
+						--if plotType == PlotTypes.PLOT_LAND then
+							--if terrainType == TerrainTypes.TERRAIN_PLAINS then
+								--if featureType == FeatureTypes.NO_FEATURE then
+									--table.insert(plot_list, plotIndex);
+								--end
+							--end
+						--end
+					--end
+				--end
+				--currentX, currentY = nextX, nextY;
+			--end
+		--end
+		--local iNumConversionCandidates = table.maxn(plot_list);
+		--if iNumConversionCandidates == 0 then
+			--iNumFoodBonusNeeded = 3;
+		--else
 			--print("-"); print("*** START HAD NO 2-FOOD TILES, YET ONLY QUALIFIED FOR 2 BONUS; CONVERTING A PLAINS TO GRASS! ***"); print("-");
-			local diceroll = 1 + Map.Rand(iNumConversionCandidates, "Choosing plot to convert to Grass near food-poor Plains start - LUA");
-			local conversionPlotIndex = plot_list[diceroll];
-			local conv_x = (conversionPlotIndex - 1) % iW;
-			local conv_y = (conversionPlotIndex - conv_x - 1) / iW;
-			local plot = Map.GetPlot(conv_x, conv_y);
-			plot:SetTerrainType(TerrainTypes.TERRAIN_GRASS, false, false)
-			self:PlaceResourceImpact(conv_x, conv_y, 1, 0) -- Disallow strategic resources at this plot, to keep it a farm plot.
-		end
-	end
+			--local diceroll = 1 + Map.Rand(iNumConversionCandidates, "Choosing plot to convert to Grass near food-poor Plains start - LUA");
+			--local conversionPlotIndex = plot_list[diceroll];
+			--local conv_x = (conversionPlotIndex - 1) % iW;
+			--local conv_y = (conversionPlotIndex - conv_x - 1) / iW;
+			--local plot = Map.GetPlot(conv_x, conv_y);
+			--plot:SetTerrainType(TerrainTypes.TERRAIN_GRASS, false, false)
+			--self:PlaceResourceImpact(conv_x, conv_y, 1, 0) -- Disallow strategic resources at this plot, to keep it a farm plot.
+		--end
+	--end
 	-- Add Bonus Resources to food-poor start positions.
 	if iNumFoodBonusNeeded > 0 then
 		local maxBonusesPossible = innerCanHaveBonus + outerCanHaveBonus;
@@ -5651,10 +5653,12 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 
 	-- Check for heavy grass and light plains. Adding Stone if grass count is high and plains count is low. - May 2011, BT
 	local iNumStoneNeeded = 0;
-	if iNumGrass >= 9 and iNumPlains == 0 then
+	if iNumGrass >= 7 and iNumPlains < 2 then
 		iNumStoneNeeded = 2;
 	elseif iNumGrass >= 6 and iNumPlains <= 4 then
 		iNumStoneNeeded = 1;
+	elseif iNumGrass >= 9 and iNumPlains <= 1 then
+		iNumStoneNeeded = 3;
 	end
 	
 	if iNumStoneNeeded > 0 then -- Add Stone to this grass start.
@@ -8445,9 +8449,9 @@ function AssignStartingPlots:NormalizeCityState(x, y)
 	-- Three levels for Bonus Resource support, from zero to two.
 	iNumFoodBonusNeeded = 1;
 	if totalFoodScore < 8 or innerFoodScore < 4 then
-		iNumFoodBonusNeeded = 2;
+		iNumFoodBonusNeeded = 3;
 	elseif totalFoodScore < 12 and innerFoodScore < 9 then
-		iNumFoodBonusNeeded = 1;
+		iNumFoodBonusNeeded = 2;
 	end
 	-- Add Bonus Resources to food-poor city states.
 	if iNumFoodBonusNeeded > 0 then
