@@ -961,24 +961,24 @@ function AssignStartingPlots:__InitLuxuryWeights()
 		self.luxury_region_weights[2] = {			-- Jungle
 		{self.cocoa_ID,		35},
 		{self.citrus_ID,	35},
-		{self.spices_ID,	30},
+		{self.spices_ID,	35},
 		{self.coconut_ID,	35},
 		{self.rubber_ID,	35},
 		{self.gems_ID,		25},
 		{self.sugar_ID,		20},
 		{self.pearls_ID,	25},
 		{self.copper_ID,	05},
-		{self.truffles_ID,	05},
+		{self.truffles_ID,	25},
 		{self.crab_ID,		25},
 		{self.whale_ID,		25},
-		{self.silk_ID,		05},
-		{self.dye_ID,		05},	};
+		{self.silk_ID,		25},
+		{self.dye_ID,		25},	};
 		
 		self.luxury_region_weights[3] = {			-- Forest
 		{self.dye_ID,		30},
 		{self.silk_ID,		30},
 		{self.truffles_ID,	30},
-		{self.coconut_ID,	05},
+		{self.coconut_ID,	30},
 		{self.rubber_ID,	10},
 		{self.fur_ID,		10},
 		{self.spices_ID,	10},
@@ -4449,7 +4449,7 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 	elseif featureType == FeatureTypes.FEATURE_FOREST then -- Place Deer
 		plot:SetResourceType(self.deer_ID, 1);
 		print("Placed Deer.");
-		self.amounts_of_resources_placed[self.deer_ID + 1] = self.amounts_of_resources_placed[self.deer_ID + 1] + 1;
+		self.amounts_of_resources_placed[self.deer_ID + 1] = self.amounts_of_resources_placed[self.deer_ID + 1] + 1; 
 		return true, false, false
 	elseif featureType == FeatureTypes.FEATURE_FOREST then -- Place Hardwood
 		plot:SetResourceType(self.hardwood_ID, 1);
@@ -4460,26 +4460,34 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 		-- add a sheep or deer, for deer add forest first
 		local terrainType = plot:GetTerrainType();
 		if terrainType ~= TerrainTypes.TERRAIN_DESERT then
-			--add deer, forest first
-			plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
-			plot:SetResourceType(self.deer_ID, 1);
-			print("Placed Deer xx.");
-			self.amounts_of_resources_placed[self.deer_ID + 1] = self.amounts_of_resources_placed[self.deer_ID + 1] + 1;
-		else
-			plot:SetResourceType(self.sheep_ID, 1);
-			print("Placed Sheep xx.");
-			self.amounts_of_resources_placed[self.sheep_ID + 1] = self.amounts_of_resources_placed[self.sheep_ID + 1] + 1;
+			local sheepordeer = Map.Rand(100, "");
+			if sheepordeer < 40 then
+				--add deer, forest first
+				plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
+				plot:SetResourceType(self.deer_ID, 1);
+				print("Placed Deer xx.");
+				self.amounts_of_resources_placed[self.deer_ID + 1] = self.amounts_of_resources_placed[self.deer_ID + 1] + 1;
+			elseif sheepordeer < 5 then
+				plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
+				plot:SetResourceType(self.hardwood_ID, 1);
+				print("Placed Hardwood.");
+				self.amounts_of_resources_placed[self.hardwood_ID + 1] = self.amounts_of_resources_placed[self.hardwood_ID + 1] + 1;
+			else
+				plot:SetResourceType(self.sheep_ID, 1);
+				print("Placed Sheep xx.");
+				self.amounts_of_resources_placed[self.sheep_ID + 1] = self.amounts_of_resources_placed[self.sheep_ID + 1] + 1;
+			end
 		end
 		return true, false, false
 	elseif plotType == PlotTypes.PLOT_LAND then
 		if featureType == FeatureTypes.NO_FEATURE then
 			if terrainType == TerrainTypes.TERRAIN_GRASS then -- Place Cows or bison
 				local bisonordeer = Map.Rand(100, "");
-				if bisonordeer < 50 then
+				if bisonordeer < 30 then
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
-				elseif bisonordeer < 30 then
+				elseif bisonordeer < 10 then
 					plot:SetFeatureType(FeatureTypes.FEATURE_FOREST, -1);
 					plot:SetResourceType(self.deer_ID, 1);
 					print("Placed Deer xx.");
@@ -4496,7 +4504,7 @@ function AssignStartingPlots:AttemptToPlaceBonusResourceAtPlot(x, y, bAllowOasis
 					plot:SetResourceType(self.bison_ID, 1);
 					print("Placed Bison.");
 					self.amounts_of_resources_placed[self.bison_ID + 1] = self.amounts_of_resources_placed[self.bison_ID + 1] + 1;
-				elseif placethis < 65 then
+				elseif placethis < 45 then
 					plot:SetResourceType(self.wheat_ID, 1);
 					print("Placed Wheat.");
 					self.amounts_of_resources_placed[self.wheat_ID + 1] = self.amounts_of_resources_placed[self.wheat_ID + 1] + 1;
@@ -5415,7 +5423,7 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 	end
 	
 	-- If early hammers will be too short, attempt to add a small Horse or Iron to second ring.
-	if innerHammerScore <= 6 and earlyHammerScore < 12 then -- Add a small Horse or Iron to second ring.
+	if innerHammerScore <= 6 and earlyHammerScore < 10 then -- Add a small Horse or Iron to second ring.
 		if isEvenY then
 			randomized_second_ring_adjustments = GetShuffledCopyOfTable(self.secondRingYIsEven);
 		else
@@ -5453,17 +5461,17 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 	
 	-- Six levels for Bonus Resource support, from zero to five.
 	if totalFoodScore < 4 and innerFoodScore == 0 then
-		iNumFoodBonusNeeded = 6;
+		iNumFoodBonusNeeded = 2;
 	elseif totalFoodScore < 6 then
-		iNumFoodBonusNeeded = 5;
+		iNumFoodBonusNeeded = 2;
 	elseif totalFoodScore < 8 then
-		iNumFoodBonusNeeded = 5;
+		iNumFoodBonusNeeded = 2;
 	elseif totalFoodScore < 12 and innerFoodScore < 5 then
-		iNumFoodBonusNeeded = 5;
+		iNumFoodBonusNeeded = 3;
 	elseif totalFoodScore < 17 and innerFoodScore < 9 then
-		iNumFoodBonusNeeded = 5;
+		iNumFoodBonusNeeded = 3;
 	elseif nativeTwoFoodTiles < 2 then
-		iNumFoodBonusNeeded = 4;
+		iNumFoodBonusNeeded = 3;
 	elseif totalFoodScore < 24 and innerFoodScore < 11 then
 		iNumFoodBonusNeeded = 3;
 	elseif nativeTwoFoodTiles == 2 or iNumNativeTwoFoodFirstRing < 2 then
@@ -5471,7 +5479,7 @@ function AssignStartingPlots:NormalizeStartLocation(region_number)
 	elseif nativeTwoFoodTiles > 10 or iNumNativeTwoFoodFirstRing > 3 then
 		iNumFoodBonusNeeded = 5;
 	elseif totalFoodScore < 20 then
-		iNumFoodBonusNeeded = 2;
+		iNumFoodBonusNeeded = 3;
 	end
 	
 	-- Check for Legendary Start resource option.
@@ -9349,7 +9357,7 @@ function AssignStartingPlots:AssignLuxuryToRegion(region_number)
 					end
 				-- Land-based resources are automatically approved if they were in the region's option table.
 				--res_ID == self.salt_ID
-				elseif res_ID == self.salt_ID  or res_ID == self.marble_ID or res_ID == self.silk_ID or res_ID == self.dye_ID then
+				elseif res_ID == self.salt_ID  or res_ID == self.marble_ID then
 					-- No salt to regions please, sorry
 				else
 					table.insert(resource_IDs, res_ID);
@@ -13277,26 +13285,26 @@ function AssignStartingPlots:PlaceStrategicAndBonusResources()
 	local uran_amt, horse_amt, oil_amt, iron_amt, coal_amt, alum_amt = self:GetMajorStrategicResourceQuantityValues()
 	
 	-- Adjust appearance rate per Resource Setting chosen by user.
-	local bonus_multiplier = 0.55;
+	local bonus_multiplier = 0.65;
 
 	if self.resource_setting == 1 then -- Near to nothing
 		bonus_multiplier = 1;
 	elseif self.resource_setting == 2 then -- 
-		bonus_multiplier = 0.9;
+		bonus_multiplier = 0.90;
 	elseif self.resource_setting == 3 then -- 
-		bonus_multiplier = 0.8;
+		bonus_multiplier = 0.80;
 	elseif self.resource_setting == 4 then -- 
-		bonus_multiplier = 0.7;
+		bonus_multiplier = 0.75;
 	elseif self.resource_setting == 6 then -- 
-		bonus_multiplier = 0.5;
+		bonus_multiplier = 0.55;
 	elseif self.resource_setting == 7 then -- 
-		bonus_multiplier = 0.4;
+		bonus_multiplier = 0.45;
 	elseif self.resource_setting == 8 then -- 
-		bonus_multiplier = 0.3;
+		bonus_multiplier = 0.35;
 	elseif self.resource_setting == 9 then -- 
-		bonus_multiplier = 0.2;
+		bonus_multiplier = 0.25;
 	elseif self.resource_setting == 10 then -- filled the map full
-		bonus_multiplier = 0.1;
+		bonus_multiplier = 0.15;
 	end
 
 	-- Place Strategic resources.
